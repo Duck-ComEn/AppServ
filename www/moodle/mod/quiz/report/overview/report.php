@@ -166,7 +166,10 @@ class quiz_report extends quiz_default_report {
                 $columns[]= 'checkbox';
                 $headers[]= NULL;
             }
-            
+             if ($CFG->grade_report_showuseridnumber) {
+                $columns[]= 'idnumber';
+                $headers[]= get_string('idnumber');
+            }
             if (!$download && $CFG->grade_report_showuserimage) {
                 $columns[]= 'picture';
                 $headers[]= '';
@@ -175,10 +178,7 @@ class quiz_report extends quiz_default_report {
             $columns[]= 'fullname';
             $headers[]= get_string('name');
     
-            if ($CFG->grade_report_showuseridnumber) {
-                $columns[]= 'idnumber';
-                $headers[]= get_string('idnumber');
-            }
+           
             
             $columns[]= 'timestart';
             $headers[]= get_string('startedon', 'quiz');
@@ -194,20 +194,24 @@ class quiz_report extends quiz_default_report {
                 $headers[] = get_string('grade', 'quiz').'/'.$quiz->grade;
             }
     
+			if ($hasfeedback) {
+                $columns[] = 'feedbacktext';
+                $headers[] = get_string('feedback', 'quiz');
+            }
+			
+			
             if ($detailedmarks) {
                 // we want to display marks for all questions
                 $questions = quiz_report_load_questions($quiz);
                 foreach ($questions as $id => $question) {
                     // Ignore questions of zero length
+		
                     $columns[] = 'qsgrade'.$id;
                     $headers[] = '#'.$question->number;
                 }
             }
     
-            if ($hasfeedback) {
-                $columns[] = 'feedbacktext';
-                $headers[] = get_string('feedback', 'quiz');
-            }
+            
     
             if (!$download) {
                 // Set up the table
@@ -221,14 +225,14 @@ class quiz_report extends quiz_default_report {
                 $table->sortable(true);
                 $table->collapsible(true);
     
-                $table->column_suppress('picture');
-                $table->column_suppress('fullname');
+				$table->column_suppress('picture');
+				$table->column_suppress('fullname');
                 $table->column_suppress('idnumber');
                 
                 $table->no_sorting('feedbacktext');
     
                 $table->column_class('picture', 'picture');
-                $table->column_class('fullname', 'bold');
+                $table->column_class('fullname');
                 $table->column_class('sumgrades', 'bold');
     
                 $table->set_attribute('cellspacing', '0');
@@ -463,6 +467,9 @@ class quiz_report extends quiz_default_report {
                         $attempt->id = $attempt->userid;
                         $picture = print_user_picture($attempt, $course->id, NULL, false, true);
                         $row[] = $picture;
+                    } 
+					if (in_array('idnumber', $columns)){
+                        $row[] = $attempt->idnumber;
                     }
                     if (!$download){
                         $userlink = '<a href="'.$CFG->wwwroot.'/user/view.php?id='.$attempt->userid.
@@ -472,9 +479,7 @@ class quiz_report extends quiz_default_report {
                         $row[] = fullname($attempt);
                     }
                     
-                    if (in_array('idnumber', $columns)){
-                        $row[] = $attempt->idnumber;
-                    }
+                   
     
                     // Timing columns.
                     if ($attempt->attempt) {
@@ -522,6 +527,22 @@ class quiz_report extends quiz_default_report {
                         
                     }
     
+				// Feedback column.
+                    if ($hasfeedback) {
+                        if ($attempt->timefinish) {
+							if(quiz_rescale_grade($attempt->sumgrades, $quiz)== $quiz->grade){
+							$row[] = '<div class="highlightPass">'.quiz_report_feedback_for_grade(quiz_rescale_grade($attempt->sumgrades, $quiz), $quiz->id).'</div>';
+							}else{
+							$row[] = '<div class="highlightFail">'.quiz_report_feedback_for_grade(quiz_rescale_grade($attempt->sumgrades, $quiz), $quiz->id).'</div>';
+							}
+                        } else {
+                            $row[] = '-';
+                        }
+                    }
+	
+	
+	
+	
                     if($detailedmarks) {
                         if(empty($attempt->attempt)) {
                             foreach($questions as $question) {
@@ -552,18 +573,7 @@ class quiz_report extends quiz_default_report {
                         }
                     }
     
-                    // Feedback column.
-                    if ($hasfeedback) {
-                        if ($attempt->timefinish) {
-							if(quiz_rescale_grade($attempt->sumgrades, $quiz)==40){
-							$row[] = '<div class="highlightPass">'.quiz_report_feedback_for_grade(quiz_rescale_grade($attempt->sumgrades, $quiz), $quiz->id).'</div>';
-							}else{
-							$row[] = '<div class="highlightFail">'.quiz_report_feedback_for_grade(quiz_rescale_grade($attempt->sumgrades, $quiz), $quiz->id).'</div>';
-							}
-                        } else {
-                            $row[] = '-';
-                        }
-                    }
+                    
                     if (!$download) {
                         $table->add_data($row);
                     } else if ($download == 'Excel' or $download == 'ODS') {

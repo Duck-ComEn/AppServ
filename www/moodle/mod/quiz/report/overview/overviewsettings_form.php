@@ -24,12 +24,12 @@ class mod_quiz_report_overview_settings extends moodleform {
             $mform->addElement('advcheckbox', 'qmfilter', get_string('show', 'quiz_overview'), get_string('optonlygradedattempts', 'quiz_overview', $gm), null, array(0,1));
         }
 //-------------------------------------------------------------------------------
-        $mform->addElement('header', 'preferencesuser', get_string('preferencesuser', 'quiz_overview'));
+        //$mform->addElement('header', 'preferencesuser', get_string('preferencesuser', 'quiz_overview'));
 
-        $mform->addElement('text', 'pagesize', get_string('pagesize', 'quiz_overview'));
-        $mform->setType('pagesize', PARAM_INT);
+        //$mform->addElement('text', 'pagesize', get_string('pagesize', 'quiz_overview'));
+       // $mform->setType('pagesize', PARAM_INT);
 
-        $mform->addElement('selectyesno', 'detailedmarks', get_string('showdetailedmarks', 'quiz_overview'));
+        //$mform->addElement('selectyesno', 'detailedmarks', get_string('showdetailedmarks', 'quiz_overview'));
 
         $this->add_action_buttons(false, get_string('preferencessave', 'quiz_overview'));
     }
