@@ -1,0 +1,590 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+<title>Edi-Mo Web Application</title>
+</head>
+
+<body>
+
+<?php
+       // index.php - the front page.	   
+    if (!file_exists('../config.php')) {
+        header('Location: install.php');
+        die;
+    }
+ 
+/// Bounds for block widths on this page
+    define('BLOCK_L_MIN_WIDTH', 160);
+    define('BLOCK_L_MAX_WIDTH', 210);
+    define('BLOCK_R_MIN_WIDTH', 160);
+    define('BLOCK_R_MAX_WIDTH', 210);
+
+    require_once('../config.php');
+    require_once($CFG->dirroot .'/course/lib.php');
+    require_once($CFG->dirroot .'/lib/blocklib.php');
+	include_once($CFG->dirroot .'/lib/moodlelib.php');  // Contains various admin-only functions
+
+	//include_once($CFG->dirroot .'/lib/adminlib.php');  // Contains various admin-only functions
+
+
+    $PAGE = page_create_object(PAGE_COURSE_VIEW, SITEID);
+    $pageblocks = blocks_setup($PAGE);
+    $editing = $PAGE->user_is_editing();
+    $preferred_width_left  = bounded_number(BLOCK_L_MIN_WIDTH, blocks_preferred_width($pageblocks[BLOCK_POS_LEFT]), BLOCK_L_MAX_WIDTH);
+    $preferred_width_right = bounded_number(BLOCK_R_MIN_WIDTH, blocks_preferred_width($pageblocks[BLOCK_POS_RIGHT]), BLOCK_R_MAX_WIDTH);
+	
+	print_header('Edi-Mo Program', '', 'home', '', '', true, true, "<div align=\"right\"><font color=\"#993300\"><h3>Edi-Mo Program&nbsp;&nbsp;</h3></font></div>");
+
+
+/** Code Edi-MO Here **/
+include("inc/FusionCharts.php");
+include("inc/FC_Colors.php");
+require_once("inc/class.mysql.inc.php");
+$mysql = new MySQL();
+
+$GLOBALS["in_mdl_course_categories_id"] = "";
+
+function getChild($parent) {
+	$mysql = new MySQL();
+	
+	$sql = "SELECT * FROM edimo_course_categories ";
+	$sql .= "WHERE mdl_course_categories_parent = " . $parent . " ";
+	$sql .= "ORDER BY mdl_course_categories_sortorder ";
+	//print $sql . "<br>";
+	$result = $mysql->executeQuery($sql);
+	while($rs = $mysql->fetchArray()) {
+		//print " -" . $rs["nameTH"] . "<br>";
+		$GLOBALS["in_mdl_course_categories_id"] .= $rs["mdl_course_categories_id"] . ",";
+		
+		getChild($rs["mdl_course_categories_id"]);
+	}
+}
+
+$data_update = "";
+$sql = "SELECT CONCAT(DAYOFMONTH(time), ' ', ";
+$sql .= "CASE MONTH(time) ";
+$sql .= "WHEN 1 THEN 'มกราคม' ";
+$sql .= "WHEN 2 THEN 'กุมภาพันธ์' "; 
+$sql .= "WHEN 3 THEN 'มีนาคม' ";
+$sql .= "WHEN 4 THEN 'เมษายน' ";
+$sql .= "WHEN 5 THEN 'พฤษภาคม' "; 
+$sql .= "WHEN 6 THEN 'มิถุนายน' "; 
+$sql .= "WHEN 7 THEN 'กรกฎาคม' "; 
+$sql .= "WHEN 8 THEN 'สิงหาคม' "; 
+$sql .= "WHEN 9 THEN 'กันยายน' "; 
+$sql .= "WHEN 10 THEN 'ตุลาคม' "; 
+$sql .= "WHEN 11 THEN 'พฤศจิกายน' "; 
+$sql .= "WHEN 12 THEN 'ธันวาคม' "; 
+$sql .= "END, ' ', YEAR(time) + 543, ' เวลา ', HOUR(time), '.', MINUTE(time) , ' น.') AS DateUpdate "; 
+$sql .= "FROM `edimo_config_time` "; 
+$sql .= "WHERE action_id = 3 "; 
+$sql .= "ORDER BY time DESC ";
+$result = $mysql->executeQuery($sql);
+if($rs = $mysql->fetchArray()) {
+	$date_update = $rs["DateUpdate"];
+}
+?>
+<style type="text/css">
+<!--
+.style13 {
+	color: #FFFFFF;
+	font-size: large;
+}
+.style14 {
+	font-size: medium;
+	font-weight: bold;
+	color: #FFFF00;
+}
+.style24 {color: #6A98C9}
+.style25 {font-size: small}
+.style26 {color: #FFFFFF}
+.style28 {color: #FF0000}
+.style30 {color: #0000CC}
+.style31 {font-weight: bold}
+-->
+</style>
+
+<script language="JavaScript"> 
+function setPointer(field, action, defaultColor, pointerColor, markColor) { 
+var newColor 
+var currentColor 
+
+currentColor=field.style.backgroundColor; 
+
+if (action == 'over' && currentColor.toLowerCase() == defaultColor.toLowerCase()) { 
+newColor=pointerColor; } 
+
+if (action == 'out' && currentColor.toLowerCase() == pointerColor.toLowerCase()) { 
+newColor=defaultColor; } 
+
+if (action == 'click' && currentColor.toLowerCase() == defaultColor.toLowerCase()) { 
+newColor=markColor; } 
+if (action == 'click' && currentColor.toLowerCase() == pointerColor.toLowerCase()) { 
+newColor=markColor; } 
+if (action == 'click' && currentColor.toLowerCase() == markColor.toLowerCase()) { 
+newColor=pointerColor; } 
+
+if (newColor) { 
+field.style.backgroundColor=newColor; } 
+} 
+
+if (document.images)
+{
+	imgOne = new Image();
+	imgOne.src = "icons/left02.gif";
+	imgOff = new Image();
+	imgOff.src =  "icons/left01.gif";
+}
+
+function msOver(num)
+{
+	if (document.images)	{
+	if (num==0)	{
+		document.images[num].src = imgOne.src;
+		}
+	}
+}
+
+function msOut(num)
+{
+	if (document.images)	{
+		document.images[num].src = imgOff.src;
+	}
+}
+
+
+
+</script> 
+
+
+<form method="post">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" >  
+  <tr >
+  <td  background="icons/topBG.jpg" width="100%" height="40"><div align="left"  valign="top" ><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="950" height="56">
+      <param name="movie" value="icons/LogoProFinal.swf" />
+            <param name="quality" value="high" />
+            <br />
+            <param name="wmode" value="transparent" />
+      <embed src="icons/LogoProFinal.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="950" height="56"></embed>
+    </object>
+  </div></td>
+</tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0" >
+  <tr>
+    <td ><table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" id="layout-table">
+      <tr>
+        <td width="18%" valign="top" ><table width="100%" border="0" cellspacing="0" cellpadding="0"  bgcolor="#F5F5F5">
+          <tr>
+            <td valign="top">
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#F5F5F5" class="text" >
+  <tr>
+    <td colspan="3" background="icons/bg_menu.gif" ><img src="icons/mainmenu.gif" width="175" height="35" /></td>
+  </tr>
+    <tr>
+    <td colspan="3" ><img src="icons/icon01.gif" width="15" height="9" /><a href="EdiMo_totalClick.php?mdl_course_categories_id=*"  title="สถิติจำนวนครั้งการใช้งาน">สถิติจำนวนครั้งการใช้งาน</a></td>
+  </tr>
+  <tr>
+    <td width="8" align="right" valign="top"><img src="icons/left0.gif" width="8" height="125" /></td>
+    <td width="164" align="left">
+<div id="panel" class="panel" >
+<script language="JavaScript">
+
+function getArray(id)
+{
+  var splitarray = link[id].split("|");
+  return splitarray;
+}
+function info(i,obj,col)
+{
+ sublink = getArray(i);
+ infobar = document.getElementById("infob");
+ infobar.innerHTML = "<img src='icons/icon02.gif'>  "+sublink[2];
+ obj.style.backgroundColor=col;
+}
+
+function endi(obj,col)
+{
+ obj.style.backgroundColor=col;
+ infobar = document.getElementById("infob");
+ infobar.innerHTML = "<img src='icons/icon02.gif'> <br>";
+}
+/*
+var link = new Array();
+link[0] = "<img src='icons/icon02.gif'> ทุกรายวิชาในระบบ|All_fac.php|All Course";
+link[1] = "<img src='icons/icon02.gif'> สำนักวิชาวิศวกรรมศาสตร์|fac_01.php|Engeering Fac.";
+link[2] = "<img src='icons/icon02.gif'> สำนักวิชาวิทยาศาสตร์|fac_02.php|Science Fac.";
+link[3] = "<img src='icons/icon02.gif'> สำนักวิชาเทคโนโลยีสังคม|fac_03.php|Social Tech. Fac.";
+link[4] = "<img src='icons/icon02.gif'> สำนักวิชาเทคโนโลยีการเกษตร|fac_04.php|Argiculture Fac.";
+link[5] = "<img src='icons/icon02.gif'> สำนักวิชแพทย์ศาสตร์|fac_05.php|Medicine Fac.";
+*/
+<?php
+$sql = "SELECT * FROM edimo_course_categories WHERE categories_ID = 1 ORDER BY mdl_course_categories_sortorder";
+//$result = $db->executeQuery(true);	// true = สั่งทำงาน, false = ไม่ทำ
+$result = $mysql->executeQuery($sql);
+print("var link = new Array();");
+print("link[0] = \"<img src='icons/icon02.gif'>ทุกวิชาในระบบ|EdiMo_totalClick.php?mdl_course_categories_id=*|ทุกวิชาในระบบ\";");
+$i = 1;
+while($rs = $mysql->fetchArray()) {
+	print("link[" . $i . "] = \"<img src='icons/icon02.gif'>" . $rs["nameTH"] . "|EdiMo_totalClick.php?mdl_course_categories_id=" . $rs["mdl_course_categories_id"] . "|" . $rs["nameTH"] . "\";");
+	++$i;
+}
+?>
+//  document.write("<div align='center' valign='center' class='move' onmouseover='over=false;' onmouseout='over=false;' style='cursor:move'><font color=blue><b>MAIN MENU</b></font></div><div class='menu'><br></div>");
+for(i=0;i<link.length;i++) {
+  sublink = getArray(i);
+  document.write("<a href='"+sublink[1]+"'><div class='menu' onmouseover=\"info("+i+",this,'#A8FF11')\" onmouseout=\"endi(this,'#F5F5F5')\" style='cursor:hand'>  "+ sublink[0] +"</div></a>");
+}
+  document.write("<div class='menu'><br></div><div class='info' id='infob' name='infob'><img src='icons/icon02.gif'> <br></div>");
+</script>	</td>
+  </tr>
+</table></td>
+          </tr>
+
+    <tr>
+           <td valign="top" background="" bgcolor="EAEAEA"></td>
+          </tr>
+   <tr>
+    <td colspan="3" width="175"   bgcolor="#F5F5F5"><img src="icons/icon01.gif" width="15" height="9" /><a href="EdiMo_totalUser.php?mdl_course_categories_id=*" title="สถิติตามจำนวนผู้ใช้งาน">สถิติตามจำนวนผู้ใช้งาน</a></td>
+  </tr>
+    <tr>
+    <td colspan="3"  width="175" bgcolor="#F5F5F5">&nbsp;</td>
+  </tr>
+
+    <tr>
+    <td colspan="3" width="175"  bgcolor="#F5F5F5">&nbsp;<!--<img src="icons/icon01.gif" width="15" height="9" />แจ้งขอใช้บริการ &lt;ชื่อย่อระบบ&gt; --></td>
+  </tr>
+    <tr bordercolor="#FFFFFF" border="2" >
+    <td colspan="3" bgcolor="#439240" ><div align="center" class="style26">
+      <table width="100%" border="2" cellpadding="0" cellspacing="0" bordercolor="#DDE3D5">
+      <tr>
+        <td><div align="center"><span class="style26"><strong>สรุปสถิติระบบ
+                <?
+				$shortname = "";
+				
+				$sql = "SELECT * FROM edimo_config";
+				$result = $mysql->executeQuery($sql);
+				while($rs = mysql_fetch_array($result, MYSQL_ASSOC)) {
+					$shortname = $rs["shortName"];
+					print $shortname;
+				}
+			?>
+        </strong><br />
+        (จำนวน) </span></div></td>
+      </tr>
+    </table>
+    </div></td>
+  </tr>
+          <tr>
+            <td align="center" valign="top"><table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#DDE3D5">
+
+              
+              <tr>
+                <td width="41%" valign="top" bgcolor="#A4C740"> <div align="left">รายวิชาทั้งหมด</div></td>
+                <td width="30%" valign="top" bgcolor="#A4C740">
+                  <div align="right">
+                    <?
+   					    	$mysql2 = new MySQL();
+							$sql = "SELECT COUNT(mdl_course_id) AS rows ";
+							$sql .= "FROM edimo_def_course";
+							$result2 = $mysql2->executeQuery($sql);
+							$rows = 0;
+							if($rs2 = $mysql2->fetchArray()) {
+								$rows = $rs2["rows"];
+								print number_format($rs2["rows"], 0);
+							}
+						?>&nbsp;                    </div></td>
+                <td width="29%" valign="top" bgcolor="#A4C740"><div align="center">รายวิชา</div></td>
+              </tr>
+              <tr>
+                <td valign="top" bgcolor="#EFC94A"><div align="left">บทเรียนทั้งหมด</div></td>
+                <td valign="top" bgcolor="#EFC94A">
+                  <div align="right">
+                    <?
+   					    	$mysql2 = new MySQL();
+							$sql = "SELECT COUNT(id) AS rows ";
+							$sql .= "FROM edimo_course_modules";
+							$result2 = $mysql2->executeQuery($sql);
+							$rows = 0;
+							if($rs2 = $mysql2->fetchArray()) {
+								$rows = $rs2["rows"];
+								print number_format($rs2["rows"], 0);
+							}
+						?>&nbsp;                    </div></td>
+                <td valign="top" bgcolor="#EFC94A"><div align="center">บทเรียน</div></td>
+              </tr>
+              <tr>
+                <td align="left" valign="top" bgcolor="#B4767E"><div align="left">สมาชิกที่เข้าใช้งานทั้งหมด</div></td>
+                <td valign="top" bgcolor="#B4767E">
+                  <div align="right"><?
+   					    	$mysql2 = new MySQL();
+							$sql = "SELECT  COUNT(DISTINCT userid) AS rows FROM mdl_log";
+							//$sql .= "FROM edimo_def_users";
+							$result2 = $mysql2->executeQuery($sql);
+							$rows = 0;
+							if($rs2 = $mysql2->fetchArray()) {
+								$rows = $rs2["rows"];
+								print number_format($rs2["rows"], 0);
+							}
+						?>&nbsp;                    </div></td>
+                <td valign="top" bgcolor="#B4767E"><div align="center">ราย</div></td>
+              </tr>
+              <tr>
+                <td align="left" valign="top" bgcolor="#43AFCE">
+                  <div align="left">จำนวนครั้งการใช้งานทั้งหมด</div></td>
+                <td valign="top" bgcolor="#43AFCE"><div align="right">
+                  <?
+   					    	$mysql2 = new MySQL();
+							$sql = "SELECT COUNT(id) AS rows ";
+							$sql .= "FROM mdl_log";
+							$result2 = $mysql2->executeQuery($sql);
+							$rows = 0;
+							if($rs2 = $mysql2->fetchArray()) {
+								$rows = $rs2["rows"];
+								print number_format($rs2["rows"], 0);
+							}
+						?>&nbsp; </div></td>
+                <td valign="top" bgcolor="#43AFCE"><div align="center">ครั้ง</div></td>
+              </tr>
+              
+            </table></td>
+          </tr>
+
+		  <tr>
+            <td valign="top" ></td>
+          </tr>
+
+
+        </table>          </td>
+        <td colspan="3" valign="top" bgcolor="#FFFFFF"><table width="100%" border="0" cellpadding="0" cellspacing="0" >
+          <tr>
+            <td width="1%" rowspan="5">&nbsp;</td>
+            <td width="99%" height="28" align="center"><div align="left"><span class="style13">&nbsp;<img src="icons/stat.gif" alt="stat" width="23" height="23" /><span class="style14 style24"> สถิติการใช้งานระบบ </span></span><span class="style28">: <?
+				$shortname = "";
+				
+				$sql = "SELECT * FROM edimo_config";
+				$result = $mysql->executeQuery($sql);
+				while($rs = mysql_fetch_array($result, MYSQL_ASSOC)) {
+					$shortname = $rs["shortName"];
+					print $shortname;
+				}
+			?>
+            </span></div></td>
+          </tr>
+          <tr>
+            <td ><table width="100%" border="0" cellpadding="0" cellspacing="0" >
+              <tr >
+                <td width="91%" height="20" align="left" ><table width="100%" border="0">
+                  <tr>
+                    <td width="2%">&nbsp;</td>
+                    <td width="49%" align="center">
+					<?php
+					   //Create an XML data document in a string variable
+					   $strXML  = "";
+					   $strXML .= "<graph baseFont='Tahoma' baseFontSize='12' caption='จำนวนครั้งการใช้งาน' xAxisName='สังกัด/กลุ่มรายวิชา' yAxisName='Total Click'
+					   decimalPrecision='0' formatNumberScale='0'>";
+					   
+					   	$sql = "SELECT * FROM edimo_course_categories ";
+						$sql .= "WHERE categories_ID = 1 ";
+						$sql .= "ORDER BY mdl_course_categories_sortorder ";
+						$result = $mysql->executeQuery($sql);
+						$index = 0;
+						while($rs = $mysql->fetchArray()) {
+							$GLOBALS["in_mdl_course_categories_id"] = "";
+							getChild($rs["mdl_course_categories_id"]);
+							
+							$mysql2 = new MySQL();
+							
+							$sql = "SELECT SUM(totalClick) AS totalClick ";
+							$sql .= "FROM edimo_def_course T1 ";
+							$sql .= "INNER JOIN edimo_course_categories T2 ON T1.mdl_course_categories_id = T2.mdl_course_categories_id ";
+							$sql .= "WHERE T1.mdl_course_categories_id IN(" . ($GLOBALS["in_mdl_course_categories_id"] != NULL ? substr($GLOBALS["in_mdl_course_categories_id"], 0, strlen($GLOBALS["in_mdl_course_categories_id"]) - 1) : $rs["mdl_course_categories_id"]) . ") ";
+							$result2 = $mysql2->executeQuery($sql);
+							$totalClick = 0;
+							if($rs2 = $mysql2->fetchArray()) {
+								$totalClick = $rs2["totalClick"];
+								//print number_format($rs2["totalClick"], 0);
+							}
+							$strXML .= "<set name='" . (++$index) . "' value='" . $totalClick . "' alpha='70' color='" . getFCColor() . "'/>";
+						}
+					   $strXML .= "</graph>";
+					
+					   //Create the chart - Column 3D Chart with data from strXML variable using dataXML method
+					   echo renderChartHTML("./charts/FCF_Column3D.swf", "", $strXML, "myNext", 400, 300);
+					?>
+                      <p align="center" class="style24"><strong><a href="EdiMo_totalClick.php?mdl_course_categories_id=*" title="คลิก...ดูสถิติจำนวนครั้งการใช้งานในแต่ละกลุ่มรายวิชา" >กราฟสถิติจำแนกตามจำนวนครั้งการใช้งาน</a></strong></p></td>
+                    <td width="49%" align="center">
+                      <?php
+					   //Create an XML data document in a string variable
+					   $strXML  = "";
+					   $strXML .= "<graph baseFont='Tahoma' baseFontSize='12' caption='จำนวนผู้ใช้งาน' xAxisName='สังกัด/กลุ่มรายวิชา' yAxisName='Total Users'
+					   decimalPrecision='0' formatNumberScale='0'>";
+					   
+					   $sql = "SELECT * FROM edimo_course_categories ";
+						$sql .= "WHERE categories_ID = 1 ";
+						$sql .= "ORDER BY mdl_course_categories_sortorder ";
+						$result = $mysql->executeQuery($sql);
+						$index = 0;
+						while($rs = $mysql->fetchArray()) {
+							$GLOBALS["in_mdl_course_categories_id"] = "";
+							getChild($rs["mdl_course_categories_id"]);
+							
+							$mysql2 = new MySQL();
+							
+							$sql = "SELECT SUM(totalUsers) AS totalUsers ";
+							$sql .= "FROM edimo_def_course T1 ";
+							$sql .= "INNER JOIN edimo_course_categories T2 ON T1.mdl_course_categories_id = T2.mdl_course_categories_id ";
+							$sql .= "WHERE T1.mdl_course_categories_id IN(" . ($GLOBALS["in_mdl_course_categories_id"] != NULL ? substr($GLOBALS["in_mdl_course_categories_id"], 0, strlen($GLOBALS["in_mdl_course_categories_id"]) - 1) : $rs["mdl_course_categories_id"]) . ") ";
+							$result2 = $mysql2->executeQuery($sql);
+							$totalUsers = 0;
+							if($rs2 = $mysql2->fetchArray()) {
+								$totalUsers = $rs2["totalUsers"];
+								//print number_format($rs2["totalClick"], 0);
+							}
+							$strXML .= "<set name='" . (++$index) . "' value='" . $totalUsers . "' alpha='70' color='" . getFCColor() . "'/>";
+						}
+					   $strXML .= "</graph>";
+					
+					   //Create the chart - Column 3D Chart with data from strXML variable using dataXML method
+					   echo renderChartHTML("./charts/FCF_Column3D.swf", "", $strXML, "myNext", 400, 300);
+					?>
+                      <p align="center" class="style24"><strong><a href="EdiMo_totalUser.php?mdl_course_categories_id=*"  title="คลิก...ดูสถิติจำนวนผู้ใช้งานในแต่ละกลุ่มรายวิชา" >กราฟสถิติจำแนกตามจำนวนผู้ใช้งาน</a></strong></p></td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td colspan="2">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td colspan="2" align="center">ตารางแสดงจำนวนรายวิชาทั้งหมดในระบบ <span class="style28">: <?=$shortname?>
+                    </span></td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td colspan="2"><table width="80%" border="2" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" align="center">
+                      <tr bordercolor="#FFFFFF">
+                        <td width="11%" height="20" align="center" bordercolor="#CCCCCC" bgcolor="#EEEEEE"><span class="style4"><strong>กลุ่มที่</strong></span></td>
+                        <td width="49%" align="center" bordercolor="#CCCCCC" bgcolor="#EEEEEE"><span class="style4"><strong>สังกัด/กลุ่มรายวิชา</strong></span></td>
+                        <td width="26%" align="center" bordercolor="#CCCCCC" bgcolor="#EEEEEE"><span class="style4"><strong>จำนวนรายวิชาทั้งหมด</strong></span></td>
+                        <td width="14%" align="center" bordercolor="#CCCCCC" bgcolor="#EEEEEE"><span class="style4"><strong>ร้อยละ</strong></span></td>
+                      </tr>
+					  <?
+					  	$sql = "SELECT COUNT(mdl_course_id) AS totalRows ";
+						$sql .= "FROM edimo_def_course ";
+						$result = $mysql->executeQuery($sql);
+						$totalRows = 0;
+						if($rs = $mysql->fetchArray()) {
+							$totalRows = $rs["totalRows"];
+						}
+							
+					  	$sql = "SELECT * FROM edimo_course_categories ";
+						$sql .= "WHERE categories_ID = 1 ";
+						$sql .= "ORDER BY mdl_course_categories_sortorder ";
+						$result = $mysql->executeQuery($sql);
+						$index = 0;
+						while($rs = $mysql->fetchArray()) {
+					  ?>
+                      <tr bordercolor="#CCCCCC">
+                        <td height="20" align="center" bgcolor="#F5F5F5"><?=++$index?></td>
+                        <td bgcolor="#F5F5F5"><?=$rs["nameTH"]?></td>
+                        <td align="center" bgcolor="#F5F5F5">
+						<?
+							$GLOBALS["in_mdl_course_categories_id"] = "";
+							getChild($rs["mdl_course_categories_id"]);
+							
+							$mysql2 = new MySQL();
+							
+							$sql = "SELECT COUNT(mdl_course_id) AS rows ";
+							$sql .= "FROM edimo_def_course T1 ";
+							$sql .= "INNER JOIN edimo_course_categories T2 ON T1.mdl_course_categories_id = T2.mdl_course_categories_id ";
+							$sql .= "WHERE T1.mdl_course_categories_id IN(" . ($GLOBALS["in_mdl_course_categories_id"] != NULL ? substr($GLOBALS["in_mdl_course_categories_id"], 0, strlen($GLOBALS["in_mdl_course_categories_id"]) - 1) : $rs["mdl_course_categories_id"]) . ") ";
+							$result2 = $mysql2->executeQuery($sql);
+							$rows = 0;
+							if($rs2 = $mysql2->fetchArray()) {
+								$rows = $rs2["rows"];
+								print number_format($rs2["rows"], 0);
+							}
+						?>
+						</td>
+                        <td align="center" bgcolor="#F5F5F5"><?=number_format($rows * 100 / $totalRows, 2)?></td>
+                      </tr>
+					  <?
+					  	}
+						if($index == 0) {
+					  ?>
+                      <tr bordercolor="#FFFFFF">
+                        <td height="20" colspan="6" align="center" bgcolor="#FFFFFF">--- ไม่พบรายการข้อมูล --- </td>
+                      </tr>
+					  <?
+					  	}
+					  ?>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td width="2%">&nbsp;</td>
+                    <td width="49%">&nbsp;</td>
+                    <td width="49%">&nbsp;</td>
+                  </tr>
+                  <tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td colspan="2"><div align="right"></div></td>
+                  </tr>
+                </table>                
+                <p align="right"><strong>ปรับปรุงข้อมูลล่าสุดเมื่อ</strong> <span class="style30">วันที่
+                    <?=$date_update?>
+                </span><span class="style30">                  <br />
+                </span></p>
+                </td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center" valign="bottom" bgcolor="A8FF11"><div align="left" class="style24"><span class="style25"><font color="006C1C">Copyright &copy;2007 Wanapu, All Rights Reserved.</font></span></div></td>
+		<td width="27%" background="icons/bottombg.gif"><img src="icons/bottom01.gif" width="176" height="35" /></td>
+        <td width="24%" background="icons/bottombg.gif"><div align="right" class="style26 style31"><span class="style26"><a href="index.php" title="หน้าหลัก"><strong>HOME</strong></a>&nbsp;&nbsp;<a href="<?=$CFG->wwwroot?>" title="<?=$CFG->wwwroot?>"><strong><?
+				$shortname = "";
+				
+				$sql = "SELECT * FROM edimo_config";
+				$result = $mysql->executeQuery($sql);
+				while($rs = mysql_fetch_array($result, MYSQL_ASSOC)) {
+					$shortname = $rs["shortName"];
+					print $shortname;
+				}
+			?>
+        </strong></a>&nbsp;&nbsp;<a href="http://sutonline.sut.ac.th/edi-mo/"  title="About Edi-Mo Program"><strong>Edi-Mo</strong></a></span></div></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<script language="javascript">
+function menuLinks(index) {
+	var url = "admin"+index+".php";
+	window.location.replace(url);
+}
+</script>
+<table width="100%" border="0">
+ <tr>
+    <td><div align="right"><span class="style24"><strong>      สนับสนุนโดย</strong> กองทุนนวัตกรรมและสิ่งประดิษฐ์ สมเด็จพระเทพรัตนราชสุดาฯ สยามบรมราชกุมารี<strong>
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2800600; 
+var sc_invisible=0; 
+var sc_partition=28; 
+var sc_security="cbb1663c"; 
+</script>
+
+<script type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js"></script><noscript>
+<div class="statcounter"><a class="statcounter" href="http://www.statcounter.com/"><strong><a href="http://my.statcounter.com/project/standard/stats.php?project_id=2800600&amp;guest=1">View My Stats </a><img class="statcounter" src="http://c29.statcounter.com/2800600/0/cbb1663c/0/" alt="counter create hit" /></div>
+</noscript>
+    </span></div></td>
+  </tr>
+</table>
+</form>
+</body>
+</html>

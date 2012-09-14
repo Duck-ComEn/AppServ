@@ -1,0 +1,2734 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+        <text>$course$/Default for QA003 : QA INSP-C2 Rev.8</text>
+
+    </category>
+  </question>
+
+
+
+<!-- question: 3538  -->
+  <question type="multichoice">
+    <name><text>จงเลือกคำตอบที่ถูกที่สุดเพียงข้อเดียว (1)</text>
+</name>
+    <questiontext format="html">
+<text><![CDATA[<img title="." style="width: 154px; height: 92px" height="92" alt="." hspace="0" src="http://korat-lms/moodle/file.php/114/ScreenHunter_002.gif" width="154" border="0" />จากรูปภาพอาการเสียนี้ตรงกับข้อใด ?]]></text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+<text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback>      <text></text>
+</correctfeedback>
+    <partiallycorrectfeedback>      <text></text>
+</partiallycorrectfeedback>
+    <incorrectfeedback>      <text></text>
+</incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="100">
+        <text>
+ลิฟด์ อัฟ ลีด (Lifted Up Lead)
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ลีด เล้นท์ เอ้าท์ สเปค (Lead Length Out Spec)
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+คอมโพเน้นท์ ทู ไฮท์ (Component Too High )
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+เอ็กเซสซีพ คอมโพเน้นท์ (Excessive Component)
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 3547  -->
+  <question type="multichoice">
+    <name><text>จงเลือกคำตอบที่ถูกที่สุดเพียงข้อเดียว (10)</text>
+</name>
+    <questiontext format="moodle_auto_format">
+<text>เอ็กซ์เซสซีพ โซลเดอร์ (Excessive Solder) ตัวอุปกรณ์ประเภทเอสเอ็มดี (SMD) จะยอมรับได้ในลักษณะใด ?</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+<text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback>      <text></text>
+</correctfeedback>
+    <partiallycorrectfeedback>      <text></text>
+</partiallycorrectfeedback>
+    <incorrectfeedback>      <text></text>
+</incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="0">
+        <text>
+โซลเดอร์จะต้องไม่สัมผัสตัวอุปกรณ์ที่เป็นพลาสติก ยกเว้นประเภท SOIC/SOT สัมผัสได้
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+โซลเดอร์จะต้องไม่เลยเทอร์มินอลเข้าไปติดตัวอุปกรณ์
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+โซลเดอร์มากได้แต่ต้องสามารถมองเห็นขาอุปกรณ์โผล่ออกมาจากเนื้อโซลเดอร์
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="100">
+        <text>
+ถูกทั้งข้อ a และ b
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 3548  -->
+  <question type="multichoice">
+    <name><text>จงเลือกคำตอบที่ถูกที่สุดเพียงข้อเดียว (11)</text>
+</name>
+    <questiontext format="moodle_auto_format">
+<text><![CDATA[ดาเมจ คอมโพเน้นท์ (Damaged Component) ประเภทชิพ (Chip) อุปกรณ์แตกชำรุด มีข้อกำหนดว่าอย่างไร ?  <br /> ]]></text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+<text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback>      <text></text>
+</correctfeedback>
+    <partiallycorrectfeedback>      <text></text>
+</partiallycorrectfeedback>
+    <incorrectfeedback>      <text></text>
+</incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="0">
+        <text>
+ประเภทเซรามิค (Ceramic) มีรอยกระเทาะหลุดจะต้องไม่เปิดเห็นส่วนสำคัญที่เป็นโลหะภายในและรอยบิ่นแหว่งบริเวณสัญลักษณ์จะต้องสามารถอ่านค่าบนตัวอุปกรณ์ได้หรือขาอุปกรณ์เสียรูปทรงไม่เกิน 10%ของเส้นผ่าศูนย์กลางของขาอุปกรณ์
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ประเภทไอซี (IC) จะต้องไม่มีรอยแตกร้าวไปถึงบริเวณที่ผนึกไว้หรือสัญลักษณ์และขาอุปกรณ์ที่อยู่ภายใน
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="100">
+        <text>
+ประเภทชิพ (Chip) บริเวณลำตัว บิ่นแหว่งได้ไม่เกิน 25% ของความกว้าง/หนา และ 50% ของความยาวของตัวอุปกรณ์ บริเวณเทอมินอล ขอบของเทอมินอลหลุดลอกได้ไม่เกิน 25% ของความกว้าง/หนา และไม่เกิน 50% ของพื้นที่ด้านบนเทอมินอลในแต่ละด้าน
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ถูกทุกข้อที่กล่าวมา
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 3549  -->
+  <question type="multichoice">
+    <name><text>จงเลือกคำตอบที่ถูกที่สุดเพียงข้อเดียว (12)</text>
+</name>
+    <questiontext format="moodle_auto_format">
+<text>คอมโพเน้นท์ ทู ไฮท์ (Component Too High) ตัวอุปกรณ์ยกสูงออกจากแผ่นลายวงจรตรงกับข้อกำหนดในข้อใด ?</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+<text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback>      <text></text>
+</correctfeedback>
+    <partiallycorrectfeedback>      <text></text>
+</partiallycorrectfeedback>
+    <incorrectfeedback>      <text></text>
+</incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="0">
+        <text>
+ตัวอุปกรณ์ลอยได้ไม่เกินความหนาของขาอุปกรณ์
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ตัวอุปกรณ์ลอยจากผิวบอร์ดได้ไม่เกิน 0.5 มิลลิเมตร
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="100">
+        <text>
+ตัวอุปกรณ์ลอยจากผิวบอร์ดได้แต่ต้องมองเห็นปลายขาอุปกรณ์โผล่จากเนื้อโซลเดอร์
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ถูกทุกข้อ
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 3550  -->
+  <question type="multichoice">
+    <name><text>จงเลือกคำตอบที่ถูกที่สุดเพียงข้อเดียว (13)</text>
+</name>
+    <questiontext format="moodle_auto_format">
+<text>โพเท็นเชียล ช็อต (Potential Short) อาการที่ทำให้เกิดการเชื่อม หรือช็อต มีข้อกำหนดว่าอย่างไร ?</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+<text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback>      <text></text>
+</correctfeedback>
+    <partiallycorrectfeedback>      <text></text>
+</partiallycorrectfeedback>
+    <incorrectfeedback>      <text></text>
+</incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="100">
+        <text>
+ไม่สามารถยอมรับได้
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ยอมรับได้ถ้าเนื้อของโซลเดอร์ไม่ลดพื้นที่เกิน 50 % ของระหว่างขาอุปกรณ์
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ยอมรับได้ถ้าเนื้อของโซลเดอร์ไม่ลดพื้นที่เกิน 75 % ของระหว่างขาอุปกรณ์
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+สามารถยอมรับได้ถ้าเกิดในลายวงจรเดียวกัน
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 3551  -->
+  <question type="multichoice">
+    <name><text>จงเลือกคำตอบที่ถูกที่สุดเพียงข้อเดียว (14)</text>
+</name>
+    <questiontext format="html">
+<text><![CDATA[ดีลามิเนท / เอ็กซ์โพส ลามิเนท (Delaminate / Expose laminate) ชั้นของแผ่นลายวงจรไม่ติดกันหรือแผ่นลายวงจรโปร่ง พอง ตรงกับข้อกำหนดในข้อใด ?<br />]]></text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+<text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback>      <text></text>
+</correctfeedback>
+    <partiallycorrectfeedback>      <text></text>
+</partiallycorrectfeedback>
+    <incorrectfeedback>      <text></text>
+</incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="0">
+        <text>
+จะต้องไม่ลดพื้นเกิน 25 % ของระหว่างตัวนำ 2 จุด
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ในกรณีที่เกิดบริเวณขอบของบอร์ดจะต้องไม่ลดพื้นที่เกิน 50% จากขอบบอร์ดจนถึงตัวนำที่ใกล้ที่สุดหรือไม่เกิน 2.5มิลลิเมตรในกรณีที่ตัวนำอยู่ไกล
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ในกรณีที่เกิดอาการโป่งพองบริเวณที่เป็นตัวนำไม่สามารถยอมรับได้
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="100">
+        <text>
+ถูกทุกข้อที่กล่าวมา
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 3552  -->
+  <question type="multichoice">
+    <name><text>จงเลือกคำตอบที่ถูกที่สุดเพียงข้อเดียว (15)</text>
+</name>
+    <questiontext format="moodle_auto_format">
+<text>รอง ลีด ฟอร์มมิ่ง เบ้นท์  (Wrong Lead Forming Bent) ขาอุปกรณ์บิดเบี้ยวไม่ได้ระยะ ตรงกับข้อกำหนดในข้อใด ?</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+<text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback>      <text></text>
+</correctfeedback>
+    <partiallycorrectfeedback>      <text></text>
+</partiallycorrectfeedback>
+    <incorrectfeedback>      <text></text>
+</incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="0">
+        <text>
+ขาอุปกรณ์จะต้องยืดออกจากลำตัวอย่างน้อยเท่ากับเส้นผ่าศูนย์กลางของขาอุปกรณ์หรือความหนา ของขาอุปกรณ์
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+การยืดตรงของขาอุปกรณ์จะต้องไม่น้อยกว่า 0.8 ม.ม. ก่อนรัศมีโค้ง
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ขาอุปกรณ์ลอยได้แต่ต้องเห็นปลายขาโผล่จากเนื้อโชลเดอร์
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="100">
+        <text>
+ข้อ a และ ข้อ b
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 3553  -->
+  <question type="multichoice">
+    <name><text>จงเลือกคำตอบที่ถูกที่สุดเพียงข้อเดียว (16)</text>
+</name>
+    <questiontext format="moodle_auto_format">
+<text>โซลเดอร์ น๊อต โฟร์ ทรู (Solder Not Flow Through) โซลเดอร์ ไม่ไหลขึ้นด้านหน้าขาอุปกรณ์ มีข้อกำหนดว่าอย่างไร ?</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+<text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback>      <text></text>
+</correctfeedback>
+    <partiallycorrectfeedback>      <text></text>
+</partiallycorrectfeedback>
+    <incorrectfeedback>      <text></text>
+</incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="0">
+        <text>
+ต้องมีโซลเดอร์อย่างน้อย 25 % ของความสูงของรูบาเรล
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ต้องมีโซลเดอร์อย่างน้อย 50 % ของความสูงของรูบาเรล
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="100">
+        <text>
+ต้องมีโซลเดอร์อย่างน้อย 75 % ของความสูงของรูบาเรล
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ไม่มีข้อใดถูก
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 3554  -->
+  <question type="multichoice">
+    <name><text>จงเลือกคำตอบที่ถูกที่สุดเพียงข้อเดียว (17)</text>
+</name>
+    <questiontext format="moodle_auto_format">
+<text><![CDATA[อินซัฟฟิเชี่ยน โซลเดอร์ (Insufficient Solder) มีโซลเดอร์ในการเชื่อมประสานน้อย ประเภทขาแอล (L) มีข้อกำหนด<br />        ว่าอย่างไร ?<br /> ]]></text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+<text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback>      <text></text>
+</correctfeedback>
+    <partiallycorrectfeedback>      <text></text>
+</partiallycorrectfeedback>
+    <incorrectfeedback>      <text></text>
+</incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="0">
+        <text>
+<![CDATA[C : ต้องมีโซลเดอร์ในการเชื่อมประสานอย่างน้อย 50 % ของความกว้างของขาอุปกรณ์<br /> D : ต้องมีโซลเดอร์ในการเชื่อมประสานอย่างน้อย 150 %ของความกว้างของขาอุปกรณ์<br /> F : ด้านส้นขาอุปกรณ์ต้องมีโซลเดอร์ในการเชื่อมประสานอย่างน้อย 50 % ของความหนาของขาอุปกรณ์]]>
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="100">
+        <text>
+<![CDATA[C : ต้องมีโซลเดอร์ในการเชื่อมประสานอย่างน้อย 50 % ของความกว้างของขาอุปกรณ์<br /> D : ต้องมีโซลเดอร์ในการเชื่อมประสานอย่างน้อย 3 เท่าของความกว้างของขาอุปกรณ์หรือ 75 %ของ<br /> ความยาวของขาอุปกรณ์อย่างใดอย่างหนึ่งที่ยาวกว่า แต่ถ้าความยาวของขาอุปกรณ์น้อยกว่า 3 เท่า (W)  ของขาอุปกรณ์จะต้องมีโซลเดอร์ในการเชื่อมประสาน 100 % ของความยาวของขาอุปกรณ์<br /> F : ด้านส้นขาอุปกรณ์ต้องมีโซลเดอร์ในการเชื่อมประสานอย่างน้อย 50 % ของความหนาของขาอุปกรณ์]]>
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+<![CDATA[C : ต้องมีโซลเดอร์ในการเชื่อมประสานอย่างน้อย 75 % ของความกว้างของขาอุปกรณ์<br /> D : ต้องมีโซลเดอร์ในการเชื่อมประสานอย่างน้อย 150%ของความกว้างของขาอุปกรณ์<br /> F : ด้านส้นขาอุปกรณ์ต้องมีโซลเดอร์ในการเชื่อมประสานเท่ากับความหนาของขาอุปกรณ์]]>
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+<![CDATA[C : ต้องมีโซลเดอร์ในการเชื่อมประสานอย่างน้อย 75 % ของความกว้างของขาของขาอุปกรณ์<br /> 	D : ต้องมีโซลเดอร์ในการเชื่อมประสานอย่างน้อย 3 เท่าของความกว้างของขาอุปกรณ์หรือ 75 % ของความยาว<br />            ของขาอุปกรณ์อย่างใดอย่างหนึ่งที่ยาวกว่า แต่ถ้าความยาวของขาอุปกรณ์น้อยกว่า 3 เท่า (W) ของขาอุปกรณ์  จะต้องมีโซลเดอร์ในการเชื่อมประสาน 100 % ของความยาวของขาอุปกรณ์<br />  F : ด้านส้นขาต้องมีโซลเดอร์ในการเชื่อมประสานเท่ากับของความหนาของขาอุปกรณ์]]>
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 3555  -->
+  <question type="multichoice">
+    <name><text>จงเลือกคำตอบที่ถูกที่สุดเพียงข้อเดียว (18)</text>
+</name>
+    <questiontext format="moodle_auto_format">
+<text><![CDATA[อินซัฟฟิเชี่ยน โซลเดอร์ (Insufficient Solder) มีโซลเดอร์ในการเชื่อมประสานน้อย ประเภทขาเจ (J) มีข้อกำหนด<br />         ว่าอย่างไร ?<br /> ]]></text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+<text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback>      <text></text>
+</correctfeedback>
+    <partiallycorrectfeedback>      <text></text>
+</partiallycorrectfeedback>
+    <incorrectfeedback>      <text></text>
+</incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="100">
+        <text>
+<![CDATA[C : ต้องมีโซลเดอร์ในการเชื่อมประสานอย่างน้อย 50 % ของความกว้างของขาอุปกรณ์<br /> D : ต้องมีโซลเดอร์ในการเชื่อมประสานอย่างน้อย 150 %ของความกว้างของขาอุปกรณ์<br /> F : ด้านส้นขาอุปกรณ์ต้องมีโซลเดอร์ในการเชื่อมประสานอย่างน้อย 50 % ของความหนาของขาอุปกรณ์]]>
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+<![CDATA[C : ต้องมีโซลเดอร์ในการเชื่อมประสานอย่างน้อย 50 % ของความกว้างของขาอุปกรณ์<br /> D : ต้องมีโซลเดอร์ในการเชื่อมประสานอย่างน้อย 3 เท่าของความกว้างของขาอุปกรณ์หรือ 75 %ของ ความยาวของขาอุปกรณ์อย่างใดอย่างหนึ่งที่ยาวกว่า แต่ถ้าความยาวของขาอุปกรณ์น้อยกว่า 3 เท่า<br />            (W)  ของขาอุปกรณ์จะต้องมีโซลเดอร์ในการเชื่อมประสาน 100 % ของความยาวของขาอุปกรณ์<br /> 	F : ด้านส้นขาอุปกรณ์ต้องมีโซลเดอร์ในการเชื่อมประสานอย่างน้อย 50 % ของความหนาของขาอุปกรณ์]]>
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+<![CDATA[C : ต้องมีโซลเดอร์ในการเชื่อมประสานอย่างน้อย 75 % ของความกว้างของขาอุปกรณ์<br /> D : ต้องมีโซลเดอร์ในการเชื่อมประสานอย่างน้อย 150%ของความกว้างของขาอุปกรณ์<br /> F : ด้านส้นขาอุปกรณ์ต้องมีโซลเดอร์ในการเชื่อมประสานเท่ากับความหนาของขาอุปกรณ์]]>
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+<![CDATA[C : ต้องมีโซลเดอร์ในการเชื่อมประสานอย่างน้อย 75 % ของความกว้างของขาของขาอุปกรณ์<br /> D : ต้องมีโซลเดอร์ในการเชื่อมประสานอย่างน้อย 3 เท่าของความกว้างของขาอุปกรณ์หรือ 75 % ของความยาวของขาอุปกรณ์อย่างใดอย่างหนึ่งที่ยาวกว่า แต่ถ้าความยาวของขาอุปกรณ์น้อยกว่า 3 เท่า (W) ของขาอุปกรณ์ จะต้องมีโซลเดอร์ในการเชื่อมประสาน 100 % ของความยาวของขาอุปกรณ์<br /> F : ด้านส้นขาต้องมีโซลเดอร์ในการเชื่อมประสานเท่ากับของความหนาของขาอุปกรณ์]]>
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 3556  -->
+  <question type="multichoice">
+    <name><text>จงเลือกคำตอบที่ถูกที่สุดเพียงข้อเดียว (19)</text>
+</name>
+    <questiontext format="moodle_auto_format">
+<text>ไซด์ โอเวอร์ แฮง (Side Overhang) ตัวอุปกรณ์เลื่อนออกจากแพด มีข้อกำหนดว่าอย่างไร ?</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+<text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback>      <text></text>
+</correctfeedback>
+    <partiallycorrectfeedback>      <text></text>
+</partiallycorrectfeedback>
+    <incorrectfeedback>      <text></text>
+</incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="0">
+        <text>
+ประเภทเมลฟ์ (Melf) สามารถเลื่อนออกจากแพดได้ไม่เกิน 25 % ของเส้นผ่าศูนย์กลางของเทอร์มินอล
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ประเภทชิพ (Chip) สามารถเลื่อนออกจากแพดได้ไม่เกิน 50 % ของความกว้างเทอร์มินอลหรือความกว้างของแพดอย่างใดอย่างหนึ่งที่น้อยกว่า
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ประเภทขาเจ (J) ขาแอล (L) สามารถเลื่อนออกจากแพดได้ไม่เกิน 50 % ของความกว้างของขาอุปกรณ์
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="100">
+        <text>
+ถูกทุกข้อที่กล่าวมา
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 3539  -->
+  <question type="multichoice">
+    <name><text>จงเลือกคำตอบที่ถูกที่สุดเพียงข้อเดียว (2)</text>
+</name>
+    <questiontext format="moodle_auto_format">
+<text>ข้อใดกล่าวถึงข้อกำหนดของ ดาเมจ พีซีบี (Damage PCB) ได้ถูกต้องที่สุด ?</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+<text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback>      <text></text>
+</correctfeedback>
+    <partiallycorrectfeedback>      <text></text>
+</partiallycorrectfeedback>
+    <incorrectfeedback>      <text></text>
+</incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="100">
+        <text>
+<![CDATA[บิ่นแหว่งได้ไม่เกิน 50 % จากขอบบอร์ดจนถึงตัวนำที่ใกล้ที่สุด และมีขนาดไม่เกิน 2.5 มิลลิเมตร<br />         กรณีที่ตัวนำอยู่ไกล]]>
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+บิ่นแหว่งได้ไม่เกิน 25 % จากขอบบอร์ดกับตัวนำที่ใกล้ที่สุด ถือว่าใช้ได้
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+บิ่นแหว่งได้ไม่เกิน 75 % จากขอบบอร์ดกับตัวนำที่ใกล้ที่สุด ถือว่าใช้ได้
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+มีไม่ได้เลย
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 3557  -->
+  <question type="multichoice">
+    <name><text>จงเลือกคำตอบที่ถูกที่สุดเพียงข้อเดียว (20)</text>
+</name>
+    <questiontext format="moodle_auto_format">
+<text>นอน เวทติ้ง (Non Wetting) โซลเดอร์ไม่เชื่อมประสานระหว่างขาอุปกรณ์กับแพด มีข้อกำหนดว่าอย่างไร ?</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+<text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback>      <text></text>
+</correctfeedback>
+    <partiallycorrectfeedback>      <text></text>
+</partiallycorrectfeedback>
+    <incorrectfeedback>      <text></text>
+</incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="0">
+        <text>
+<![CDATA[ตัวอุปกรณ์ประเภทเอสเอ็มดี (SMD) ต้องมีโซลเดอร์เชื่อมประสานอย่างน้อย <br />   50% ของความกว้างของขาอุปกรณ์]]>
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ตัวอุปกรณ์ประเภททรูโฮล  (Through Hole ) ต้องมีโซลเดอร์เชื่อมประสานรอบขาอุปกรณ์ด้านปลายทางโซลเดอร์อย่างน้อย 180 องศา
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="100">
+        <text>
+ไม่สามารถยอมรับได้
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ถูกทั้งข้อ a และ b
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 3558  -->
+  <question type="multichoice">
+    <name><text>จงเลือกคำตอบที่ถูกที่สุดเพียงข้อเดียว (21)</text>
+</name>
+    <questiontext format="moodle_auto_format">
+<text>เอ็กซ์โพส คอปเปอร์ ออน ลีด (Expose Copper On Lead) เห็นทองแดงที่ขาอุปกรณ์มี ข้อกำหนดว่าอย่างไร ? </text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+<text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback>      <text></text>
+</correctfeedback>
+    <partiallycorrectfeedback>      <text></text>
+</partiallycorrectfeedback>
+    <incorrectfeedback>      <text></text>
+</incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="0">
+        <text>
+มีขนาดได้ไม่เกิน 10 % ของความกว้างของขาอุปกรณ์
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+มีขนาดได้ไม่เกิน 20 % ของความกว้างของขาอุปกรณ์
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+มีขนาดได้ไม่เกิน 25 % ของความกว้างของขาอุปกรณ์
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="100">
+        <text>
+ไม่สามารถยอมรับได้
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 3559  -->
+  <question type="multichoice">
+    <name><text>จงเลือกคำตอบที่ถูกที่สุดเพียงข้อเดียว (22)</text>
+</name>
+    <questiontext format="moodle_auto_format">
+<text>ลิฟด์ อัพ ลีด (Lifted Up Lead) ขาอุปกรณ์ลอยออกจากแพด ตรงกับข้อกำหนดในข้อใด ?</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+<text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback>      <text></text>
+</correctfeedback>
+    <partiallycorrectfeedback>      <text></text>
+</partiallycorrectfeedback>
+    <incorrectfeedback>      <text></text>
+</incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="100">
+        <text>
+ขาอุปกรณ์ลอยออกจากแพดแต่ต้องมีโซลเดอร์เชื่อมประสานระหว่างขาอุปกรณ์และแพด
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ขาอุปกรณ์ลอยได้ไม่เกิน 2 มม.
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ขาอุปกรณ์ลอยได้ไม่เกิน 2 มม.
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ถูกทุกข้อ
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 3560  -->
+  <question type="multichoice">
+    <name><text>จงเลือกคำตอบที่ถูกที่สุดเพียงข้อเดียว (23)</text>
+</name>
+    <questiontext format="moodle_auto_format">
+<text>แฟร็กเจอร์ จ๊อยท์ (Fracture Joint) เกิดรอยแยกระหว่างขาอุปกรณ์และโซลเดอร์ มีข้อกำหนดว่าอย่างไร ?</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+<text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback>      <text></text>
+</correctfeedback>
+    <partiallycorrectfeedback>      <text></text>
+</partiallycorrectfeedback>
+    <incorrectfeedback>      <text></text>
+</incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="0">
+        <text>
+ได้ไม่เกิน 10% ของจุดบัดกรี
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ได้ไม่เกิน 15% ของจุดบัดกรี
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ได้ไม่เกิน 20% ของจุดบัดกรี
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="100">
+        <text>
+ไม่สามารถยอมรับได้
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 3561  -->
+  <question type="multichoice">
+    <name><text>จงเลือกคำตอบที่ถูกที่สุดเพียงข้อเดียว (24)</text>
+</name>
+    <questiontext format="moodle_auto_format">
+<text>ข้อกำหนดโน ลีดโพรทรูชั่น (No Lead Protrusion) ขาอุปกรณ์ไม่โผล่ด้านโซลเดอร์ ข้อใดกล่าวถูกต้อง ?</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+<text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback>      <text></text>
+</correctfeedback>
+    <partiallycorrectfeedback>      <text></text>
+</partiallycorrectfeedback>
+    <incorrectfeedback>      <text></text>
+</incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="100">
+        <text>
+ต้องมองเห็นปลายขาอุปกรณ์โผล่ในเนื้อโซลเดอร์
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ไม่จำเป็นต้องมองเห็นปลายขาอุปกรณ์โผล่ขอให้มีโซลเดอร์ติดด้านตัวอุปกรณ์ถือว่าใช้ได้
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+มองเห็นโซลเดอร์ยุบตัวลงได้ไม่เกิน 25 % ของความสูงของรูบาเรล
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ห้ามมี
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 3562  -->
+  <question type="multichoice">
+    <name><text>จงเลือกคำตอบที่ถูกที่สุดเพียงข้อเดียว (25)</text>
+</name>
+    <questiontext format="html">
+<text>ข้อกำหนดของโซลเดอร์ สไพ๊ด์ (Solder Spike) โซลเดอร์เป็นหนาม มีข้อกำหนดว่าอย่างไร ?</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+<text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback>      <text></text>
+</correctfeedback>
+    <partiallycorrectfeedback>      <text></text>
+</partiallycorrectfeedback>
+    <incorrectfeedback>      <text></text>
+</incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="0">
+        <text>
+ตัวอุปกรณ์ประเภททรูโฮล (Through Hole) ความยาวของโซลเดอร์รวมกับขาอุปกรณ์จะต้องไม่เกิน 2.5 มิลลิเมตร
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+มีได้ห้ามเกิน 1.5 มิลลิเมตร
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ตัวอุปกรณ์ประเภทเอสเอ็มดี (SMD) ห้ามมี
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="100">
+        <text>
+ถูกทั้งข้อ a และ c
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 3563  -->
+  <question type="multichoice">
+    <name><text>จงเลือกคำตอบที่ถูกที่สุดเพียงข้อเดียว (26)</text>
+</name>
+    <questiontext format="moodle_auto_format">
+<text><![CDATA[ข้อกำหนดของไอซ์แลนด์ / เบ้าท์ คอปเปอร์ (Island/Bulged Copper) ก้อนทองแดงที่ยื่นหรือเกินออกมาจากเส้น<br /> ลายวงจรมีข้อกำหนดว่าอย่างไร ?<br /> ]]></text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+<text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback>      <text></text>
+</correctfeedback>
+    <partiallycorrectfeedback>      <text></text>
+</partiallycorrectfeedback>
+    <incorrectfeedback>      <text></text>
+</incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="0">
+        <text>
+ลดพื้นที่ไม่เกิน 20 % ของระหว่างเส้นลายวงจร
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="100">
+        <text>
+ลดพื้นที่ไม่เกิน 30 % ของระหว่างเส้นลายวงจร
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ลดพื้นที่ไม่เกิน 75 % ของระหว่างเส้นลายวงจร
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ห้ามมี
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 3564  -->
+  <question type="multichoice">
+    <name><text>จงเลือกคำตอบที่ถูกที่สุดเพียงข้อเดียว (27)</text>
+</name>
+    <questiontext format="moodle_auto_format">
+<text>ตัวอักษรเลอะเลือน, การเเสต้มป์หรือเครื่องหมายหายไปบนแผ่นพีซีบี (PCB) ตรงกับอาการเสียในข้อใด ?</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+<text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback>      <text></text>
+</correctfeedback>
+    <partiallycorrectfeedback>      <text></text>
+</partiallycorrectfeedback>
+    <incorrectfeedback>      <text></text>
+</incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="100">
+        <text>
+อิลิจิเบิ้ล / มิสซิ่ง มาร์คกิ้งออน พีซีบี (Illegible/Missing Marking On PCB)
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+อิลิจิเบิ้ล / มิสซิ่ง มาร์คกิ้ง ออน คอมโพเน้นท์ (Illegible/Missing Marking On Component)
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+มิสซิ่ง / รอง / ดาเมจ ลาเบล  (Missing/Wrong/Damaged Label)
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ถูกทุกข้อ
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 3565  -->
+  <question type="multichoice">
+    <name><text>จงเลือกคำตอบที่ถูกที่สุดเพียงข้อเดียว (28)</text>
+</name>
+    <questiontext format="moodle_auto_format">
+<text>คำว่า ลีด วิด (Lead Width) มีความหมายตรงกับข้อใด ?</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+<text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback>      <text></text>
+</correctfeedback>
+    <partiallycorrectfeedback>      <text></text>
+</partiallycorrectfeedback>
+    <incorrectfeedback>      <text></text>
+</incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="0">
+        <text>
+ระยะสูงสุดของโซลเดอร์ที่เชื่อมประสานระหว่างขาอุปกรณ์กับแพด
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ระยะปลายขาอุปกรณ์ที่เลื่อนออกจากแพด
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="100">
+        <text>
+ความกว้างของขาอุปกรณ์หรือเทอร์มินอล
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ความหนาของขาอุปกรณ์
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 3566  -->
+  <question type="multichoice">
+    <name><text>จงเลือกคำตอบที่ถูกที่สุดเพียงข้อเดียว (29)</text>
+</name>
+    <questiontext format="moodle_auto_format">
+<text>คำว่าอินสเป็คชั่น (Inspection) มีความหมายตรงกับข้อใด ?</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+<text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback>      <text></text>
+</correctfeedback>
+    <partiallycorrectfeedback>      <text></text>
+</partiallycorrectfeedback>
+    <incorrectfeedback>      <text></text>
+</incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="0">
+        <text>
+อาการที่สามารถยอมรับได้ตามข้อกำหนด
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ระยะความสูงของเทอร์มินอล
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+การเชื่อมประสานของโซลเดอร์
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="100">
+        <text>
+การตรวจสอบคุณภาพของผลิตภัณฑ์
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 3540  -->
+  <question type="multichoice">
+    <name><text>จงเลือกคำตอบที่ถูกที่สุดเพียงข้อเดียว (3)</text>
+</name>
+    <questiontext format="moodle_auto_format">
+<text><![CDATA[ตัวอุปกรณ์ประเภทเอสเอ็มดี (SMD) และประเภททรูโฮล (Through Hole)  มีการเชื่อมประสานของโซลเดอร์ ลักษณะใดที่สามารถยอมรับได้ตามข้อกำหนด ?<br /> ]]></text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+<text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback>      <text></text>
+</correctfeedback>
+    <partiallycorrectfeedback>      <text></text>
+</partiallycorrectfeedback>
+    <incorrectfeedback>      <text></text>
+</incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="0">
+        <text>
+ประเภทเอสเอ็มดี (SMD) จะต้องมีโซลเดอร์ในการเชื่อมประสานอย่างน้อย 50 % ของความกว้างเทอร์มินอล ระยะความสูงของโซลเดอร์ต้องมองเห็นการเชื่อมประสานของโซลเดอร์
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ประเภททรูโฮล (Through Hole) โซลเดอร์ยุบลงทั้ง 2 ด้านได้ไม่เกิน 25 % ของความสูงของรูบาเรล
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ประเภททรูโฮล (Through Hole) ต้องมีโซลเดอร์ในรูบาเรลอย่างน้อย 75 % ของความสูงของรูบาเรล
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="100">
+        <text>
+ถูกทุกข้อที่กล่าวมา
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 3567  -->
+  <question type="multichoice">
+    <name><text>จงเลือกคำตอบที่ถูกที่สุดเพียงข้อเดียว (30)</text>
+</name>
+    <questiontext format="moodle_auto_format">
+<text>คำว่า ฟิลเล็ท ไฮจ์ (Fillet High) มีความหมายตรงกับข้อใด ?</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+<text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback>      <text></text>
+</correctfeedback>
+    <partiallycorrectfeedback>      <text></text>
+</partiallycorrectfeedback>
+    <incorrectfeedback>      <text></text>
+</incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="100">
+        <text>
+ระยะสูงสุดของโซลเดอร์ที่เชื่อมประสานระหว่างขาอุปกรณ์กับแพด
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ระยะปลายขาอุปกรณ์ที่เลื่อนออกจากแพด
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ความหนาของโซลเดอร์
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ความหนาของขาอุปกรณ์
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 3568  -->
+  <question type="multichoice">
+    <name><text>จงเลือกคำตอบที่ถูกที่สุดเพียงข้อเดียว (31)</text>
+</name>
+    <questiontext format="moodle_auto_format">
+<text>เกณฑ์การตรวจสอบผลิตภัณฑ์ของระดับที่  2 ( CLASS 2 )  ข้อใดกล่าวถูกต้อง ?</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+<text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback>      <text></text>
+</correctfeedback>
+    <partiallycorrectfeedback>      <text></text>
+</partiallycorrectfeedback>
+    <incorrectfeedback>      <text></text>
+</incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="0">
+        <text>
+ผลิตภัณฑ์อิเลคทรอนิคส์ทั่วๆ ไปที่ไม่ต้องการความละเอียดหรือ  อายุการใช้งานที่ไม่ยาวนาน และมีราคาถูก
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="100">
+        <text>
+ผลิตภัณฑ์อิเลคทรอนิคส์ที่มีการใช้งานเฉพาะเจาะจง มีอายุการใช้งานยืดยาว  และการใช้งานต้องไม่สะดุด หรือหยุดชะงัก และเน้นความละเอียด
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ผลิตภัณฑ์อิเลคทรอนิคส์ทีประสิทธิภาพอย่างต่อเนื่องตลอดเวลาเครื่องมือหรืออุปกรณ์จะต้องทำงานตลอดห้ามมีการหยุดชะงัก หรือหยุดการทำงาน และเน้นความละเอียดค่อนข้างสูง
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ถูกทุกข้อ
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 3569  -->
+  <question type="multichoice">
+    <name><text>จงเลือกคำตอบที่ถูกที่สุดเพียงข้อเดียว (32)</text>
+</name>
+    <questiontext format="moodle_auto_format">
+<text>ไอพีซี (IPC) มีความหมายว่าอย่างไร ?</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+<text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback>      <text></text>
+</correctfeedback>
+    <partiallycorrectfeedback>      <text></text>
+</partiallycorrectfeedback>
+    <incorrectfeedback>      <text></text>
+</incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="0">
+        <text>
+มาตรฐาน และข้อกำหนดของลูกค้ากำหนดในการตรวจสอบผลิตภัณฑ์
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="100">
+        <text>
+มาตรฐานการตรวจสอบเพื่อยอมรับคุณภาพการประกอบแผงวงจรอิเลคทรอนิคส์
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+มาตรฐานทางอุตสาหกรรมที่ใช้ในการตรวจสอบผลิตภัณฑ์ทางการแพทย์
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+มาตรฐานทางอุตสาหกรรมที่ใช้ในการตรวจสอบผลิตภัณฑ์ยานยนต์
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 3570  -->
+  <question type="multichoice">
+    <name><text>จงเลือกคำตอบที่ถูกที่สุดเพียงข้อเดียว (33)</text>
+</name>
+    <questiontext format="html">
+<text><![CDATA[<img title="." height="70" alt="." hspace="0" src="http://korat-lms/moodle/file.php/114/ScreenHunter_001.gif" width="73" border="0" />จากรูปภาพสัญลักษณ์นี้มีความหมายว่าอย่างไร ?]]></text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+<text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback>      <text></text>
+</correctfeedback>
+    <partiallycorrectfeedback>      <text></text>
+</partiallycorrectfeedback>
+    <incorrectfeedback>      <text></text>
+</incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="100">
+        <text>
+ผลิตภัณฑ์มีความไวต่อไฟฟ้าสถิตย์ดังนั้นก่อนหยิบจับต้องมีการสวมสายกราวด์
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ห้ามหยิบจับผลิตภัณฑ์ด้วยมือเปล่า
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ใส่ถุงมือเพื่อป้องกันความร้อน
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+เครื่องจักรที่มีคุณสมบัติป้องกันไฟฟ้าสถิตย์ได้
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 3571  -->
+  <question type="multichoice">
+    <name><text>จงเลือกคำตอบที่ถูกที่สุดเพียงข้อเดียว (34)</text>
+</name>
+    <questiontext format="moodle_auto_format">
+<text>ข้อใดกล่าวถึงกฎระเบียบวินัย หรือดิสซิบปลินนารี่ (Disciplinary) ได้ถูกต้อง ? </text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+<text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback>      <text></text>
+</correctfeedback>
+    <partiallycorrectfeedback>      <text></text>
+</partiallycorrectfeedback>
+    <incorrectfeedback>      <text></text>
+</incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="0">
+        <text>
+ตั้งใจทำงาน ไม่พูดคุย หรือส่งเสียงดังในบริเวณที่ทำงาน
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ไม่นำทรัพย์สินส่วนเข้าไปในไลน์การผลิต และไม่นำทรัพย์สินของบริษัทออกนอกไลน์การผลิต
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ไม่รับประทานหรือหยุดพักผ่อนในไลน์การผลิต
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="100">
+        <text>
+ถูกทุกข้อ
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 3572  -->
+  <question type="multichoice">
+    <name><text>จงเลือกคำตอบที่ถูกที่สุดเพียงข้อเดียว (35)</text>
+</name>
+    <questiontext format="moodle_auto_format">
+<text>ภาชนะที่บรรจุสารเคมี เมื่อใช้หมดแล้วควรทิ้งขยะอุตสาหกรรมถุงสีใด ?</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+<text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback>      <text></text>
+</correctfeedback>
+    <partiallycorrectfeedback>      <text></text>
+</partiallycorrectfeedback>
+    <incorrectfeedback>      <text></text>
+</incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="100">
+        <text>
+ถุงสีขาว
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ถุงสีเขียว
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ถุงสีแดง
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ถุงสีดำ
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 3573  -->
+  <question type="multichoice">
+    <name><text>จงเลือกคำตอบที่ถูกที่สุดเพียงข้อเดียว (36)</text>
+</name>
+    <questiontext format="html">
+<text><![CDATA[<img title="." style="width: 66px; height: 50px" height="50" alt="." hspace="0" src="http://korat-lms/moodle/file.php/114/ScreenHunter_004.gif" width="66" border="0" />จากรูปภาพหมายเลข 3 ที่แสดงอยู่ในพื้นที่สีแดงมีความหมายตรงกับข้อใด ?]]></text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+<text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback>      <text></text>
+</correctfeedback>
+    <partiallycorrectfeedback>      <text></text>
+</partiallycorrectfeedback>
+    <incorrectfeedback>      <text></text>
+</incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="0">
+        <text>
+ไม่ติดไฟ
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ต้องทำให้ร้อน หรือแตะต้องอุณหภูมิสูง จุดวาบไฟต่ำกว่า 93 องศาเซลเซียส
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="100">
+        <text>
+ติดไฟได้ทุกสถานะของอุณหภูมิห้อง จุดวาบไฟต่ำกว่า 38 องศาเซลเซียส
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ระเหยเป็นไอ และพร้อมจะติดไฟ
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 3574  -->
+  <question type="multichoice">
+    <name><text>จงเลือกคำตอบที่ถูกที่สุดเพียงข้อเดียว (37)</text>
+</name>
+    <questiontext format="moodle_auto_format">
+<text><![CDATA[เมื่อน้ำยาไอพีเอ (IPA) กระเด็นเข้าตา จะมีวีธีการปฐมพยาบาลอย่างไร ?    <br /> ]]></text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+<text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback>      <text></text>
+</correctfeedback>
+    <partiallycorrectfeedback>      <text></text>
+</partiallycorrectfeedback>
+    <incorrectfeedback>      <text></text>
+</incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="100">
+        <text>
+ล้างด้วยน้ำปริมาณมากๆ อย่างน้อย 10 นาที หรือนำส่งแพทย์
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+นำผู้ป่วยไปยังที่มีอากาศบริสุทธิ์ ถ้าอาการไม่ดีขึ้นให้นำส่งแพทย์
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ให้ดื่มน้ำมาก ๆ
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ใช้ผ้าเช็ดหน้าเช็ดตาเบา ๆ
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 3575  -->
+  <question type="multichoice">
+    <name><text>จงเลือกคำตอบที่ถูกที่สุดเพียงข้อเดียว (38)</text>
+</name>
+    <questiontext format="moodle_auto_format">
+<text>ผลิตภัณฑ์ที่ ไม่เป็นไปตามข้อกำหนดจะต้องติดใบวิปสเตตัส (Wip Status) สีอะไรสำหรับงานหลีดฟรี (Lead Free) ?</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+<text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback>      <text></text>
+</correctfeedback>
+    <partiallycorrectfeedback>      <text></text>
+</partiallycorrectfeedback>
+    <incorrectfeedback>      <text></text>
+</incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="0">
+        <text>
+สีชมพู
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="100">
+        <text>
+สีส้ม
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+สีขาว
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+สีเขียว
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 3576  -->
+  <question type="multichoice">
+    <name><text>จงเลือกคำตอบที่ถูกที่สุดเพียงข้อเดียว (39)</text>
+</name>
+    <questiontext format="moodle_auto_format">
+<text>ข้อตกลงร่วมกันในกลุ่มตลาดร่วมยุโรปที่ต้องการให้กระบวนการผลิตแบบใหม่ไม่มีการใช้ตะกั่ว หรือสารอันตรายที่ส่งผลกระทบต่อสิ่งแวดล้อมทั้ง 6 ชนิด มีชื่อเรียกว่าอะไร ?</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+<text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback>      <text></text>
+</correctfeedback>
+    <partiallycorrectfeedback>      <text></text>
+</partiallycorrectfeedback>
+    <incorrectfeedback>      <text></text>
+</incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="0">
+        <text>
+ISO 13488
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+5 S
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="100">
+        <text>
+ROHS (โรส)
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ISO 14001
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 3541  -->
+  <question type="multichoice">
+    <name><text>จงเลือกคำตอบที่ถูกที่สุดเพียงข้อเดียว (4)</text>
+</name>
+    <questiontext format="html">
+<text><![CDATA[ถ้าพบว่าตัวอุปกรณ์ยกสูงจากผิวพีซีบี (PCB) และมีข้อกำหนดว่าจะต้องมองเห็นปลายโผล่จากเนื้อโซลเดอร์ข้อความนี้ตรงกับอาการเสียในข้อใด ?<br />]]></text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+<text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback>      <text></text>
+</correctfeedback>
+    <partiallycorrectfeedback>      <text></text>
+</partiallycorrectfeedback>
+    <incorrectfeedback>      <text></text>
+</incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="0">
+        <text>
+ลิฟด์ อัฟ ลีด (Lifted Up Lead)
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ลีด เล้นท์ เอ้าท์ สเปค (Lead Length Out Spec)
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="100">
+        <text>
+คอมโพเน้นท์ ทู ไฮท์ (Component Too High)
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+เอ็กเซสซีพ คอมโพเน้นท์ (Excessive Component)
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 3577  -->
+  <question type="multichoice">
+    <name><text>จงเลือกคำตอบที่ถูกที่สุดเพียงข้อเดียว (40)</text>
+</name>
+    <questiontext format="html">
+<text><![CDATA[<img title="." height="93" alt="." hspace="0" src="http://korat-lms/moodle/file.php/114/ScreenHunter_007.gif" width="85" border="0" />เอกสารกำกับการทำงาน (WI) และใบวิป สเตตัส ที่มีสัญลักษณ์จากรูปภาพ กำกับไว้ มีความหมายว่าอย่างไร ?]]></text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+<text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback>      <text></text>
+</correctfeedback>
+    <partiallycorrectfeedback>      <text></text>
+</partiallycorrectfeedback>
+    <incorrectfeedback>      <text></text>
+</incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="0">
+        <text>
+ใช้กำกับงานที่มีสารเคมีเป็นส่วนผสมในวัสดุที่ใช้ในการผลิต
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ใช้กำกับงานที่ปราศจากสารเคมีเป็นส่วนผสมในวัสดุที่ใช้ในการผลิต
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ใช้กำกับงานที่มีโลหะผสมเป็นส่วนผสมในวัสดุที่ใช้ในการผลิต
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="100">
+        <text>
+ใช้กำกับงานที่ปราศจากสารอันตราย 6 ชนิดเป็นส่วนผสมในวัสดุที่ใช้ในการผลิต
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 3542  -->
+  <question type="multichoice">
+    <name><text>จงเลือกคำตอบที่ถูกที่สุดเพียงข้อเดียว (5)</text>
+</name>
+    <questiontext format="moodle_auto_format">
+<text>สแครช ออน พีซีบี (Scratch On PCB) รอยขีดข่วนที่เกิดขึ้นบนแผ่นพีซีบี (PCB) มีข้อกำหนดว่าอย่างไร ?</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+<text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback>      <text></text>
+</correctfeedback>
+    <partiallycorrectfeedback>      <text></text>
+</partiallycorrectfeedback>
+    <incorrectfeedback>      <text></text>
+</incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="0">
+        <text>
+ไม่สามารถยอมรับได้
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="100">
+        <text>
+ถ้าไม่ลึกเปิดเห็นทองแดง ถือว่าใช้ได้
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+จะยอมรับได้ ถ้าไม่เปิดเห็นทองแดงเกิน 0.75 มิลลิเมตร
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+จะยอมรับได้ต้องเปิดเห็นทองแดงเกิน 50 % ของเส้นลายวงจร
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 3543  -->
+  <question type="multichoice">
+    <name><text>จงเลือกคำตอบที่ถูกที่สุดเพียงข้อเดียว (6)</text>
+</name>
+    <questiontext format="moodle_auto_format">
+<text>ลิฟด์ ดาเมจ/แพด/เทรช (Lifted Damaged Pad/Trace) แพดล่อน, แพดเผยอ มีข้อกำหนดว่าอย่างไร ?</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+<text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback>      <text></text>
+</correctfeedback>
+    <partiallycorrectfeedback>      <text></text>
+</partiallycorrectfeedback>
+    <incorrectfeedback>      <text></text>
+</incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="100">
+        <text>
+แพดล่อนหรือเผยอได้ไม่เกินความหนาของแพดหรือแลนด์
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+แพดล่อนหรือเผยอได้ไม่เกิน 25 % ของพื้นที่แพด
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+แพดล่อนหรือเผยอได้ไม่เกิน 50 % ของพื้นที่แพด
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ไม่มีข้อใดถูก
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 3544  -->
+  <question type="multichoice">
+    <name><text>จงเลือกคำตอบที่ถูกที่สุดเพียงข้อเดียว (7)</text>
+</name>
+    <questiontext format="html">
+<text><![CDATA[ลีด เล้งท์ เอ้าท์ สเปค (Lead Length Out Spec) ข้อมีข้อกำหนดว่าอย่างไร ?<br />]]></text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+<text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback>      <text></text>
+</correctfeedback>
+    <partiallycorrectfeedback>      <text></text>
+</partiallycorrectfeedback>
+    <incorrectfeedback>      <text></text>
+</incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="0">
+        <text>
+ขาอุปกรณ์ยาวได้ไม่เกิน 1.5 มม.และสั้นน้อยสุดต้องมองเห็นปลายขาโผล่จากเนื้อโซลเดอร์
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ขาอุปกรณ์ยาวได้ไม่เกิน 2.0 มม.และสั้นน้อยสุดต้องมองเห็นปลายขาโผล่จากเนื้อโซลเดอร์
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="100">
+        <text>
+ขาอุปกรณ์ยาวได้ไม่เกิน 2.5 มม.และสั้นน้อยสุดต้องมองเห็นปลายขาโผล่จากเนื้อโซลเดอร์
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ถูกทั้ง a และ b
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 3545  -->
+  <question type="multichoice">
+    <name><text>จงเลือกคำตอบที่ถูกที่สุดเพียงข้อเดียว (8)</text>
+</name>
+    <questiontext format="moodle_auto_format">
+<text>โซลเดอร์ บอล, โซลเดอร์ พาร์ทิเคิล (Solder Ball/Solder Particle) สามารถยอมรับได้ตามข้อกำหนดคือข้อใด ?</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+<text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback>      <text></text>
+</correctfeedback>
+    <partiallycorrectfeedback>      <text></text>
+</partiallycorrectfeedback>
+    <incorrectfeedback>      <text></text>
+</incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="0">
+        <text>
+เศษของโซลเดอร์จะต้องติดแน่นหรือถูกหุ้มด้วยน้ำยาฟลั๊ก/เคลือบบอร์ด
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+เศษโซลเดอร์จะต้องไม่ส่งผลกระทบต่อระยะห่างทางไฟฟ้า
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+โซลเดอร์ พาร์ทิเคิล ห้ามมี
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="100">
+        <text>
+ถูกทุกข้อที่กล่าวมา
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 3546  -->
+  <question type="multichoice">
+    <name><text>จงเลือกคำตอบที่ถูกที่สุดเพียงข้อเดียว (9)</text>
+</name>
+    <questiontext format="moodle_auto_format">
+<text>พิน โฮล / โบว์ โฮล (Pin Hole/Blow Hole) โซลเดอร์เป็นรูจะยอมรับได้ในลักษณะใด ?</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+<text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback>      <text></text>
+</correctfeedback>
+    <partiallycorrectfeedback>      <text></text>
+</partiallycorrectfeedback>
+    <incorrectfeedback>      <text></text>
+</incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="0">
+        <text>
+ประเภท เอสเอ็มดี (SMD) จะต้องมีการเชื่อมประสานของโซลเดอร์อย่างน้อย 50%   ของความกว้างของขาอุปกรณ์
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ประเภท ทรูโฮล (Through Hole) การเชื่อมประสานของโซลเดอร์รอบขาอุปกรณ์ ด้านปลายทางโซลเดอร์จะต้องมีโซลเดอร์อย่างน้อย 180 องศา
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+ประเภท ทรูโฮล (Through Hole) การเชื่อมประสานของโซลเดอร์รอบขาอุปกรณ์ด้านบัดกรีจะต้องมีโซลเดอร์อย่างน้อย 270 องศา
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="100">
+        <text>
+ถูกทุกข้อ
+        </text>
+      <feedback>
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+</quiz>

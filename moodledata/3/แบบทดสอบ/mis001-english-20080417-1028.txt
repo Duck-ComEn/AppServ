@@ -1,0 +1,28 @@
+// question: 4  name: จับคู่หมายเลขที่ถูกต้องในบทความ 
+::จับคู่หมายเลขที่ถูกต้องในบทความ::[html]{
+	=has -> 6
+	=issues -> 8
+	=believed -> 7
+	=displays -> 5
+	=made -> 3
+	=spreading -> 1
+	=affected -> 4
+	=announcement -> 2
+}
+
+
+// question: 5  name: จับคู่คำศัพท์ตามความหมาย 
+::จับคู่คำศัพท์ตามความหมาย::[html]จับคู่คำศัพท์ตามความหมาย{
+	=Announcement -> N : ประกาศ
+	=Report -> A: รายงาน
+	=Text -> B: ข้อความ
+	=Believe -> Q:เชื่อ
+	=Spreading -> P:การแพร่กระจาย	
+	=Affect -> R:มีผลกระทบ
+	=Contain -> C:บรรจุ/เต็มไปด้วย
+	=Already -> S:พร้อมแล้ว/มีอยู๋แล้ว
+	=Article -> D:หัวข้อ/บทความ
+	=Need -> J:จำเป็น/ความจำเป็น
+}
+
+

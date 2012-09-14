@@ -1,0 +1,137 @@
+/*******************************************************************
+ styles_variable.css
+  
+ This CSS file contains all color definitions like 
+ background-color, font-color, border-color etc.
+
+ 
+
+*******************************************************************/
+
+/***
+ ***  Core
+ ***/
+
+a:link,
+a:visited {
+  color:#ff0000;
+}
+
+a:hover {
+  color:#5390a0;
+}
+  
+body {
+  background: #0a62a1 url('images/backgroundlg.jpg') no-repeat center top;
+  border-color:#ffffff;
+  width: 960px;
+  margin-left: auto; 
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+}
+
+.surround {
+  background: #ffffff;
+  border-top: 0px solid #ffffff;
+  border-right: 0px solid #ffffff;
+  border-bottom: 0px solid #ffffff;
+  border-left: 0px solid #ffffff;
+  
+  
+}
+
+.menubar {
+  background: #dddddd url('images/menubar.jpg') repeat-x;
+
+}
+
+.navbar {
+  background: #a3d2de;
+  border-color:#a3d2de;
+  color: #5390a0;
+}
+
+.navbar a:link {
+    color: #5390a0;
+}
+.navbar a:visited {
+    color: #5390a0;
+}
+.navbar a:hover {
+    color: #cc0000;
+}
+
+
+div.headermenu 
+{
+	color:#ffffff;
+}
+
+.breadcrumb .sep, #admin-report-simpletest-index .sep {
+  color:#5390a0;
+}
+
+.breadcrumb a{
+  color:#5390a0;
+}
+
+.minicalendar a,
+.calendarmonth a {
+  color:#ff0000;
+}
+
+.block_login_logout .logintable {
+  text-align:center;
+}
+
+.block_login_logout .loginform {
+  display:inline;
+}
+
+.block_login_logout .loginform .c1 {
+  font-size: 12px;
+  margin:0px 2px 4px 0px;
+}
+
+.block_login_logout .loginform .fld input {
+  width:5em;
+}
+
+.block_login_logout .loginform label {
+  padding-right: 4px;
+}
+
+.block_login_logout .loginform div {
+  margin:0.3em 0.8em;
+  text-align:right;
+  display:block;
+}
+
+.block_login_logout .loginform div.c1.btn {
+  text-align:center;
+}
+
+.block_login_logout .logoutusername,
+.block_login_logout .logoutuserimg {
+  text-align:center;
+  font-size:10pt;
+  padding:2px;
+}
+
+.block_login_logout .logoutform {
+  margin:0px;
+}
+
+.block_login_logout .logoutbtn {
+  text-align:center;
+  font-size:10pt;
+  padding:5px;
+}
+
+.block_login_logout .logoutfooter {
+  text-align:center;
+  font-size:8pt;
+  padding:2px;
+}
+
