@@ -1037,3 +1037,9 @@ form.mform .required .fgroup span label {
 .sideblock .hide-show a {
   border:1px solid white;
 }
+.scroll_demo {
+  width:965px;
+  height:700px;
+  border:1px solid red;
+  overflow:auto;
+}

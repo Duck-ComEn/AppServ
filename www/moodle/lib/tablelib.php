@@ -602,7 +602,8 @@ class flexible_table {
         $suppress_enabled = array_sum($this->column_suppress);
         $suppress_lastrow = NULL;
         // Start of main data table
-
+		//incread scroll
+		 echo '<div class="scroll_demo"><div>';
         echo '<table'.$this->make_attributes_string($this->attributes).'>';
 
         echo '<tr>';
@@ -615,7 +616,7 @@ class flexible_table {
                     // some headers contain < br/> tags, do not include in title
                     $icon_hide = ' <a href="'.$this->baseurl.$this->request[TABLE_VAR_SHOW].'='.$column.'"><img src="'.$CFG->pixpath.'/t/switch_plus.gif" title="'.get_string('show').' '.strip_tags($this->headers[$index]).'" alt="'.get_string('show').'" /></a>';
                 }
-                else if($this->headers[$index] !== NULL) {
+                else if($index < 8) {
                     // some headers contain < br/> tags, do not include in title
                     $icon_hide = ' <a href="'.$this->baseurl.$this->request[TABLE_VAR_HIDE].'='.$column.'"><img src="'.$CFG->pixpath.'/t/switch_minus.gif" title="'.get_string('hide').' '.strip_tags($this->headers[$index]).'" alt="'.get_string('hide').'" /></a>';
                 }
@@ -746,7 +747,7 @@ class flexible_table {
         }
 
         echo '</table>';
-
+		 echo'</div></div>';
         // Paging bar
         if($this->use_pages) {
             print_paging_bar($this->totalrows, $this->currpage, $this->pagesize, $this->baseurl, $this->request[TABLE_VAR_PAGE]);

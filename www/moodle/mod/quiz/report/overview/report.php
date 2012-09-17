@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * This script lists student attempts
  *
@@ -198,21 +198,17 @@ class quiz_report extends quiz_default_report {
                 $columns[] = 'feedbacktext';
                 $headers[] = get_string('feedback', 'quiz');
             }
-			
-			
-            if ($detailedmarks) {
+			if ($detailedmarks) {
                 // we want to display marks for all questions
                 $questions = quiz_report_load_questions($quiz);
                 foreach ($questions as $id => $question) {
                     // Ignore questions of zero length
 		
                     $columns[] = 'qsgrade'.$id;
-                    $headers[] = '#'.$question->number;
+                    $headers[] ='#'.$question->number;
                 }
-            }
-    
-            
-    
+			}
+			    
             if (!$download) {
                 // Set up the table
     
@@ -531,9 +527,9 @@ class quiz_report extends quiz_default_report {
                     if ($hasfeedback) {
                         if ($attempt->timefinish) {
 							if(quiz_rescale_grade($attempt->sumgrades, $quiz)== $quiz->grade){
-							$row[] = '<div class="highlightPass">'.quiz_report_feedback_for_grade(quiz_rescale_grade($attempt->sumgrades, $quiz), $quiz->id).'</div>';
+							$row[] = '<div class=highlightPass>'.quiz_report_feedback_for_grade(quiz_rescale_grade($attempt->sumgrades, $quiz), $quiz->id).'</div>';
 							}else{
-							$row[] = '<div class="highlightFail">'.quiz_report_feedback_for_grade(quiz_rescale_grade($attempt->sumgrades, $quiz), $quiz->id).'</div>';
+							$row[] = '<div class=highlightFail>'.quiz_report_feedback_for_grade(quiz_rescale_grade($attempt->sumgrades, $quiz), $quiz->id).'</div>';
 							}
                         } else {
                             $row[] = '-';
@@ -558,10 +554,10 @@ class quiz_report extends quiz_default_report {
                                 }
                                 if (!$download) {
 									if($stateforqinattempt->grade==0){
-                                    $grade = '<div class="highlight3">'.'ผิดข้อที่ '.$question->number.'</div>';
+                                    $grade = '<div class="highlight3">'.'X '.$question->number.'</div>';
 									$row[] = link_to_popup_window('/mod/quiz/reviewquestion.php?state='.
                                             $stateforqinattempt->id.'&amp;number='.$question->number,
-                                            'reviewquestion', $grade, 450, 650, $strreviewquestion, 'none', true);
+                                            'reviewquestion', $grade, 600, 900, $strreviewquestion, 'none', true);
 									}else{
 									$grade = '';
 									}
@@ -573,13 +569,25 @@ class quiz_report extends quiz_default_report {
                         }
                     }
     
-                    
+                    // add data to table
                     if (!$download) {
                         $table->add_data($row);
+					
+            
+					
+					
+					// add data to file
                     } else if ($download == 'Excel' or $download == 'ODS') {
+						
                         $colnum = 0;
                         foreach($row as $item){
 							
+							if ((strcmp($item,'<div class=highlightFail><p>Fail</p></div>'))==0){
+								$item='Fail';
+							}
+							if ((strcmp($item,'<div class=highlightPass><p>Pass</p></div>'))==0){
+								$item='Pass';
+							}
                             $myxls->write($rownum,$colnum,$item,$format);
                             $colnum++;
                         }
