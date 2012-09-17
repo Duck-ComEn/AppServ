@@ -53,3 +53,6 @@ SELECT *,
                     `TABLE_COMMENT`      AS `Comment`
                FROM `information_schema`.`TABLES`
               WHERE  `TABLE_SCHEMA` IN ('moodle');
+C:\AppServ\MySQL\bin\mysqld-nt, Version: 5.0.51b-community-nt-log (MySQL Community Edition (GPL)). started with:
+TCP Port: 3306, Named Pipe: (null)
+Time                 Id Command    Argument
