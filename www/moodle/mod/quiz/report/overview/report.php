@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * This script lists student attempts
  *
@@ -554,7 +554,7 @@ class quiz_report extends quiz_default_report {
                                 }
                                 if (!$download) {
 									if($stateforqinattempt->grade==0){
-                                    $grade = '<div class="highlight3">'.'X '.$question->number.'</div>';
+                                    $grade = '<div class="highlight3">'.'ผิดข้อ '.$question->number.'</div>';
 									$row[] = link_to_popup_window('/mod/quiz/reviewquestion.php?state='.
                                             $stateforqinattempt->id.'&amp;number='.$question->number,
                                             'reviewquestion', $grade, 600, 900, $strreviewquestion, 'none', true);
