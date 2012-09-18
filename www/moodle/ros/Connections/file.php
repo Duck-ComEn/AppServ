@@ -1,5 +1,5 @@
 <?php
-mysql_connect('localhost','root','korat');
+mysql_connect('localhost','root','1234');
 mysql_select_db("moodle");
 $ipserver_path='http://korat-lms/moodle/ros/';
 $messagefile="พนักของคุณ  กำลังจะหมด Certificate กรุณาคลิกลิงค์ข้างล่างเพื่อรวจสอบรายชื่อพนักงานของท่าน ทางผู้ดูแลระบบขออภัยเนื่องจากนี่เป็นระบบส่งอัตโนมัตและข้อมูลอาจไม่ได้อัพเดจ จากเจ้าหน้าที่";

@@ -1,58 +1,45 @@
 C:\AppServ\MySQL\bin\mysqld-nt, Version: 5.0.51b-community-nt-log (MySQL Community Edition (GPL)). started with:
 TCP Port: 3306, Named Pipe: (null)
 Time                 Id Command    Argument
-# Time: 120917  8:08:46
-# User@Host: root[root] @ localhost [127.0.0.1]
-# Query_time: 16  Lock_time: 0  Rows_sent: 223  Rows_examined: 223
-SELECT *,
-                    `TABLE_SCHEMA`       AS `Db`,
-                    `TABLE_NAME`         AS `Name`,
-                    `ENGINE`             AS `Engine`,
-                    `ENGINE`             AS `Type`,
-                    `VERSION`            AS `Version`,
-                    `ROW_FORMAT`         AS `Row_format`,
-                    `TABLE_ROWS`         AS `Rows`,
-                    `AVG_ROW_LENGTH`     AS `Avg_row_length`,
-                    `DATA_LENGTH`        AS `Data_length`,
-                    `MAX_DATA_LENGTH`    AS `Max_data_length`,
-                    `INDEX_LENGTH`       AS `Index_length`,
-                    `DATA_FREE`          AS `Data_free`,
-                    `AUTO_INCREMENT`     AS `Auto_increment`,
-                    `CREATE_TIME`        AS `Create_time`,
-                    `UPDATE_TIME`        AS `Update_time`,
-                    `CHECK_TIME`         AS `Check_time`,
-                    `TABLE_COLLATION`    AS `Collation`,
-                    `CHECKSUM`           AS `Checksum`,
-                    `CREATE_OPTIONS`     AS `Create_options`,
-                    `TABLE_COMMENT`      AS `Comment`
-               FROM `information_schema`.`TABLES`
-              WHERE  `TABLE_SCHEMA` IN ('moodle');
-# User@Host: root[root] @ localhost [127.0.0.1]
-# Query_time: 12  Lock_time: 0  Rows_sent: 223  Rows_examined: 223
-use moodle;
-SELECT *,
-                    `TABLE_SCHEMA`       AS `Db`,
-                    `TABLE_NAME`         AS `Name`,
-                    `ENGINE`             AS `Engine`,
-                    `ENGINE`             AS `Type`,
-                    `VERSION`            AS `Version`,
-                    `ROW_FORMAT`         AS `Row_format`,
-                    `TABLE_ROWS`         AS `Rows`,
-                    `AVG_ROW_LENGTH`     AS `Avg_row_length`,
-                    `DATA_LENGTH`        AS `Data_length`,
-                    `MAX_DATA_LENGTH`    AS `Max_data_length`,
-                    `INDEX_LENGTH`       AS `Index_length`,
-                    `DATA_FREE`          AS `Data_free`,
-                    `AUTO_INCREMENT`     AS `Auto_increment`,
-                    `CREATE_TIME`        AS `Create_time`,
-                    `UPDATE_TIME`        AS `Update_time`,
-                    `CHECK_TIME`         AS `Check_time`,
-                    `TABLE_COLLATION`    AS `Collation`,
-                    `CHECKSUM`           AS `Checksum`,
-                    `CREATE_OPTIONS`     AS `Create_options`,
-                    `TABLE_COMMENT`      AS `Comment`
-               FROM `information_schema`.`TABLES`
-              WHERE  `TABLE_SCHEMA` IN ('moodle');
+C:\AppServ\MySQL\bin\mysqld-nt, Version: 5.0.51b-community-nt-log (MySQL Community Edition (GPL)). started with:
+TCP Port: 3306, Named Pipe: (null)
+Time                 Id Command    Argument
+C:\AppServ\MySQL\bin\mysqld-nt, Version: 5.0.51b-community-nt-log (MySQL Community Edition (GPL)). started with:
+TCP Port: 3306, Named Pipe: (null)
+Time                 Id Command    Argument
+C:\AppServ\MySQL\bin\mysqld-nt, Version: 5.0.51b-community-nt-log (MySQL Community Edition (GPL)). started with:
+TCP Port: 3306, Named Pipe: (null)
+Time                 Id Command    Argument
+C:\AppServ\MySQL\bin\mysqld-nt.exe, Version: 5.0.51b-community-nt-log (MySQL Community Edition (GPL)). started with:
+TCP Port: 3306, Named Pipe: (null)
+Time                 Id Command    Argument
+C:\AppServ\MySQL\bin\mysqld-nt, Version: 5.0.51b-community-nt-log (MySQL Community Edition (GPL)). started with:
+TCP Port: 3306, Named Pipe: (null)
+Time                 Id Command    Argument
+C:\AppServ\MySQL\bin\mysqld-nt.exe, Version: 5.0.51b-community-nt-log (MySQL Community Edition (GPL)). started with:
+TCP Port: 3306, Named Pipe: (null)
+Time                 Id Command    Argument
+C:\AppServ\MySQL\bin\mysqld-nt, Version: 5.0.51b-community-nt-log (MySQL Community Edition (GPL)). started with:
+TCP Port: 3306, Named Pipe: (null)
+Time                 Id Command    Argument
+C:\AppServ\MySQL\bin\mysqld-nt, Version: 5.0.51b-community-nt-log (MySQL Community Edition (GPL)). started with:
+TCP Port: 3306, Named Pipe: (null)
+Time                 Id Command    Argument
+C:\AppServ\MySQL\bin\mysqld-nt, Version: 5.0.51b-community-nt-log (MySQL Community Edition (GPL)). started with:
+TCP Port: 3306, Named Pipe: (null)
+Time                 Id Command    Argument
+C:\AppServ\MySQL\bin\mysqld-nt, Version: 5.0.51b-community-nt-log (MySQL Community Edition (GPL)). started with:
+TCP Port: 3306, Named Pipe: (null)
+Time                 Id Command    Argument
+C:\AppServ\MySQL\bin\mysqld-nt, Version: 5.0.51b-community-nt-log (MySQL Community Edition (GPL)). started with:
+TCP Port: 3306, Named Pipe: (null)
+Time                 Id Command    Argument
+C:\AppServ\MySQL\bin\mysqld-nt, Version: 5.0.51b-community-nt-log (MySQL Community Edition (GPL)). started with:
+TCP Port: 3306, Named Pipe: (null)
+Time                 Id Command    Argument
+C:\AppServ\MySQL\bin\mysqld-nt, Version: 5.0.51b-community-nt-log (MySQL Community Edition (GPL)). started with:
+TCP Port: 3306, Named Pipe: (null)
+Time                 Id Command    Argument
 C:\AppServ\MySQL\bin\mysqld-nt, Version: 5.0.51b-community-nt-log (MySQL Community Edition (GPL)). started with:
 TCP Port: 3306, Named Pipe: (null)
 Time                 Id Command    Argument
