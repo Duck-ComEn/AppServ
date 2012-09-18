@@ -34,3 +34,5 @@ Version: '5.0.51b-community-nt-log'  socket: ''  port: 3306  MySQL Community Edi
 
 120917 17:35:59 [Note] C:\AppServ\MySQL\bin\mysqld-nt: Shutdown complete
 
+120918  8:04:40 [Note] C:\AppServ\MySQL\bin\mysqld-nt: ready for connections.
+Version: '5.0.51b-community-nt-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
