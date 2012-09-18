@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html<?php echo $direction ?>>
+<head>
+    <?php echo $meta ?>
+    <meta name="keywords" content="moodle, <?php echo $title ?> " />
+    <title><?php echo $title ?></title>
+    <link rel="shortcut icon" href="<?php echo $CFG->themewww .'/'. current_theme() ?>/favicon.ico" />
+    <?php include("$CFG->javascript"); ?>
+    <script src="<?php echo $CFG->themewww .'/'. current_theme() ?>/js/cufon-yui.js"></script>
+    <script type="text/javascript" src="<?php echo $CFG->themewww .'/'. current_theme() ?>/js/Harabara_700.font.js"></script>
+    <script type="text/javascript">
+	Cufon.replace('.jvas_blogname');
+    </script>
+</head>
+
+<body<?php
+    echo " $bodytags";
+    if ($focus) {
+        echo " onload=\"setfocus()\"";
+    }
+    ?>>
+
+<div id="page">
+
+<div id="jvas_catmenucontainer">
+	<div id="jvas_catmenu"> 
+		<ul><li><a href="http://www.ufrj.br/" target="_new">Universidade Federal do Rio de Janeiro</a></li><li><a href="http://www.ouvidoria.ufrj.br/" target="_new">Ouvidoria</a></li></ul>
+	</div> <!-- catmenu -->
+</div> <!-- catmenucontainer -->
+
+<div id="jvas_top">
+	<div class="jvas_blogname">
+		<h1 class="headermain"><?php echo $heading ?></h1>
+	</div> <!-- blogname -->
+	<div class="jvas_clear"></div>
+</div> <!-- top -->
+
+<div id="jvas_wrapper" class="boxshadow">
+	<div id="jvas_casing" >
+
+<?php //Accessibility: 'headermain' is now H1, see theme/standard/styles_layout.css: .headermain
+if ($home) {  // This is what gets printed on the home page only
+?>
+	<?php print_container_start(true, '', 'header-home'); ?>
+	
+	<!-- EMPTY -->
+
+	<?php print_container_end(); ?>
+<?php } else if ($heading) {  // This is what gets printed on any other page with a heading
+?>
+	<?php print_container_start(true, '', 'header'); ?>
+	
+	<!-- EMPTY -->
+
+	<?php print_container_end(); ?>
+<?php } ?>
+
+<?php //Accessibility: breadcrumb trail/navbar now a DIV, not a table.
+if ($navigation) { // This is the navigation bar with breadcrumbs  ?>
+		<div id="jvas_foxmenucontainer">
+			<div id="jvas_menu">
+				<div class="navbar">
+		       			<div class="breadcrumb"><?php print_navigation($navigation); ?></div>
+		       			<div class="navbutton"><?php echo $button; ?></div>
+				</div>
+			</div> <!-- menu -->
+		</div> <!-- foxmenucontainer -->
+<?php } else if ($heading) { // If no navigation, but a heading, then print a line
+?>
+		<div id="jvas_foxmenucontainer">
+			<div id="jvas_menu">
+			<div class="navbar">
+				<div class="breadcrumb"><ul><li>Bem-vindo ao Ambiente Virtual de Aprendizagem Moodle</div>
+			</div>
+			</div> <!-- menu -->
+		</div> <!-- foxmenucontainer -->
+<?php } ?>
+		<div id="jvas_content" >
+<!-- END OF HEADER -->
+<?php print_container_start(false, '', 'content'); ?>
