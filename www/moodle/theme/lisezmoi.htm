@@ -1,0 +1,280 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>orange choc theme for Moodle by JR</title>
+<style>
+body {
+  background-color:#D5CEBC;
+  color: #4D1700;
+  font-size: small;
+  font-family: Verdana, Lucida, Geneva, Helvetica, Arial, sans-serif;
+  line-height:140%;
+  margin:auto;
+  margin-bottom:20px;
+  margin-top:20px;
+  width:680px;
+ }
+#page {
+  background-color:#FBFBF5;
+  padding-bottom:10px;
+  padding-top:10px;
+  margin-left:auto;
+  margin-right:auto;
+}
+h1, h2 {
+  margin-left:10px;
+  margin-right:10px;
+  text-indent:10px;
+}
+h1 {
+  border-bottom:1px solid #FF4D00;
+  border-left:8px solid #FF4D00;
+  font-size:110%;
+  margin-bottom:0.4em;
+}
+h2 {
+  border-left:8px solid #FFCC00;
+  font-size:100%;
+  font-weight:bold;
+  margin-bottom:0.0em;
+  margin-top:0.2em;
+}
+p {
+  margin-bottom:0.6em;
+  margin-left:25px;
+  margin-right:25px;
+  margin-top:0.6em;
+}
+.orangechoc {
+  color:#FF4D00;
+  font-weight:bold;
+}
+a:link, a:visited {
+  border-bottom:1px groove #CCCCCC;
+  color:#190055;
+  text-decoration:none;
+}
+/*because MSIE6 does not treat groove the same as MOZ*/
+html>body a:link,
+html>body a:visited {
+  border-bottom-color: #190055;
+}
+a:hover {
+  background-color: #4D1700;
+  border-bottom-color:#4D1700;
+  border-bottom-style: solid;
+  color: #F1F1DF;
+  text-decoration:none;
+}
+.code {
+  color:#000000;
+  font-family:"Courier New", Courier, mono;
+  line-height:100%;
+}
+.style1 {color: #FF0000}
+.style2 {color: #FFFAE6}
+.style3 {color:#0000FF}
+span.help {
+  color:red;
+  cursor:help;
+  font-weight:bold;
+}
+a.autolink:link, a.autolink:visited {
+  background-color:#F1F1DF;
+  border-bottom: thin dotted #FF0000;
+  color:inherit;
+}
+a.autolink:hover {
+  border-bottom: thin solid #FF0000;
+  color: #000000;
+}
+a.autolink.glossary:hover {
+  background-color:#F1F1DF; /*DEV JR mettre important?*/
+  border-bottom: 1px solid #FF0000;
+  color:#190055!important;
+  cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+<div id="page">
+<h1>th&egrave;me orangechocolate (<span class="orangechoc">orangechoc</span>) pour Moodle</h1>
+      <p align="right"><a href="readme.html">version anglaise </a></p>
+      <p>par Joseph R&eacute;zeau - Universit&eacute; Rennes 2, France</p>
+      <p>URL permanente pour le t&eacute;l&eacute;chargement <a href="http://rezeau.org/moodle/orangechoc.zip" target="_blank">http://rezeau.org/moodle/orangechoc.zip</a></p>
+      <p>mise &agrave; jour du <span class="style1">6 juin, 2007</span></p>
+      <h1>manifeste</h1>
+      <p>Le th&egrave;me <span class="orangechoc">orangechoc</span> a &eacute;t&eacute; inspir&eacute; par le manifeste de David Scotson <a href="http://moodle.org/mod/forum/discuss.php?d=25147#118657" target="_blank">Kubrick theme manifesto&nbsp;&gt;&gt;</a>. Je partage enti&egrave;rement ses arguments en faveur d'une disposition de largeur fixe sur 2 colonnes. <span class="orangechoc">Orangechoc</span> tient juste sur un &eacute;cran de 830 pixels de largeur. Sur des &eacute;crans affichant une r&eacute;solution sup&eacute;rieure, le contenu d'un site Moodle sera affich&eacute; centr&eacute;, entour&eacute; de deux marges de couleur chocolat. Ceci signifie que les lignes de texte seront toujours affich&eacute;es sur une largeur raisonnable, pour assurer une bonne lisibilit&eacute;. Pour les notions de lisibilit&eacute; sur le Web, voir les sites <a href="http://www.maxdesign.com.au/presentation/em/" target="_blank">http://www.maxdesign.com.au/presentation/em/</a> et <a href="http://www.webstyleguide.com/type/lines.html" target="_blank">http://www.webstyleguide.com/type/lines.html</a></p>
+      <p>Le th&egrave;me<span class="orangechoc"> orangechoc</span> traite &eacute;galement une question souvent n&eacute;glig&eacute;e, celle de la modification de l'affichage de la taille du texte dans les navigateurs. Dans les deux navigateurs les plus courants, MS Internet Explorer (7.0) et Firefox (2.0), si l'affichage du texte est param&eacute;tr&eacute; sur <em>Moyenne</em> (pour MSIE) ou <em>Normale</em> (pour Firefox), le texte affich&eacute; en utilisant le th&egrave;me <span class="orangechoc"> orangechoc</span> aura pratiquement la m&ecirc;me taille, qui est celle que vous lisez en ce moment. Lorsque l'utilisateur modifiera la taille du texte en plus ou en moins, elle augmentera ou diminuera par incr&eacute;ments de valeur raisonnable (plus petits dans Firefox que MSIE). A divers endroits du site Moodle, la taille de police a &eacute;t&eacute; r&eacute;duite &agrave; 85% de fa&ccedil;on &agrave; pouvoir afficher des &eacute;l&eacute;ments de texte plus nombreux, tout en restant lisibles. </p>
+      <h1>probl&egrave;mes de compatibilit&eacute; </h1>
+      <h2>compatibilit&eacute; du navigateur </h2>
+      <p><span class="orangechoc">Orangechoc</span> a &eacute;t&eacute; test&eacute; sous Windows XP et avec les navigateurs MS Internet Explorer (7.0) et Firefox (2.0). Sous Windows, ces deux navigateurs affichent le th&egrave;me de mani&egrave;re quasi identique, sauf pour les boutons personnalis&eacute;s, qui ne s'affichent que dans Firefox. Avec un Mac, je suppose que ce th&egrave;me fonctionnera correctement dans Firefox, &agrave; peu pr&egrave;s avec Safari et pas du tout avec Internet Explorer, dont l'usage est fortement d&eacute;conseill&eacute; sous Mac de toute fa&ccedil;on. Merci aux testeurs de confirmer tout ceci.</p>
+      <h2>compatibilit&eacute; Moodle</h2>
+      <p>Le th&egrave;me <span class="orangechoc">orangechoc</span> est compatible avec les versions <strong>1.6</strong> à <strong>1.8</strong> de Moodle. Avant de me signaler d'&eacute;ventuels probl&egrave;mes avec ce th&egrave;me, v&eacute;rifiez que vous utilisez bien la toute derni&egrave;re version d'<span class="orangechoc">orangechoc</span>, disponible &agrave; l'adresse indiqu&eacute;e en t&ecirc;te de ce document. </p>
+      <h2>HTML doctype</h2>
+      <p>Pour que le th&egrave;me <span class="orangechoc">orangechoc</span> affiche correctement les tailles de police dans Internet Explorer, vous ne devez pas modifier l'en-t&ecirc;te qui se trouve dans le fichier <em>header.html</em>. </p>
+      <div class="code">
+        <p>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd&quot;&gt;</p>
+      </div>
+      <h1>comment utiliser <span class="orangechoc">orangechoc</span> dans Moodle </h1>
+      <h2>les blocs situ&eacute;s &agrave; gauche</h2>
+      <p>&Eacute;tant donn&eacute; que <span class="orangechoc">orangechoc</span> adopte une disposition en deux colonnes, les blocs d'un site ou d'un cours Moodle dispos&eacute;s dans la colonne de gauche ne seront pas affich&eacute;s. Il est donc recommand&eacute; de d&eacute;placer tous les blocs situ&eacute;s &agrave; gauche vers la colonne de droite avant de choisir le th&egrave;me <span class="orangechoc">orangechoc</span>. Cependant, si vous l'avez oubli&eacute;, pas de panique, les blocs de gauche qui sont invisibles pourront &ecirc;tre visualis&eacute;s et d&eacute;plac&eacute;s vers la droite <em>en mode &eacute;dition</em>. </p>
+      <h2>le logo de votre institution </h2>
+      <p>Dans <span class="orangechoc">orangechoc</span>, le logo affich&eacute; sur la page d'accueil du site et le logo affich&eacute; sur la page d'accueil de chaque cours sont par d&eacute;faut ceux de Moodle, &agrave; savoir <em>logo.gif</em>  et <em>smalllogo.gif</em>. Vous pouvez bien entendu les remplacer par les logos de votre propre institution, simplement en les d&eacute;posant &agrave; la place de ces deux fichiers images, sous le m&ecirc;me nom, dans le r&eacute;pertoire du th&egrave;me <span class="orangechoc">orangechoc</span>. Si vos logos sont beaucoup plus grands que les originaux Moodle, l'affichage sera modifi&eacute; en cons&eacute;quence. Il se peut &eacute;galement que les couleurs de vos logos n'aillent pas avec la charte de couleurs du th&egrave;me <span class="orangechoc">orangechoc</span>.</p>
+      <p>Sur la page d'accueil et le page d'accueil de chaque cours vous pouvez d&eacute;cider d'afficher ou non un logo ou le nom du site/du cours. Dans le fichier header.html, les lignes qui affichent les logos sont indiqu&eacute;es en bleu, celles qui affichent les noms de site/cours en bleu. Vous pouvez ainsi personnaliser votre site en enlevant les lignes correspondant aux &eacute;l&eacute;ments que vous ne voulez pas afficher. </p>
+      <div class="code">
+        <p>&lt;?php if ($home) { // This is what gets printed on the home page only <br />
+          // snip //
+          ........................................................<br />
+&lt;div class=&quot;headermain&quot;&gt;<br />
+<span class="style3">&lt;img border=&quot;0&quot; src=&quot;&lt;?php echo &quot;$CFG-&gt;wwwroot/theme/$CFG-&gt;theme&quot; ?&gt;/logo.gif&quot;&gt;<br />
+</span><span class="style1">&lt;?php echo $heading ?&gt;</span><br />
+&lt;/div&gt;<br />
+// snip //.........................................................<br />
+&lt;?php } else if ($heading) { // This is what gets printed on any other page with a heading <br />
+?&gt;<br />
+&lt;div id=&quot;header&quot;&gt;<br />
+&lt;div class=&quot;headermain&quot;&gt;<br />
+<span class="style3">&lt;img border=&quot;0&quot; src=&quot;&lt;?php echo &quot;$CFG-&gt;wwwroot/theme/$CFG-&gt;theme&quot; ?&gt;/logo_small.gif&quot;&gt;<br />
+</span><span class="style1">&lt;?php echo $heading ?&gt;</span><br />
+&lt;/div&gt;<br />
+&lt;div class=&quot;headermenu&quot;&gt;&lt;?php echo $menu ?&gt;&lt;/div&gt;<br />
+&lt;/div&gt;<br />
+        </p>
+      </div>
+      <h1>cacher le menu &#8220;liste d&eacute;roulante&#8221; en haut &agrave; droite de chaque page de cours </h1>
+      <p>Personnellement, je trouve que ce menu d&eacute;roulant pose deux probl&egrave;mes. D'une part il prend de la place pour s'afficher, et peut entrer en conflit avec des noms de site/cours un peu longs. D'autre part il permet aux &eacute;tudiants de naviguer au hasard vers n'importe quelle partie du cours, au risque de se perdre. J'ai donc remplac&eacute; ce menu d&eacute;roulant par l'indication du login en cours (que j'ai d&eacute;plac&eacute; du pied de page dans l'en-t&ecirc;te de page).</p>
+      <h2>personnalisation</h2>
+      <p>Si vous pr&eacute;f&eacute;rez conserver l'affichage standard du menu d&eacute;roulant de navigation de Moodle, il vous suffit d'enlever les lignes en rouge et d'y ajouter les lignes en bleu dans le code du fichier header.html. </p>
+      <div class="code">
+        <p>&lt;?php } else if ($heading) {  // This is what gets printed on any other page with a heading <br>
+          ?&gt;<br>
+          &lt;div id=&quot;header&quot;&gt;<br>
+          &lt;div class=&quot;headermain&quot;&gt;&lt;?php echo $heading ?&gt;&lt;/div&gt;<br>
+          <span class="style1">&lt;div class=&quot;headermenu&quot;&gt;&lt;?php echo user_login_string($usercourse, $USER) ?&gt;&lt;/div&gt;</span></p>
+        <p>remplacez la ligne ci-dessus par: </p>
+        <p><span class="style3">&lt;div class=&quot;headermenu&quot;&gt;&lt;?php echo $menu ?&gt;&lt;/div&gt;</span><br>
+        </p>
+      </div>
+      <p>et dans le fichier footer.htm file rajoutez ce qui est en bleu apr&egrave;s &lt;div id=&quot;footer&quot;&gt;</p>
+  <div class="code">
+    <p>&lt;div id=&quot;footer&quot;&gt;<span class="style3">&lt;?php echo $loggedinas ?</span></p>
+  </div>
+      <h1>les couleurs du fond de page et l'image</h1>
+      <h2>personnalisation</h2>
+      <p>Si vous voulez remplacer le fond couleur chocolat uni par un fond tram&eacute;, vous pouvrez utiliser l'image choc01.jpg. Dans le fichier orangechoc.css, remplacez la ligne en rouge par la ligne en bleu.</p>
+      <div class="code">
+        <p><span class="style1">html {<br>
+&nbsp;&nbsp;background: #4D1700;<br>
+        </span><span class="style3">html {<br>
+&nbsp;&nbsp;background: #4D1700 url(choc01.jpg) top left repeat;<br>
+<br>
+        </span></p>
+      </div>
+      <p>Les effets de d&eacute;grad&eacute; dans la barre de navigation et les en-t&ecirc;tes des blocs sont fournis par l'image choc_gradient01.jpg.</p>
+      <h1>charte des couleurs </h1>
+      <p>Pratiquement toutes les couleurs utilis&eacute;es dans ce th&egrave;me <span class="orangechoc">orangechoc</span> sont affich&eacute;es en bas de cette page, avec leur code HTML. Les autres couleurs utilis&eacute;es par ce th&egrave;me sont le gris (pour les &eacute;l&eacute;ments inactifs), le rouge et le vert (pour les commentaires dans les Tests).</p>
+      <h1>format des liens &amp; survol </h1>
+      <p>Les liens normaux d'un site Moodle ont &eacute;t&eacute; format&eacute;s avec un effet de pseudo-soulignement. Cet effet est obtenu au moyen d'une bordure et d'un <em>padding</em> de fa&ccedil;on &agrave; &eacute;loigner vers le bas la bordure classique de l'attribut <em>underline</em>. </p>
+      <p> to glossary entries have been formatted with a light background tint and an orange dotted underline effect. Upon hovering, a hand cursor appears, rather than the help cursor (arrow + question mark) usually found in Moodle themes. This has been done on purpose, to keep with the usual semantics of the hand cursor on the Web, waiting for a click on the hyperlink. The help cursor is available for a new span.help class, which you can use e.g. for hovering effects as in <span class="help" title="this is an example">this example</span>. </p>
+      <p>Les liens automatiques (<a href="#" class="autolink" title="Link to glossary entry">autolink</a>) ont &eacute;t&eacute; format&eacute;s avec un l&eacute;ger arri&egrave;re-plan color&eacute; et un soulignement en pointill&eacute;s. Le survol de la souris provoque la transformation du curseur &#8220;fl&egrave;che&#8221; en petite main avec index. Les th&egrave;mes standard de Moodle affichent une grosse fl&egrave;che accompagn&eacute;e d'un point d'interrogation. J'ai choisi la main avec index pour &ecirc;tre en conformit&eacute; avec les standards du Web; en effet, cette main avec index invite l'utilisateur &agrave; cliquer pour naviguer vers une autre fen&ecirc;tre, ce qui est bien le cas, avec l'ouverture de la fen&ecirc;tre popup du glossaire. En revanche, j'ai affect&eacute; le curseur d'aide &agrave; une nouvelle classe span.help que vous pouvez voir passant votre curseur <span class="help" title="coucou!">ici</span>. </p>
+      <h2>personnalisation</h2>
+      <p>Si vous pr&eacute;f&eacute;rez le comporement standard des autres th&egrave;mes de Moodle, vous pouvez modifier la ligne suivante du fichier orangechoc.css.</p>
+      <p>Remplacer&nbsp;:</p>
+      <p><span class="code">a.autolink.glossary:hover {<br />
+&nbsp;&nbsp;background-color:#F1F1DF;<br />
+&nbsp;&nbsp;border-bottom: 1px solid #FF0000;<br />
+&nbsp;&nbsp;color:#190055!important;<br />
+<span class="style1">&nbsp;&nbsp;cursor: pointer;</span><br />
+}</span><br />
+par&nbsp;:</p>
+      <p class="code"><span class="style1">&nbsp;&nbsp;cursor: help;</span></p>
+      <h1>cacher la barre de navigation etc. dans la fen&ecirc;tre popup du Glossaire </h1>
+      <p>Lorsque, dans une ressource du cours ou une activit&eacute;, une &eacute;tudiante clique sur un mot automatiquement li&eacute; par Moodle vers une entr&eacute;e d'un glossaire, cette entr&eacute;e est affich&eacute;e dans une fen&ecirc;tre popup. Je n'aime pas du tout le fait que - dans un th&egrave;me standard de Moodle - cette fen&ecirc;tre popup affiche une barre de navigation compl&egrave;te en haut et un lien vers le glossaire lui-m&ecirc;me en bas. En effet, si l'&eacute;tudiante clique par hasard ou d&eacute;lib&eacute;r&eacute;ment sur l'un de ces liens, elle va se retrouver &agrave; naviguer dans son cours, dans la fen&ecirc;tre popup. Du coup, il y a deux fen&ecirc;tres de cours ouvertes en m&ecirc;me temps sur le plan de travail... de quoi s'y perdre.</p>
+      <p>Le th&egrave;me <span class="orangechoc">orangechoc</span> cache donc des liens superflus et potentiellement dangereux. Dans Firefox tous les liens sont cach&eacute;s, dans MSIE seule la barre de navigation en haut est cach&eacute;e, le lien vers le glossaire lui-m&ecirc;me reste visible. </p>
+      <h2>personnalisation</h2>
+      <p>Si vous pr&eacute;f&eacute;rez r&eacute;tablir le comportement standard de Moodle, modifiez le fichier <em>orangechoc.css</em> comme indiqu&eacute;.</p>
+      <p>Enlevez ces lignes&nbsp;:</p>
+      <div class="code">
+        <p class="style1">#mod-glossary-showentry p[align=&quot;right&quot;] {<br />
+display:none;<br />
+}<br />
+#mod-glossary-showentry .entrylowersection,<br />
+#mod-glossary-showentry .navbar {<br />
+display: none;<br />
+}</p>
+      </div>
+      <h1>heading block hidden</h1>
+      <p>Dans Moodle il existe 3 formats de pr&eacute;sentation du contenu dans la colonne centrale d'un cours: Th&eacute;matique, Informel et Hebdomadaire. Je trouve que l'affichage de l'en-t&ecirc;te o&ugrave; se trouve le nom de ces formats inutile, donc je l'ai cach&eacute;. Si vous voulez l'afficher, enlevez ou commentez (/*&#8230;*/) la ligne en bleu dans le fichier orangechoc.css. </p>
+      <div class="code">
+        <p>#course-view .headingblock {<br />
+&nbsp;&nbsp;<span class="style3">display:none;</span><br />
+}<br />
+        </p>
+      </div>
+      <h1>traitement des &#8220;&eacute;l&eacute;ments &agrave; &eacute;viter&#8221; de Moodle </h1>
+      <p>Lors de la mise au point du th&egrave;me <span class="orangechoc">orangechoc</span> je suis tomb&eacute; sur un certain nombre d'&eacute;l&eacute;ments HTML que l'on appelle <a href="http://en.wikipedia.org/wiki/Deprecation" target="_blank">deprecated</a>, c'est-&agrave;-dire dont l'emploi est maintenant d&eacute;conseill&eacute; par les instances de normalisation du HTML Il est dommage qu'il subsiste encore de tels &eacute;l&eacute;ments dans les versions 1.5 de Moodle&nbsp;; ils vont dispara&icirc;tre peu &agrave; peu. Il s'agit par exemple des &eacute;l&eacute;ments <strong>font, b, center, nowrap,</strong> etc. Dans la mesure du possible le th&egrave;me <span class="orangechoc">orangechoc</span> combat les effets n&eacute;gatifs de ces &eacute;l&eacute;ments, mais je n'ai pas toujours r&eacute;ussi. Vous trouverz un exemple ici: </p>
+      <p><a href="http://moodle.org/mod/forum/discuss.php?d=25147#142051" target="_blank">http://moodle.org/mod/forum/discuss.php?d=25147#142051</a></p>
+      <h1>automatisation<a name="automatisation"></a> de la t&acirc;che cron</h1>
+      <p>Tout &agrave; la fin du fichier header.html vous pouvez rajouter du code qui lance automatiquement la t&acirc;che cron (toutes les heures). Voir <a href="http://moodle.org/mod/forum/discuss.php?d=38397" target="_blank">cette discusssion</a> sur le forum international de Moodle. Si vous souhaitez automatiser ainsi votre cron, <strong>rajoutez les lignes suivantes</strong> tout &agrave; la fin du fichier header.html&nbsp;: </p>
+      <p><span class="code">&lt;?php<br>
+        if(file_exists($CFG-&gt;dataroot.&quot;/cron.time&quot;) &amp;&amp; time()-filemtime($CFG-&gt;dataroot.&quot;/cron.time&quot;)&gt;3600){<br>
+        $ch = curl_init($CFG-&gt;wwwroot.&quot;/admin/cron.php&quot;);<br>
+        $fp = fopen($CFG-&gt;dataroot.&quot;/cron.time&quot;, &quot;w&quot;);<br>
+        curl_setopt($ch, CURLOPT_FILE, $fp);<br>
+        curl_setopt($ch, CURLOPT_HEADER, 0);<br>
+        curl_exec($ch);<br>
+        curl_close($ch);<br>
+        fclose($fp);<br>
+        }<br>
+  ?&gt;</span><br>Veuillez noter que ce script est sans effet sur un site Moodle install&eacute; en local sur un ordinateur. </p>
+      <h1>conclusion </h1>
+      <p>La feuille de style orangechoc.css ne soit pas &ecirc;tre consid&eacute;r&eacute;e comme un mod&egrave;le de feuille de style Moodle. Elle ne suit pas le mod&egrave;le (introduit dans Moodle 1.5) de la s&eacute;paration des param&egrave;tres de police, couleurs et disposition en plusieurs feuilles de style distinctes. Il reste encore beaucoup de nettoyage &agrave; faire dans cette feuille de style. </p>
+      <p>Je serai reconnaissant &agrave; tous les utilisateurs de Moodle qui voudront bien tester le th&egrave;me <span class="orangechoc">orangechoc</span> et me faire part de leurs remarques et suggestions. Pour que le dialogue fonctionne, il est indispensable de me fournir les renseignements suivants sur votre configuration.</p>
+      <p>Vesion de Moodle&nbsp;; plateforme (Windows, Mac, Linux)&nbsp;; nom du navigateur et num&eacute;ro de version. </p>
+      <p>Postez de pr&eacute;f&eacute;rence vos commentaires sur le forum <a href="http://moodle.org/course/view.php?id=20" target="_blank">Moodle en fran&ccedil;ais</a>. </p>
+      <p>Veuillez noter que je ne pourrai r&eacute;pondre aux questions concernant vos propres adaptations du th&egrave;me <span class="orangechoc">orangechoc</span>, et que toute discussion devra s'appuyer sur la toute derni&egrave;re version du th&egrave;me disponible &agrave; l'URL indiqu&eacute;e plus haut. </p>
+      <p>Vous avez tout &agrave; fait le droit d'utiliser <span class="orangechoc">orangechoc</span> tel quel, de le modifier, de le copier, de le partager, etc. Je pr&eacute;f&eacute;rerais que vous laissiez dans le fichier orangechoc.css l'en-t&ecirc;te d'identification avec mes coordonn&eacute;es, mais vous n'irez pas br&ucirc;ler en enfer si vous l'effacez. </p>
+      <p>Si vous d&eacute;cidez d'adopter ce th&egrave;me (tel quel ou modifi&eacute;) sur votre propre site ou celui de votre institution, j'appr&eacute;cierais que vous m'en avertissiez et que vous m'en donniez l'adresse.</p>
+      <p>Vous <em>pouvez</em> effacer la barre de la charte des couleurs qui se trouve dans le fichier footer.html du th&egrave;me <span class="orangechoc">orangechoc</span>.</p>
+      <h1>historique</h1>
+      <h2>06 juin 2007</h2>
+      <p>le thème est maintenant compatible avec Moodle 1.7 et 1.8</p>
+      <p>j'ai augmenté la largeur du body de 760 à 810 pixels, ce qui donne plus d'espace d'affichage&nbsp;; sur la plupart des pages d'administration du site (où le bloc est fixé à gauche) la page s'affiche sur toute la largeur de la fenêtre du navigateur, pour faire tenir des éléments souvent très nombreux</p>
+      <p>le thème fonctionne bien avec MSIE (Internet Explorer) 7.0 et FireFox 2.0; quelques petits problèmes avec MSIE 6.0  </p>
+      <h2>20 mai 2006</h2>
+      <p>le th&egrave;me <span class="orangechoc">orangechoc</span> est maintenant compatible avec <strong>Moodle 1.6</strong>  </p>
+      <p>sur les pages de cours, le pied de page comporte d&eacute;sormais un lien automatique vers la page d'aide correspondante dans la Documentation de Moodle en ligne (en mode Administrateur ou Enseignant et sous Moodle 1.6 seulement) </p>
+      <h2>24 f&eacute;v 2006</h2>
+      <p>enlev&eacute; le fond brun chocolat des messsages de forums envoy&eacute;s par courriel ainsi que de la fen&ecirc;tre de chat (rendait le texte en partie illisible) </p>
+      <p>automatisation (facultative) de la t&acirc;che cron dans le fichier header.html (voir <a href="#automatisation">ci-dessus</a>) </p>
+      <h2>31 d&eacute;c 2005</h2>
+      <p>corrig&eacute; quelques bugs et enlev&eacute; l'image tram&eacute;e du fond des pages (couleur chocolat unie) </p>
+      <h2>06 nov 2005</h2>
+      <p>bug corrig&eacute;: forcer l'affichage de la colonne de gauche en mode &eacute;dition pour la page d'accueil du site (en plus du mode &eacute;dition de la page d'accueil des cours) </p>
+      <h2>13 oct 2005</h2>
+      <ul>
+        <li>ajout&eacute; un comportement <em>nowrap</em> pour l'info. sur les cours sur la page d'accueil du site (#site-index page)</li>
+        <li>ajout&eacute; quelques styles personnels &agrave; la fin de la feuille de style </li>
+        <li>ajout&eacute; une classe sp&eacute;ciale #mod-quiz-review .highlight (couleur vert p&acirc;le) diff&eacute;rente de la classe plus g&eacute;n&eacute;rale .highlight (jaune orang&eacute;) </li>
+  </ul>
+      <h2>22 sept. 2005</h2>
+      <p>rajout&eacute; l'icone de <em>HotPotatoes</em> dans le r&eacute;pertoire <strong>pix</strong></p>
+      <table  style="margin-top:25px; "width="75%" border="0" align="center" cellpadding="0" cellspacing="1" bordercolor="#010000">
+    <tr>
+    <td width="83" bgcolor="#190055"><span class="style2">#190055</span></td>
+    <td width="83" bgcolor="#FFCC00">#FFCC00</td>
+    <td width="82" bgcolor="#6A6A5A">#6A6A5A</td>
+    <td width="82" bgcolor="#FF4D00">#FF4D00</td>
+    <td width="82" bgcolor="#4D1700" class="style2">#4D1700</td>
+    <td width="66" bgcolor="#F1F1DF">#F1F1DF</td>
+    <td width="61" bgcolor="#D5CEBC">#D5CEBC</td>
+
+    <td width="58" bgcolor="#FBFBF5">#FBFBF5</td>
+    <td width="194" bgcolor="#FFFAE6">#FFFAE6</td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

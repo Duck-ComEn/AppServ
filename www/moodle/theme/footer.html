@@ -1,0 +1,19 @@
+</div> <!-- end div content -->
+</div> <!-- end page -->
+<div id="footer">
+<?php 
+	if ($home) 
+	{ ?>
+		orangechoc&nbsp;theme&nbsp;designed&nbsp;by&nbsp;Joseph R&eacute;zeau</div>
+		<?php  echo $homelink; ?>
+	<?php } else {
+	
+	echo('<table width="100%" border="0" style="padding-top:0px; height:auto;"><tr><td width="55%"><div style="float:left; margin:0px;">'.$homelink.'</div></td><td><div style="float:right; margin:0px;">');
+	if (function_exists('page_doc_link')) {
+		echo(page_doc_link(get_string("moodledocslink")));
+	}
+	echo ('</div></td></tr></table>'); ?>
+	</div>
+<?php } ?>
+</body>
+</html>

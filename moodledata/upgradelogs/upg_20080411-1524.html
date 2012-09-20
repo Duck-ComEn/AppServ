@@ -1,0 +1,219 @@
+<div class="notifysuccess" style="text-align:center"><b>เครื่องมือนำเข้าภาษา</b>: th_utf8 ... </div><br />
+<h2   class="main">การปรับปรุงฐานข้อมูล จาก เวอร์ชั่น 1.7.4+ (2006101041) เป็น  1.8.5 (Build: 20080409) (2007021550)...</h2><hr />
+(mysql): SELECT * FROM mdl_user WHERE username = 'guest' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): DELETE FROM mdl_course_display where userid=1 &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">สำเร็จ</div><br />
+<hr />
+(mysql): DELETE FROM mdl_config where name='secureforms' &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">สำเร็จ</div><br />
+<hr />
+(mysql): SELECT * FROM mdl_role &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_role_capabilities WHERE contextid = '1' AND roleid = '1' AND capability = 'moodle/user:viewdetails' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_role_capabilities WHERE contextid = '1' AND roleid = '2' AND capability = 'moodle/user:viewdetails' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_role_capabilities WHERE contextid = '1' AND roleid = '3' AND capability = 'moodle/user:viewdetails' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_role_capabilities WHERE contextid = '1' AND roleid = '4' AND capability = 'moodle/user:viewdetails' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_role_capabilities WHERE contextid = '1' AND roleid = '5' AND capability = 'moodle/user:viewdetails' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_role_capabilities WHERE contextid = '1' AND roleid = '6' AND capability = 'moodle/user:viewdetails' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_config WHERE name = 'registerauth' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): UPDATE mdl_config SET value = '' WHERE name = 'registerauth' &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_mnet_host WHERE id = '1' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): UPDATE mdl_user SET mnethostid = '1' WHERE mnethostid = '0' &nbsp; 
+<hr />
+<hr />
+(mysql): ALTER TABLE mdl_user_info_field MODIFY COLUMN name LONGTEXT NOT NULL after shortname &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">สำเร็จ</div><br />
+<hr />
+(mysql): SELECT id, name FROM mdl_user_info_field &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT COUNT(*) FROM mdl_context  &nbsp; 
+<hr />
+<table width="500" cellpadding="0" cellspacing="0" align="center"><tr><td width="500"><div id="bar12" style="border-style:solid;border-width:1px;width:500px;height:50px;"><div id="slider12" style="border-style:solid;border-width:1px;height:48px;width:10px;background-color:green;"></div></div><div id="text12" align="center" style="width:500px;"></div></td></tr></table></div><script>document.getElementById("text12").innerHTML = "Processing context relations (1/12) ";
+document.getElementById("slider12").style.width = '40px';
+</script><div class="notifytiny" style="text-align:center">Duplicate entry '2-3' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 2, 3 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '2-1' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 2, 1 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '2-2' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 2, 2 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '3-1' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 3, 1 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '3-3' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 3, 3 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '4-5' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 4, 5 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '4-1' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 4, 1 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '4-4' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 4, 4 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '5-1' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 5, 1 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '5-5' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 5, 5 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '6-7' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 6, 7 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '6-1' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 6, 1 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '6-6' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 6, 6 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '7-1' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 7, 1 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '7-7' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 7, 7 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '8-12' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 8, 12 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '8-1' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 8, 1 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '8-8' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 8, 8 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '9-4' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 9, 4 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '9-5' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 9, 5 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '9-1' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 9, 1 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '9-9' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 9, 9 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '10-2' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 10, 2 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '10-3' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 10, 3 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '10-1' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 10, 1 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '10-10' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 10, 10 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '11-1' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 11, 1 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '11-11' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 11, 11 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '12-1' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 12, 1 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '12-12' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 12, 12 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<hr />
+(mysql): ALTER TABLE mdl_course MODIFY COLUMN lang VARCHAR(30) NOT NULL DEFAULT '' after groupmodeforce &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_user MODIFY COLUMN lang VARCHAR(30) NOT NULL DEFAULT 'en' after country &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">สำเร็จ</div><br />
+<hr />
+(mysql): DELETE FROM mdl_user WHERE username='changeme' &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_user MODIFY COLUMN ajax TINYINT(1) unsigned NOT NULL DEFAULT 1 after htmleditor &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">สำเร็จ</div><br />
+<hr />
+(mysql): SELECT * FROM mdl_role WHERE shortname = 'user' &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_role WHERE name = 'บุคคลทั่วไป' LIMIT 100 &nbsp; 
+<hr />
+<br /><div class="box errorbox errorboxcontent">there is already a role with this name!</div><div class="notifysuccess" style="text-align:center"><b>เครื่องมือนำเข้าภาษา</b>: th_utf8 ... </div><br />
+<h2   class="main">การปรับปรุงฐานข้อมูล จาก เวอร์ชั่น 1.7.4+ (2006101041) เป็น  1.8.5 (Build: 20080409) (2007021550)...</h2><hr />
+(mysql): SELECT * FROM mdl_user WHERE username = 'guest' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): DELETE FROM mdl_course_display where userid=1 &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">สำเร็จ</div><br />
+<hr />
+(mysql): DELETE FROM mdl_config where name='secureforms' &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">สำเร็จ</div><br />
+<hr />
+(mysql): SELECT * FROM mdl_role &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_role_capabilities WHERE contextid = '1' AND roleid = '1' AND capability = 'moodle/user:viewdetails' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_role_capabilities WHERE contextid = '1' AND roleid = '2' AND capability = 'moodle/user:viewdetails' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_role_capabilities WHERE contextid = '1' AND roleid = '3' AND capability = 'moodle/user:viewdetails' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_role_capabilities WHERE contextid = '1' AND roleid = '4' AND capability = 'moodle/user:viewdetails' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_role_capabilities WHERE contextid = '1' AND roleid = '5' AND capability = 'moodle/user:viewdetails' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_role_capabilities WHERE contextid = '1' AND roleid = '6' AND capability = 'moodle/user:viewdetails' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_config WHERE name = 'registerauth' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): UPDATE mdl_config SET value = '' WHERE name = 'registerauth' &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_mnet_host WHERE id = '1' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): UPDATE mdl_user SET mnethostid = '1' WHERE mnethostid = '0' &nbsp; 
+<hr />
+<hr />
+(mysql): ALTER TABLE mdl_user_info_field MODIFY COLUMN name LONGTEXT NOT NULL after shortname &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">สำเร็จ</div><br />
+<hr />
+(mysql): SELECT id, name FROM mdl_user_info_field &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT COUNT(*) FROM mdl_context  &nbsp; 
+<hr />
+<table width="500" cellpadding="0" cellspacing="0" align="center"><tr><td width="500"><div id="bar12" style="border-style:solid;border-width:1px;width:500px;height:50px;"><div id="slider12" style="border-style:solid;border-width:1px;height:48px;width:10px;background-color:green;"></div></div><div id="text12" align="center" style="width:500px;"></div></td></tr></table></div><script>document.getElementById("text12").innerHTML = "Processing context relations (1/12) ";
+document.getElementById("slider12").style.width = '40px';
+</script><div class="notifytiny" style="text-align:center">Duplicate entry '2-3' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 2, 3 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '2-1' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 2, 1 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '2-2' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 2, 2 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '3-1' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 3, 1 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '3-3' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 3, 3 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '4-5' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 4, 5 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '4-1' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 4, 1 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '4-4' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 4, 4 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '5-1' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 5, 1 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '5-5' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 5, 5 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '6-7' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 6, 7 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '6-1' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 6, 1 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '6-6' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 6, 6 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '7-1' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 7, 1 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '7-7' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 7, 7 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '8-12' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 8, 12 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '8-1' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 8, 1 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '8-8' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 8, 8 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '9-4' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 9, 4 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '9-5' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 9, 5 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '9-1' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 9, 1 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '9-9' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 9, 9 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '10-2' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 10, 2 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '10-3' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 10, 3 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '10-1' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 10, 1 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '10-10' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 10, 10 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '11-1' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 11, 1 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '11-11' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 11, 11 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '12-1' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 12, 1 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<div class="notifytiny" style="text-align:center">Duplicate entry '12-12' for key 2<br /><br />INSERT INTO mdl_context_rel ( C1, C2 ) VALUES ( 12, 12 )<ul style="text-align:left"><li>line 1425 of lib\dmllib.php: call to debugging()</li><li>line 3971 of lib\accesslib.php: call to insert_record()</li><li>line 3993 of lib\accesslib.php: call to insert_context_rel()</li><li>line 527 of lib\db\upgrade.php: call to build_context_rel()</li><li>line 328 of admin\index.php: call to xmldb_main_upgrade()</li></ul></div><br />
+<hr />
+(mysql): ALTER TABLE mdl_course MODIFY COLUMN lang VARCHAR(30) NOT NULL DEFAULT '' after groupmodeforce &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_user MODIFY COLUMN lang VARCHAR(30) NOT NULL DEFAULT 'en' after country &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">สำเร็จ</div><br />
+<hr />
+(mysql): DELETE FROM mdl_user WHERE username='changeme' &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_user MODIFY COLUMN ajax TINYINT(1) unsigned NOT NULL DEFAULT 1 after htmleditor &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">สำเร็จ</div><br />
+<hr />
+(mysql): SELECT * FROM mdl_role WHERE shortname = 'user' &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_role WHERE name = 'บุคคลทั่วไป' LIMIT 100 &nbsp; 
+<hr />
+<br /><div class="box errorbox errorboxcontent">there is already a role with this name!</div>

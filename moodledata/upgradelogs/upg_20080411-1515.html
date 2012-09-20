@@ -1,0 +1,499 @@
+<div class="notifysuccess" align="center"><b>เครื่องมือนำเข้าภาษา</b>: th_utf8 ... </div><br />
+<h2   class="main">การปรับปรุงฐานข้อมูล จาก เวอร์ชั่น 1.6.6+ (2006050561) เป็น  1.7.4+ (2006101041)...</h2><hr />
+(mysql): SELECT * FROM mdl_log_display WHERE module = 'course' AND action = 'report log' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_log_display WHERE module = 'course' AND action = 'report live' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_log_display WHERE module = 'course' AND action = 'report outline' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_log_display WHERE module = 'course' AND action = 'report participation' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_log_display WHERE module = 'course' AND action = 'report stats' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SHOW COLUMNS FROM `mdl_user` &nbsp; 
+<hr />
+<hr />
+(mysql): ALTER TABLE mdl_grade_letter CHANGE grade_high grade_high decimal(5,2)  DEFAULT '100.00' not null  &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_grade_letter CHANGE grade_low grade_low decimal(5,2)  DEFAULT '0.00' not null  &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): CREATE TABLE mdl_role (
+                              `id` int(10) unsigned NOT NULL auto_increment,
+                              `name` varchar(255) NOT NULL default '',
+                              `shortname` varchar(100) NOT NULL default '',
+                              `description` text NOT NULL default '',
+                              `sortorder` int(10) unsigned NOT NULL default '0',
+                              PRIMARY KEY  (`id`)
+                            ) &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): CREATE TABLE mdl_context (
+                              `id` int(10) unsigned NOT NULL auto_increment,
+                              `level` int(10) unsigned NOT NULL default '0',
+                              `instanceid` int(10) unsigned NOT NULL default '0',
+                              PRIMARY KEY  (`id`)
+                            ) &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): CREATE TABLE mdl_role_assignments (
+                              `id` int(10) unsigned NOT NULL auto_increment,
+                              `roleid` int(10) unsigned NOT NULL default '0',
+                              `contextid` int(10) unsigned NOT NULL default '0',
+                              `userid` int(10) unsigned NOT NULL default '0',
+                              `hidden` int(1) unsigned NOT NULL default '0',
+                              `timestart` int(10) unsigned NOT NULL default '0',
+                              `timeend` int(10) unsigned NOT NULL default '0',
+                              `timemodified` int(10) unsigned NOT NULL default '0',
+                              `modifierid` int(10) unsigned NOT NULL default '0',
+                              `enrol` varchar(20) NOT NULL default '',
+                              `sortorder` int(10) unsigned NOT NULL default '0',
+                              PRIMARY KEY  (`id`)
+                            ) &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): CREATE TABLE mdl_role_capabilities (
+                              `id` int(10) unsigned NOT NULL auto_increment,
+                              `contextid` int(10) unsigned NOT NULL default '0',
+                              `roleid` int(10) unsigned NOT NULL default '0',
+                              `capability` varchar(255) NOT NULL default '',
+                              `permission` int(10) unsigned NOT NULL default '0',
+                              `timemodified` int(10) unsigned NOT NULL default '0',
+                              `modifierid` int(10) unsigned NOT NULL default '0',
+                              PRIMARY KEY (`id`)
+                            ) &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): CREATE TABLE mdl_role_deny_grant (
+                              `id` int(10) unsigned NOT NULL auto_increment,
+                              `roleid` int(10) unsigned NOT NULL default '0',
+                              `unviewableroleid` int(10) unsigned NOT NULL default '0',
+                              PRIMARY KEY (`id`)
+                            ) &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): CREATE TABLE mdl_capabilities ( 
+                              `id` int(10) unsigned NOT NULL auto_increment, 
+                              `name` varchar(255) NOT NULL default '', 
+                              `captype` varchar(50) NOT NULL default '', 
+                              `contextlevel` int(10) unsigned NOT NULL default '0', 
+                              `component` varchar(100) NOT NULL default '', 
+                              PRIMARY KEY (`id`) 
+                            ) &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): CREATE TABLE mdl_role_names ( 
+                              `id` int(10) unsigned NOT NULL auto_increment, 
+                              `roleid` int(10) unsigned NOT NULL default '0',
+                              `contextid` int(10) unsigned NOT NULL default '0', 
+                              `text` text NOT NULL default '',
+                              PRIMARY KEY (`id`) 
+                            ) &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE `mdl_role` ADD INDEX `sortorder` (`sortorder`) &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE `mdl_context` ADD INDEX `instanceid` (`instanceid`) &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE `mdl_context` ADD UNIQUE INDEX `level-instanceid` (`level`, `instanceid`) &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE `mdl_role_assignments` ADD INDEX `roleid` (`roleid`) &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE `mdl_role_assignments` ADD INDEX `contextid` (`contextid`) &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE `mdl_role_assignments` ADD INDEX `userid` (`userid`) &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE `mdl_role_assignments` ADD UNIQUE INDEX `contextid-roleid-userid` (`contextid`, `roleid`, `userid`) &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE `mdl_role_assignments` ADD INDEX `sortorder` (`sortorder`) &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE `mdl_role_capabilities` ADD INDEX `roleid` (`roleid`) &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE `mdl_role_capabilities` ADD INDEX `contextid` (`contextid`) &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE `mdl_role_capabilities` ADD INDEX `modifierid` (`modifierid`) &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE `mdl_role_capabilities` ADD INDEX `capability` (`capability`) &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE `mdl_role_capabilities` ADD UNIQUE INDEX `roleid-contextid-capability` (`roleid`, `contextid`, `capability`) &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE `mdl_role_deny_grant` ADD INDEX `roleid` (`roleid`) &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE `mdl_role_deny_grant` ADD INDEX `unviewableroleid` (`unviewableroleid`) &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE `mdl_role_deny_grant` ADD UNIQUE INDEX `roleid-unviewableroleid` (`roleid`, `unviewableroleid`) &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE `mdl_capabilities` ADD UNIQUE INDEX `name` (`name`) &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE `mdl_role_names` ADD INDEX `roleid` (`roleid`) &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE `mdl_role_names` ADD INDEX `contextid` (`contextid`) &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE `mdl_role_names` ADD UNIQUE INDEX `roleid-contextid` (`roleid`, `contextid`) &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE `mdl_role_capabilities` CHANGE permission permission int(10) NOT NULL default '0' &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): DROP TABLE `mdl_role_deny_grant` &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): CREATE TABLE mdl_role_allow_assign (
+                    `id` int(10) unsigned NOT NULL auto_increment,
+                    `roleid` int(10) unsigned NOT NULL default '0',
+                    `allowassign` int(10) unsigned NOT NULL default '0',
+                    KEY `roleid` (`roleid`),
+                    KEY `allowassign` (`allowassign`),
+                    UNIQUE KEY `roleid-allowassign` (`roleid`, `allowassign`),
+                    PRIMARY KEY (`id`)
+                    ) &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): CREATE TABLE mdl_role_allow_override (
+                    `id` int(10) unsigned NOT NULL auto_increment,
+                    `roleid` int(10) unsigned NOT NULL default '0',
+                    `allowoverride` int(10) unsigned NOT NULL default '0',
+                    KEY `roleid` (`roleid`),
+                    KEY `allowoverride` (`allowoverride`),
+                    UNIQUE KEY `roleid-allowoverride` (`roleid`, `allowoverride`),
+                    PRIMARY KEY (`id`)
+                    ) &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_context CHANGE level aggregatelevel int unsigned DEFAULT '0' not null  &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_timezone CHANGE rule tzrule VARCHAR(20)  DEFAULT '' not null  &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_user ADD ajax INTEGER(1) unsigned DEFAULT '1' not null AFTER `htmleditor` &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): DROP TABLE mdl_sessions &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): 
+            CREATE TABLE mdl_sessions2 (
+                sesskey VARCHAR(64) NOT NULL default '',
+                expiry DATETIME NOT NULL,
+                expireref VARCHAR(250),
+                created DATETIME NOT NULL,
+                modified DATETIME NOT NULL,
+                sessdata TEXT,
+                CONSTRAINT  PRIMARY KEY (sesskey)
+            ) COMMENT='Optional database session storage in new format, not used by default'; &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): 
+            CREATE INDEX mdl_sess_exp_ix ON mdl_sessions2 (expiry); &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): 
+            CREATE INDEX mdl_sess_exp2_ix ON mdl_sessions2 (expireref); &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_sessions2 CHANGE sessdata sessdata LONGTEXT  DEFAULT ''   &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_capabilities ADD riskbitmask INTEGER(10) unsigned DEFAULT '0' not null  &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_course CHANGE modinfo modinfo longtext NULL AFTER showgrades &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_course_categories CHANGE description description text NULL AFTER name &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_user CHANGE description description text NULL AFTER url &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_course_sections CHANGE summary summary text NULL AFTER section &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_course_sections CHANGE sequence sequence text NULL AFTER section &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): CREATE TABLE mdl_user_lastaccess ( 
+                    `id` int(10) unsigned NOT NULL auto_increment, 
+                    `userid` int(10) unsigned NOT NULL default '0',
+                    `courseid` int(10) unsigned NOT NULL default '0', 
+                    `timeaccess` int(10) unsigned NOT NULL default '0', 
+                    KEY `userid` (`userid`),
+                    KEY `courseid` (`courseid`),
+                    UNIQUE KEY `userid-courseid` (`userid`, `courseid`),
+                    PRIMARY KEY (`id`) 
+                    )TYPE=MYISAM COMMENT ='time user last accessed any page in a course'; &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): SELECT r.*
+                      FROM mdl_role r,
+                           mdl_role_capabilities rc
+                     WHERE rc.capability = 'moodle/legacy:guest'
+                       AND rc.roleid = r.id  AND rc.permission = '1' &nbsp; 
+<hr />
+<hr />
+(mysql): ALTER TABLE mdl_course ADD defaultrole INTEGER(10) unsigned DEFAULT '0' not null  &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): DELETE FROM mdl_config WHERE name = 'showsiteparticipantslist' &nbsp; 
+<hr />
+<hr />
+(mysql): DELETE FROM mdl_config WHERE name = 'requestedteachername' &nbsp; 
+<hr />
+<hr />
+(mysql): DELETE FROM mdl_config WHERE name = 'requestedteachersname' &nbsp; 
+<hr />
+<hr />
+(mysql): DELETE FROM mdl_config WHERE name = 'requestedstudentname' &nbsp; 
+<hr />
+<hr />
+(mysql): DELETE FROM mdl_config WHERE name = 'requestedstudentsname' &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_role &nbsp; 
+<hr />
+<hr />
+(mysql): CREATE TABLE mdl_user_info_field (
+                        id BIGINT(10) NOT NULL auto_increment,
+                        name VARCHAR(255) NOT NULL default '',
+                        datatype VARCHAR(255) NOT NULL default '',
+                        categoryid BIGINT(10) unsigned NOT NULL default 0,
+                        sortorder BIGINT(10) unsigned NOT NULL default 0,
+                        required TINYINT(2) unsigned NOT NULL default 0,
+                        locked TINYINT(2) unsigned NOT NULL default 0,
+                        visible SMALLINT(4) unsigned NOT NULL default 0,
+                        defaultdata LONGTEXT,
+                        CONSTRAINT  PRIMARY KEY (id)); &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_user_info_field COMMENT='Customisable user profile fields'; &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): CREATE TABLE mdl_user_info_category (
+                        id BIGINT(10) NOT NULL auto_increment,
+                        name VARCHAR(255) NOT NULL default '',
+                        sortorder BIGINT(10) unsigned NOT NULL default 0,
+                        CONSTRAINT  PRIMARY KEY (id)); &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_user_info_category COMMENT='Customisable fields categories'; &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): CREATE TABLE mdl_user_info_data (
+                        id BIGINT(10) NOT NULL auto_increment,
+                        userid BIGINT(10) unsigned NOT NULL default 0,
+                        fieldid BIGINT(10) unsigned NOT NULL default 0,
+                        data LONGTEXT NOT NULL,
+                        CONSTRAINT  PRIMARY KEY (id)); &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_user_info_data COMMENT='Data for the customisable user fields'; &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_context CHANGE aggregatelevel contextlevel int unsigned DEFAULT '0' not null  &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): TRUNCATE TABLE mdl_cache_text &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_cache_text CHANGE formattedtext formattedtext longtext  DEFAULT '' not null  &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): SELECT * FROM mdl_role ORDER BY sortorder ASC &nbsp; 
+<hr />
+<hr />
+(mysql): ALTER TABLE mdl_user ADD trustbitmask INTEGER(10) unsigned DEFAULT '0' not null  &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_log_display CHANGE field field VARCHAR(200)  DEFAULT '' not null  &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): SELECT * FROM mdl_modules WHERE name = 'exercise' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT COUNT(*) FROM mdl_modules WHERE name = 'lams' &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT COUNT(*) FROM mdl_lams  &nbsp; 
+<hr />
+<hr />
+(mysql): UPDATE mdl_modules SET visible = '0' WHERE name = 'lams' &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_user WHERE username = 'guest' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): DELETE FROM mdl_course_display where userid=1 &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): SELECT * FROM mdl_role &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">Updating country list according to recent official ISO listing...</div><br />
+<div class="notifysuccess" align="center">...update complete. Remember to update your language packs to get the most recent country names definitions and codes.  This is especially important for sites with users from Congo (now CD), Timor (now TL), Kosovo (now RS), Wales (now GB), Serbia (RS) and Montenegro (ME).  Users based in Montenegro (ME) will need to manually update their profile.</div><br />
+<table width="500" cellpadding="0" cellspacing="0" align="center"><tr><td width="500"><div id="bar16" style="border-style:solid;border-width:1px;width:500px;height:50px;"><div id="slider16" style="border-style:solid;border-width:1px;height:48px;width:10px;background-color:green;"></div></div><div id="text16" align="center" style="width:500px;"></div></td></tr></table></div><br />
+<b>Notice</b>:  Undefined index:  mod/forum:initialsubscriptions in <b>C:\AppServ\www\mod\forum\lib.php</b> on line <b>3818</b><br />
+<script>document.getElementById("text16").innerHTML = "Processing role assignments (1/16) ";
+document.getElementById("slider16").style.width = '30px';
+</script><br />
+<b>Notice</b>:  Undefined index:  mod/forum:initialsubscriptions in <b>C:\AppServ\www\mod\forum\lib.php</b> on line <b>3818</b><br />
+<br />
+<b>Notice</b>:  Undefined index:  mod/forum:initialsubscriptions in <b>C:\AppServ\www\mod\forum\lib.php</b> on line <b>3818</b><br />
+<br />
+<b>Notice</b>:  Undefined index:  mod/forum:initialsubscriptions in <b>C:\AppServ\www\mod\forum\lib.php</b> on line <b>3818</b><br />
+<br />
+<b>Notice</b>:  Undefined index:  mod/forum:initialsubscriptions in <b>C:\AppServ\www\mod\forum\lib.php</b> on line <b>3818</b><br />
+<br />
+<b>Notice</b>:  Undefined index:  mod/forum:initialsubscriptions in <b>C:\AppServ\www\mod\forum\lib.php</b> on line <b>3818</b><br />
+<br />
+<b>Notice</b>:  Undefined index:  mod/forum:initialsubscriptions in <b>C:\AppServ\www\mod\forum\lib.php</b> on line <b>3818</b><br />
+<br />
+<b>Notice</b>:  Undefined index:  mod/forum:initialsubscriptions in <b>C:\AppServ\www\mod\forum\lib.php</b> on line <b>3818</b><br />
+<br />
+<b>Notice</b>:  Undefined index:  mod/forum:initialsubscriptions in <b>C:\AppServ\www\mod\forum\lib.php</b> on line <b>3818</b><br />
+<br />
+<b>Notice</b>:  Undefined index:  mod/forum:initialsubscriptions in <b>C:\AppServ\www\mod\forum\lib.php</b> on line <b>3818</b><br />
+<br />
+<b>Notice</b>:  Undefined index:  mod/forum:initialsubscriptions in <b>C:\AppServ\www\mod\forum\lib.php</b> on line <b>3818</b><br />
+<br />
+<b>Notice</b>:  Undefined index:  mod/forum:initialsubscriptions in <b>C:\AppServ\www\mod\forum\lib.php</b> on line <b>3818</b><br />
+<br />
+<b>Notice</b>:  Undefined index:  mod/forum:initialsubscriptions in <b>C:\AppServ\www\mod\forum\lib.php</b> on line <b>3818</b><br />
+<br />
+<b>Notice</b>:  Undefined index:  mod/forum:initialsubscriptions in <b>C:\AppServ\www\mod\forum\lib.php</b> on line <b>3818</b><br />
+<br />
+<b>Notice</b>:  Undefined index:  mod/forum:initialsubscriptions in <b>C:\AppServ\www\mod\forum\lib.php</b> on line <b>3818</b><br />
+<br />
+<b>Notice</b>:  Undefined index:  mod/forum:initialsubscriptions in <b>C:\AppServ\www\mod\forum\lib.php</b> on line <b>3818</b><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">ฐานข้อมูลได้รับการอัพเกรดแล้ว</div><br />

@@ -1,0 +1,894 @@
+<h2   class="main">assignment module needs upgrading</h2><hr />
+(mysql): ALTER TABLE mdl_assignment_submissions CHANGE comment submissioncomment TEXT  DEFAULT '' not null  &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">ตาราง assignment  ได้รับการติดตั้งแล้ว</div><br />
+<hr /><h2   class="main">chat module needs upgrading</h2><div class="notifysuccess" align="center">ตาราง chat  ได้รับการติดตั้งแล้ว</div><br />
+<hr /><h2   class="main">choice module needs upgrading</h2><div class="notifysuccess" align="center">ตาราง choice  ได้รับการติดตั้งแล้ว</div><br />
+<hr /><h2   class="main">data module needs upgrading</h2><hr />
+(mysql): ALTER TABLE mdl_data ADD jstemplate TEXT  DEFAULT '' not null AFTER `csstemplate` &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): SELECT * FROM mdl_modules WHERE name = 'data' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_data &nbsp; 
+<hr />
+<hr />
+(mysql): ALTER TABLE mdl_data DROP COLUMN participants &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_data DROP COLUMN assesspublic &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_data DROP COLUMN ratings &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_data CHANGE singletemplate singletemplate text NULL AFTER rssarticles &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_data CHANGE listtemplate listtemplate text NULL AFTER singletemplate &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_data CHANGE listtemplateheader listtemplateheader text NULL AFTER listtemplate &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_data CHANGE listtemplatefooter listtemplatefooter text NULL AFTER listtemplateheader &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_data CHANGE addtemplate addtemplate text NULL AFTER listtemplatefooter &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_data CHANGE rsstemplate rsstemplate text NULL AFTER addtemplate &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_data CHANGE rsstitletemplate rsstitletemplate text NULL AFTER rsstemplate &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_data CHANGE csstemplate csstemplate text NULL AFTER rsstitletemplate &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_data CHANGE jstemplate jstemplate text NULL AFTER csstemplate &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_data_fields CHANGE param1 param1 text NULL AFTER description &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_data_fields CHANGE param2 param2 text NULL AFTER param1 &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_data_fields CHANGE param3 param3 text NULL AFTER param2 &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_data_fields CHANGE param4 param4 text NULL AFTER param3 &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_data_fields CHANGE param5 param5 text NULL AFTER param4 &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_data_fields CHANGE param6 param6 text NULL AFTER param5 &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_data_fields CHANGE param7 param7 text NULL AFTER param6 &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_data_fields CHANGE param8 param8 text NULL AFTER param7 &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_data_fields CHANGE param9 param9 text NULL AFTER param8 &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_data_fields CHANGE param10 param10 text NULL AFTER param9 &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_data_content CHANGE content content longtext NULL AFTER recordid &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_data_content CHANGE content1 content1 longtext NULL AFTER content &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_data_content CHANGE content2 content2 longtext NULL AFTER content1 &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_data_content CHANGE content3 content3 longtext NULL AFTER content2 &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_data_content CHANGE content4 content4 longtext NULL AFTER content3 &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">ตาราง data  ได้รับการติดตั้งแล้ว</div><br />
+<hr /><h2   class="main">forum module needs upgrading</h2><hr />
+(mysql): SELECT * FROM mdl_modules WHERE name = 'forum' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_forum &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT r.*
+                      FROM mdl_role r,
+                           mdl_role_capabilities rc
+                     WHERE rc.capability = 'moodle/legacy:teacher'
+                       AND rc.roleid = r.id  AND rc.permission = '1' &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT r.*
+                      FROM mdl_role r,
+                           mdl_role_capabilities rc
+                     WHERE rc.capability = 'moodle/legacy:student'
+                       AND rc.roleid = r.id  AND rc.permission = '1' &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT r.*
+                      FROM mdl_role r,
+                           mdl_role_capabilities rc
+                     WHERE rc.capability = 'moodle/legacy:guest'
+                       AND rc.roleid = r.id  AND rc.permission = '1' &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT cm.*, m.name, md.name as modname
+                           FROM mdl_course_modules cm,
+                                mdl_modules md,
+                                mdl_forum m
+                           WHERE 
+                                 cm.instance = m.id AND
+                                 md.name = 'forum' AND
+                                 md.id = cm.module AND
+                                 m.id = '1' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_context WHERE contextlevel = '70' AND instanceid = '1' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_context WHERE contextlevel = '70' AND instanceid = '1' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT COUNT(*) FROM mdl_course_modules WHERE id = '1' &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_context WHERE id = '-1' &nbsp; 
+<hr />
+<hr />
+(mysql): INSERT INTO mdl_context ( CONTEXTLEVEL, INSTANCEID ) VALUES ( 70, 1 ) &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT LAST_INSERT_ID() &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_context WHERE id = '8' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_context WHERE contextlevel = '70' AND instanceid = '1' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_role_capabilities WHERE contextid = '8' AND roleid = '5' AND capability = 'mod/forum:startdiscussion' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): INSERT INTO mdl_role_capabilities ( CONTEXTID, ROLEID, CAPABILITY, PERMISSION, TIMEMODIFIED, MODIFIERID ) VALUES ( 8, 5, 'mod/forum:startdiscussion', -1, 1207898249, 2 ) &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT LAST_INSERT_ID() &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_role_capabilities WHERE contextid = '8' AND roleid = '5' AND capability = 'mod/forum:replypost' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): INSERT INTO mdl_role_capabilities ( CONTEXTID, ROLEID, CAPABILITY, PERMISSION, TIMEMODIFIED, MODIFIERID ) VALUES ( 8, 5, 'mod/forum:replypost', 1, 1207898249, 2 ) &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT LAST_INSERT_ID() &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_role_capabilities WHERE contextid = '8' AND roleid = '5' AND capability = 'mod/forum:viewanyrating' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): INSERT INTO mdl_role_capabilities ( CONTEXTID, ROLEID, CAPABILITY, PERMISSION, TIMEMODIFIED, MODIFIERID ) VALUES ( 8, 5, 'mod/forum:viewanyrating', -1, 1207898249, 2 ) &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT LAST_INSERT_ID() &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_role_capabilities WHERE contextid = '8' AND roleid = '4' AND capability = 'mod/forum:viewanyrating' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): INSERT INTO mdl_role_capabilities ( CONTEXTID, ROLEID, CAPABILITY, PERMISSION, TIMEMODIFIED, MODIFIERID ) VALUES ( 8, 4, 'mod/forum:viewanyrating', 1, 1207898249, 2 ) &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT LAST_INSERT_ID() &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT COUNT(*) FROM mdl_forum_discussions WHERE forum = '2' &nbsp; 
+<hr />
+<hr />
+(mysql): DELETE FROM mdl_forum WHERE id = '2' &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT cm.*, m.name, md.name as modname
+                           FROM mdl_course_modules cm,
+                                mdl_modules md,
+                                mdl_forum m
+                           WHERE 
+                                 cm.instance = m.id AND
+                                 md.name = 'forum' AND
+                                 md.id = cm.module AND
+                                 m.id = '4' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_context WHERE contextlevel = '70' AND instanceid = '21' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_context WHERE contextlevel = '70' AND instanceid = '21' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT COUNT(*) FROM mdl_course_modules WHERE id = '21' &nbsp; 
+<hr />
+<hr />
+(mysql): INSERT INTO mdl_context ( CONTEXTLEVEL, INSTANCEID ) VALUES ( 70, 21 ) &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT LAST_INSERT_ID() &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_context WHERE id = '9' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_context WHERE contextlevel = '70' AND instanceid = '21' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_role_capabilities WHERE contextid = '9' AND roleid = '5' AND capability = 'mod/forum:startdiscussion' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): INSERT INTO mdl_role_capabilities ( CONTEXTID, ROLEID, CAPABILITY, PERMISSION, TIMEMODIFIED, MODIFIERID ) VALUES ( 9, 5, 'mod/forum:startdiscussion', -1, 1207898249, 2 ) &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT LAST_INSERT_ID() &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_role_capabilities WHERE contextid = '9' AND roleid = '5' AND capability = 'mod/forum:replypost' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): INSERT INTO mdl_role_capabilities ( CONTEXTID, ROLEID, CAPABILITY, PERMISSION, TIMEMODIFIED, MODIFIERID ) VALUES ( 9, 5, 'mod/forum:replypost', 1, 1207898249, 2 ) &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT LAST_INSERT_ID() &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_role_capabilities WHERE contextid = '9' AND roleid = '5' AND capability = 'mod/forum:viewanyrating' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): INSERT INTO mdl_role_capabilities ( CONTEXTID, ROLEID, CAPABILITY, PERMISSION, TIMEMODIFIED, MODIFIERID ) VALUES ( 9, 5, 'mod/forum:viewanyrating', -1, 1207898249, 2 ) &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT LAST_INSERT_ID() &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_role_capabilities WHERE contextid = '9' AND roleid = '4' AND capability = 'mod/forum:viewanyrating' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): INSERT INTO mdl_role_capabilities ( CONTEXTID, ROLEID, CAPABILITY, PERMISSION, TIMEMODIFIED, MODIFIERID ) VALUES ( 9, 4, 'mod/forum:viewanyrating', 1, 1207898249, 2 ) &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT LAST_INSERT_ID() &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT COUNT(*) FROM mdl_forum_discussions WHERE forum = '5' &nbsp; 
+<hr />
+<hr />
+(mysql): DELETE FROM mdl_forum WHERE id = '5' &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT COUNT(*) FROM mdl_forum_discussions WHERE forum = '8' &nbsp; 
+<hr />
+<hr />
+(mysql): DELETE FROM mdl_forum WHERE id = '8' &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT cm.*, m.name, md.name as modname
+                           FROM mdl_course_modules cm,
+                                mdl_modules md,
+                                mdl_forum m
+                           WHERE 
+                                 cm.instance = m.id AND
+                                 md.name = 'forum' AND
+                                 md.id = cm.module AND
+                                 m.id = '9' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_context WHERE contextlevel = '70' AND instanceid = '46' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_context WHERE contextlevel = '70' AND instanceid = '46' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT COUNT(*) FROM mdl_course_modules WHERE id = '46' &nbsp; 
+<hr />
+<hr />
+(mysql): INSERT INTO mdl_context ( CONTEXTLEVEL, INSTANCEID ) VALUES ( 70, 46 ) &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT LAST_INSERT_ID() &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_context WHERE id = '10' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_context WHERE contextlevel = '70' AND instanceid = '46' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_role_capabilities WHERE contextid = '10' AND roleid = '5' AND capability = 'mod/forum:startdiscussion' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): INSERT INTO mdl_role_capabilities ( CONTEXTID, ROLEID, CAPABILITY, PERMISSION, TIMEMODIFIED, MODIFIERID ) VALUES ( 10, 5, 'mod/forum:startdiscussion', -1, 1207898249, 2 ) &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT LAST_INSERT_ID() &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_role_capabilities WHERE contextid = '10' AND roleid = '5' AND capability = 'mod/forum:replypost' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): INSERT INTO mdl_role_capabilities ( CONTEXTID, ROLEID, CAPABILITY, PERMISSION, TIMEMODIFIED, MODIFIERID ) VALUES ( 10, 5, 'mod/forum:replypost', 1, 1207898249, 2 ) &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT LAST_INSERT_ID() &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_role_capabilities WHERE contextid = '10' AND roleid = '5' AND capability = 'mod/forum:viewanyrating' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): INSERT INTO mdl_role_capabilities ( CONTEXTID, ROLEID, CAPABILITY, PERMISSION, TIMEMODIFIED, MODIFIERID ) VALUES ( 10, 5, 'mod/forum:viewanyrating', -1, 1207898249, 2 ) &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT LAST_INSERT_ID() &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_role_capabilities WHERE contextid = '10' AND roleid = '4' AND capability = 'mod/forum:viewanyrating' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): INSERT INTO mdl_role_capabilities ( CONTEXTID, ROLEID, CAPABILITY, PERMISSION, TIMEMODIFIED, MODIFIERID ) VALUES ( 10, 4, 'mod/forum:viewanyrating', 1, 1207898249, 2 ) &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT LAST_INSERT_ID() &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT id,fullname FROM mdl_course &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT cm.*, m.name as modname
+                            FROM mdl_modules m,
+                                 mdl_course_modules cm
+                            WHERE cm.course = '1'
+                            AND cm.module = m.id  &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_course_sections WHERE course = '1' ORDER BY section ASC &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_forum WHERE id = '1' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): UPDATE mdl_course SET modinfo = 'a:1:{i:1;O:8:&quot;stdClass&quot;:6:{s:2:&quot;cm&quot;;i:1;s:3:&quot;mod&quot;;s:5:&quot;forum&quot;;s:7:&quot;section&quot;;s:1:&quot;0&quot;;s:4:&quot;name&quot;;s:99:&quot;%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%94%E0%B8%B2%E0%B8%99%E0%B9%80%E0%B8%AA%E0%B8%A7%E0%B8%99%E0%B8%B2&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:0:&quot;&quot;;}}' WHERE id = '1' &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT cm.*, m.name as modname
+                            FROM mdl_modules m,
+                                 mdl_course_modules cm
+                            WHERE cm.course = '2'
+                            AND cm.module = m.id  &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_course_sections WHERE course = '2' ORDER BY section ASC &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_resource WHERE id = '1' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_resource WHERE id = '1' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_forum WHERE id = '4' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_quiz WHERE id = '1' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_resource WHERE id = '2' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_resource WHERE id = '2' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_resource WHERE id = '3' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_resource WHERE id = '3' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_resource WHERE id = '4' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_resource WHERE id = '4' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_resource WHERE id = '5' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_resource WHERE id = '5' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_resource WHERE id = '6' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_resource WHERE id = '6' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_resource WHERE id = '7' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_resource WHERE id = '7' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_resource WHERE id = '8' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_resource WHERE id = '8' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_resource WHERE id = '9' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_resource WHERE id = '9' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_resource WHERE id = '10' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_resource WHERE id = '10' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_resource WHERE id = '11' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_resource WHERE id = '11' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_resource WHERE id = '12' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_resource WHERE id = '12' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_resource WHERE id = '13' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_resource WHERE id = '13' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_resource WHERE id = '14' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_resource WHERE id = '14' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_resource WHERE id = '15' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_resource WHERE id = '15' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_resource WHERE id = '16' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_resource WHERE id = '16' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_resource WHERE id = '17' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_resource WHERE id = '17' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_resource WHERE id = '18' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_resource WHERE id = '18' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_resource WHERE id = '23' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_resource WHERE id = '23' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_resource WHERE id = '24' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_resource WHERE id = '24' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_resource WHERE id = '25' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_resource WHERE id = '25' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_resource WHERE id = '26' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_resource WHERE id = '26' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_resource WHERE id = '27' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_resource WHERE id = '27' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_resource WHERE id = '28' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_resource WHERE id = '28' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_resource WHERE id = '29' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_resource WHERE id = '29' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_resource WHERE id = '30' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_resource WHERE id = '30' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_resource WHERE id = '31' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_resource WHERE id = '31' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_resource WHERE id = '32' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_resource WHERE id = '32' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_resource WHERE id = '33' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_resource WHERE id = '33' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_resource WHERE id = '34' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_resource WHERE id = '34' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_resource WHERE id = '35' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_resource WHERE id = '35' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_resource WHERE id = '36' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_resource WHERE id = '36' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): UPDATE mdl_course SET modinfo = 'a:34:{i:3;O:8:&quot;stdClass&quot;:6:{s:2:&quot;cm&quot;;i:3;s:3:&quot;mod&quot;;s:8:&quot;resource&quot;;s:7:&quot;section&quot;;s:1:&quot;0&quot;;s:4:&quot;name&quot;;s:21:&quot;don%27t%2C+no%2C+not+&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:292:&quot;target%3D%22resource1%22+onclick%3D%22return+openpopup%28%27%2Fmod%2Fresource%2Fview.php%3Finpopup%3Dtrue%26amp%3Bid%3D3%27%2C%27resource1%27%2C%27resizable%3D1%2Cscrollbars%3D1%2Cdirectories%3D1%2Clocation%3D1%2Cmenubar%3D1%2Ctoolbar%3D1%2Cstatus%3D1%2Cheight%3D450%2Cwidth%3D620%27%29%3B%22&quot;;}i:21;O:8:&quot;stdClass&quot;:6:{s:2:&quot;cm&quot;;i:21;s:3:&quot;mod&quot;;s:5:&quot;forum&quot;;s:7:&quot;section&quot;;s:1:&quot;0&quot;;s:4:&quot;name&quot;;s:60:&quot;%C2%A1%C3%83%C3%90%C2%B4%C3%92%C2%B9%C2%A2%C3%A8%C3%92%C3%87&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:0:&quot;&quot;;}i:22;O:8:&quot;stdClass&quot;:6:{s:2:&quot;cm&quot;;i:22;s:3:&quot;mod&quot;;s:4:&quot;quiz&quot;;s:7:&quot;section&quot;;s:1:&quot;0&quot;;s:4:&quot;name&quot;;s:105:&quot;%C3%A1%C2%BA%C2%BA%C2%B7%C2%B4%C3%8A%C3%8D%C2%BA%C2%A1%C3%92%C3%83%C3%A3%C2%AA%C3%A9+No%2C+Don%27t%2C+Not&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:0:&quot;&quot;;}i:4;O:8:&quot;stdClass&quot;:6:{s:2:&quot;cm&quot;;i:4;s:3:&quot;mod&quot;;s:8:&quot;resource&quot;;s:7:&quot;section&quot;;s:1:&quot;1&quot;;s:4:&quot;name&quot;;s:55:&quot;%C3%A1%C3%85%C2%A1%C3%83%C3%99%C2%BB%C3%80%C3%92%C2%BE+&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:292:&quot;target%3D%22resource2%22+onclick%3D%22return+openpopup%28%27%2Fmod%2Fresource%2Fview.php%3Finpopup%3Dtrue%26amp%3Bid%3D4%27%2C%27resource2%27%2C%27resizable%3D1%2Cscrollbars%3D1%2Cdirectories%3D1%2Clocation%3D1%2Cmenubar%3D1%2Ctoolbar%3D1%2Cstatus%3D1%2Cheight%3D450%2Cwidth%3D620%27%29%3B%22&quot;;}i:5;O:8:&quot;stdClass&quot;:6:{s:2:&quot;cm&quot;;i:5;s:3:&quot;mod&quot;;s:8:&quot;resource&quot;;s:7:&quot;section&quot;;s:1:&quot;2&quot;;s:4:&quot;name&quot;;s:55:&quot;%C2%B5%C3%91%C3%87%C2%B5%C3%A8%C3%8D%C2%B5%C3%91%C3%87+&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:292:&quot;target%3D%22resource3%22+onclick%3D%22return+openpopup%28%27%2Fmod%2Fresource%2Fview.php%3Finpopup%3Dtrue%26amp%3Bid%3D5%27%2C%27resource3%27%2C%27resizable%3D1%2Cscrollbars%3D1%2Cdirectories%3D1%2Clocation%3D1%2Cmenubar%3D1%2Ctoolbar%3D1%2Cstatus%3D1%2Cheight%3D450%2Cwidth%3D620%27%29%3B%22&quot;;}i:6;O:8:&quot;stdClass&quot;:6:{s:2:&quot;cm&quot;;i:6;s:3:&quot;mod&quot;;s:8:&quot;resource&quot;;s:7:&quot;section&quot;;s:1:&quot;3&quot;;s:4:&quot;name&quot;;s:7:&quot;belated&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:292:&quot;target%3D%22resource4%22+onclick%3D%22return+openpopup%28%27%2Fmod%2Fresource%2Fview.php%3Finpopup%3Dtrue%26amp%3Bid%3D6%27%2C%27resource4%27%2C%27resizable%3D1%2Cscrollbars%3D1%2Cdirectories%3D1%2Clocation%3D1%2Cmenubar%3D1%2Ctoolbar%3D1%2Cstatus%3D1%2Cheight%3D450%2Cwidth%3D620%27%29%3B%22&quot;;}i:7;O:8:&quot;stdClass&quot;:6:{s:2:&quot;cm&quot;;i:7;s:3:&quot;mod&quot;;s:8:&quot;resource&quot;;s:7:&quot;section&quot;;s:1:&quot;4&quot;;s:4:&quot;name&quot;;s:37:&quot;%C3%8A%C3%94%C2%B9%C3%8A%C3%8D%C2%B4+&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:292:&quot;target%3D%22resource5%22+onclick%3D%22return+openpopup%28%27%2Fmod%2Fresource%2Fview.php%3Finpopup%3Dtrue%26amp%3Bid%3D7%27%2C%27resource5%27%2C%27resizable%3D1%2Cscrollbars%3D1%2Cdirectories%3D1%2Clocation%3D1%2Cmenubar%3D1%2Ctoolbar%3D1%2Cstatus%3D1%2Cheight%3D450%2Cwidth%3D620%27%29%3B%22&quot;;}i:8;O:8:&quot;stdClass&quot;:6:{s:2:&quot;cm&quot;;i:8;s:3:&quot;mod&quot;;s:8:&quot;resource&quot;;s:7:&quot;section&quot;;s:1:&quot;5&quot;;s:4:&quot;name&quot;;s:37:&quot;%C2%B7%C3%88%C2%B9%C3%94%C3%82%C3%81+&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:292:&quot;target%3D%22resource6%22+onclick%3D%22return+openpopup%28%27%2Fmod%2Fresource%2Fview.php%3Finpopup%3Dtrue%26amp%3Bid%3D8%27%2C%27resource6%27%2C%27resizable%3D1%2Cscrollbars%3D1%2Cdirectories%3D1%2Clocation%3D1%2Cmenubar%3D1%2Ctoolbar%3D1%2Cstatus%3D1%2Cheight%3D450%2Cwidth%3D620%27%29%3B%22&quot;;}i:9;O:8:&quot;stdClass&quot;:6:{s:2:&quot;cm&quot;;i:9;s:3:&quot;mod&quot;;s:8:&quot;resource&quot;;s:7:&quot;section&quot;;s:1:&quot;6&quot;;s:4:&quot;name&quot;;s:17:&quot;I+told+you+so%21+&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:292:&quot;target%3D%22resource7%22+onclick%3D%22return+openpopup%28%27%2Fmod%2Fresource%2Fview.php%3Finpopup%3Dtrue%26amp%3Bid%3D9%27%2C%27resource7%27%2C%27resizable%3D1%2Cscrollbars%3D1%2Cdirectories%3D1%2Clocation%3D1%2Cmenubar%3D1%2Ctoolbar%3D1%2Cstatus%3D1%2Cheight%3D450%2Cwidth%3D620%27%29%3B%22&quot;;}i:10;O:8:&quot;stdClass&quot;:6:{s:2:&quot;cm&quot;;i:10;s:3:&quot;mod&quot;;s:8:&quot;resource&quot;;s:7:&quot;section&quot;;s:1:&quot;7&quot;;s:4:&quot;name&quot;;s:12:&quot;in+charge+of&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:293:&quot;target%3D%22resource8%22+onclick%3D%22return+openpopup%28%27%2Fmod%2Fresource%2Fview.php%3Finpopup%3Dtrue%26amp%3Bid%3D10%27%2C%27resource8%27%2C%27resizable%3D1%2Cscrollbars%3D1%2Cdirectories%3D1%2Clocation%3D1%2Cmenubar%3D1%2Ctoolbar%3D1%2Cstatus%3D1%2Cheight%3D450%2Cwidth%3D620%27%29%3B%22&quot;;}i:11;O:8:&quot;stdClass&quot;:6:{s:2:&quot;cm&quot;;i:11;s:3:&quot;mod&quot;;s:8:&quot;resource&quot;;s:7:&quot;section&quot;;s:1:&quot;8&quot;;s:4:&quot;name&quot;;s:49:&quot;%C3%A0%C3%87%C3%A9%C2%B9%C3%87%C3%83%C3%83%C2%A4+&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:293:&quot;target%3D%22resource9%22+onclick%3D%22return+openpopup%28%27%2Fmod%2Fresource%2Fview.php%3Finpopup%3Dtrue%26amp%3Bid%3D11%27%2C%27resource9%27%2C%27resizable%3D1%2Cscrollbars%3D1%2Cdirectories%3D1%2Clocation%3D1%2Cmenubar%3D1%2Ctoolbar%3D1%2Cstatus%3D1%2Cheight%3D450%2Cwidth%3D620%27%29%3B%22&quot;;}i:12;O:8:&quot;stdClass&quot;:6:{s:2:&quot;cm&quot;;i:12;s:3:&quot;mod&quot;;s:8:&quot;resource&quot;;s:7:&quot;section&quot;;s:1:&quot;9&quot;;s:4:&quot;name&quot;;s:49:&quot;%C2%A1%C3%89%C3%91%C2%B5%C3%83%C3%94%C3%82%C3%AC+&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:295:&quot;target%3D%22resource10%22+onclick%3D%22return+openpopup%28%27%2Fmod%2Fresource%2Fview.php%3Finpopup%3Dtrue%26amp%3Bid%3D12%27%2C%27resource10%27%2C%27resizable%3D1%2Cscrollbars%3D1%2Cdirectories%3D1%2Clocation%3D1%2Cmenubar%3D1%2Ctoolbar%3D1%2Cstatus%3D1%2Cheight%3D450%2Cwidth%3D620%27%29%3B%22&quot;;}i:13;O:8:&quot;stdClass&quot;:6:{s:2:&quot;cm&quot;;i:13;s:3:&quot;mod&quot;;s:8:&quot;resource&quot;;s:7:&quot;section&quot;;s:2:&quot;10&quot;;s:4:&quot;name&quot;;s:25:&quot;%C2%A8%C2%BA%C3%85%C2%A7+&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:295:&quot;target%3D%22resource11%22+onclick%3D%22return+openpopup%28%27%2Fmod%2Fresource%2Fview.php%3Finpopup%3Dtrue%26amp%3Bid%3D13%27%2C%27resource11%27%2C%27resizable%3D1%2Cscrollbars%3D1%2Cdirectories%3D1%2Clocation%3D1%2Cmenubar%3D1%2Ctoolbar%3D1%2Cstatus%3D1%2Cheight%3D450%2Cwidth%3D620%27%29%3B%22&quot;;}i:14;O:8:&quot;stdClass&quot;:6:{s:2:&quot;cm&quot;;i:14;s:3:&quot;mod&quot;;s:8:&quot;resource&quot;;s:7:&quot;section&quot;;s:2:&quot;11&quot;;s:4:&quot;name&quot;;s:12:&quot;Produced+by+&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:295:&quot;target%3D%22resource12%22+onclick%3D%22return+openpopup%28%27%2Fmod%2Fresource%2Fview.php%3Finpopup%3Dtrue%26amp%3Bid%3D14%27%2C%27resource12%27%2C%27resizable%3D1%2Cscrollbars%3D1%2Cdirectories%3D1%2Clocation%3D1%2Cmenubar%3D1%2Ctoolbar%3D1%2Cstatus%3D1%2Cheight%3D450%2Cwidth%3D620%27%29%3B%22&quot;;}i:15;O:8:&quot;stdClass&quot;:6:{s:2:&quot;cm&quot;;i:15;s:3:&quot;mod&quot;;s:8:&quot;resource&quot;;s:7:&quot;section&quot;;s:2:&quot;12&quot;;s:4:&quot;name&quot;;s:39:&quot;%22+%C3%A4%C3%81%C3%A8%C3%81%C3%95+%22+&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:295:&quot;target%3D%22resource13%22+onclick%3D%22return+openpopup%28%27%2Fmod%2Fresource%2Fview.php%3Finpopup%3Dtrue%26amp%3Bid%3D15%27%2C%27resource13%27%2C%27resizable%3D1%2Cscrollbars%3D1%2Cdirectories%3D1%2Clocation%3D1%2Cmenubar%3D1%2Ctoolbar%3D1%2Cstatus%3D1%2Cheight%3D450%2Cwidth%3D620%27%29%3B%22&quot;;}i:16;O:8:&quot;stdClass&quot;:6:{s:2:&quot;cm&quot;;i:16;s:3:&quot;mod&quot;;s:8:&quot;resource&quot;;s:7:&quot;section&quot;;s:2:&quot;13&quot;;s:4:&quot;name&quot;;s:19:&quot;ain%27t+%2F+is+not+&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:295:&quot;target%3D%22resource14%22+onclick%3D%22return+openpopup%28%27%2Fmod%2Fresource%2Fview.php%3Finpopup%3Dtrue%26amp%3Bid%3D16%27%2C%27resource14%27%2C%27resizable%3D1%2Cscrollbars%3D1%2Cdirectories%3D1%2Clocation%3D1%2Cmenubar%3D1%2Ctoolbar%3D1%2Cstatus%3D1%2Cheight%3D450%2Cwidth%3D620%27%29%3B%22&quot;;}i:17;O:8:&quot;stdClass&quot;:6:{s:2:&quot;cm&quot;;i:17;s:3:&quot;mod&quot;;s:8:&quot;resource&quot;;s:7:&quot;section&quot;;s:2:&quot;14&quot;;s:4:&quot;name&quot;;s:20:&quot;The+Other%2C+Another&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:295:&quot;target%3D%22resource15%22+onclick%3D%22return+openpopup%28%27%2Fmod%2Fresource%2Fview.php%3Finpopup%3Dtrue%26amp%3Bid%3D17%27%2C%27resource15%27%2C%27resizable%3D1%2Cscrollbars%3D1%2Cdirectories%3D1%2Clocation%3D1%2Cmenubar%3D1%2Ctoolbar%3D1%2Cstatus%3D1%2Cheight%3D450%2Cwidth%3D620%27%29%3B%22&quot;;}i:18;O:8:&quot;stdClass&quot;:6:{s:2:&quot;cm&quot;;i:18;s:3:&quot;mod&quot;;s:8:&quot;resource&quot;;s:7:&quot;section&quot;;s:2:&quot;15&quot;;s:4:&quot;name&quot;;s:15:&quot;a+great+deal+of&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:295:&quot;target%3D%22resource16%22+onclick%3D%22return+openpopup%28%27%2Fmod%2Fresource%2Fview.php%3Finpopup%3Dtrue%26amp%3Bid%3D18%27%2C%27resource16%27%2C%27resizable%3D1%2Cscrollbars%3D1%2Cdirectories%3D1%2Clocation%3D1%2Cmenubar%3D1%2Ctoolbar%3D1%2Cstatus%3D1%2Cheight%3D450%2Cwidth%3D620%27%29%3B%22&quot;;}i:19;O:8:&quot;stdClass&quot;:6:{s:2:&quot;cm&quot;;i:19;s:3:&quot;mod&quot;;s:8:&quot;resource&quot;;s:7:&quot;section&quot;;s:2:&quot;16&quot;;s:4:&quot;name&quot;;s:17:&quot;something+to+eat+&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:295:&quot;target%3D%22resource17%22+onclick%3D%22return+openpopup%28%27%2Fmod%2Fresource%2Fview.php%3Finpopup%3Dtrue%26amp%3Bid%3D19%27%2C%27resource17%27%2C%27resizable%3D1%2Cscrollbars%3D1%2Cdirectories%3D1%2Clocation%3D1%2Cmenubar%3D1%2Ctoolbar%3D1%2Cstatus%3D1%2Cheight%3D450%2Cwidth%3D620%27%29%3B%22&quot;;}i:20;O:8:&quot;stdClass&quot;:6:{s:2:&quot;cm&quot;;i:20;s:3:&quot;mod&quot;;s:8:&quot;resource&quot;;s:7:&quot;section&quot;;s:2:&quot;17&quot;;s:4:&quot;name&quot;;s:93:&quot;%C3%8B%C3%87%C3%A8%C3%92%C2%B9+-+%C3%A0%C2%A1%C3%A7%C2%BA%C3%A0%C2%A1%C3%95%C3%A8%C3%82%C3%87&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:295:&quot;target%3D%22resource18%22+onclick%3D%22return+openpopup%28%27%2Fmod%2Fresource%2Fview.php%3Finpopup%3Dtrue%26amp%3Bid%3D20%27%2C%27resource18%27%2C%27resizable%3D1%2Cscrollbars%3D1%2Cdirectories%3D1%2Clocation%3D1%2Cmenubar%3D1%2Ctoolbar%3D1%2Cstatus%3D1%2Cheight%3D450%2Cwidth%3D620%27%29%3B%22&quot;;}i:32;O:8:&quot;stdClass&quot;:6:{s:2:&quot;cm&quot;;i:32;s:3:&quot;mod&quot;;s:8:&quot;resource&quot;;s:7:&quot;section&quot;;s:2:&quot;18&quot;;s:4:&quot;name&quot;;s:61:&quot;%C3%A3%C3%8B%C3%A9%C2%A1%C3%93%C3%85%C3%91%C2%A7%C3%A3%C2%A8+&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:295:&quot;target%3D%22resource23%22+onclick%3D%22return+openpopup%28%27%2Fmod%2Fresource%2Fview.php%3Finpopup%3Dtrue%26amp%3Bid%3D32%27%2C%27resource23%27%2C%27resizable%3D1%2Cscrollbars%3D1%2Cdirectories%3D1%2Clocation%3D1%2Cmenubar%3D1%2Ctoolbar%3D1%2Cstatus%3D1%2Cheight%3D450%2Cwidth%3D620%27%29%3B%22&quot;;}i:33;O:8:&quot;stdClass&quot;:6:{s:2:&quot;cm&quot;;i:33;s:3:&quot;mod&quot;;s:8:&quot;resource&quot;;s:7:&quot;section&quot;;s:2:&quot;19&quot;;s:4:&quot;name&quot;;s:138:&quot;%C2%BC%C3%99%C3%A9%C3%81%C3%95%C2%BA%C3%92%C3%83%C3%81%C3%95%C2%B9%C3%8D%C2%A1%C3%83%C3%91%C2%B0%C2%B8%C3%83%C3%83%C3%81%C2%B9%C3%99%C2%AD&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:295:&quot;target%3D%22resource24%22+onclick%3D%22return+openpopup%28%27%2Fmod%2Fresource%2Fview.php%3Finpopup%3Dtrue%26amp%3Bid%3D33%27%2C%27resource24%27%2C%27resizable%3D1%2Cscrollbars%3D1%2Cdirectories%3D1%2Clocation%3D1%2Cmenubar%3D1%2Ctoolbar%3D1%2Cstatus%3D1%2Cheight%3D450%2Cwidth%3D620%27%29%3B%22&quot;;}i:34;O:8:&quot;stdClass&quot;:6:{s:2:&quot;cm&quot;;i:34;s:3:&quot;mod&quot;;s:8:&quot;resource&quot;;s:7:&quot;section&quot;;s:2:&quot;20&quot;;s:4:&quot;name&quot;;s:42:&quot;%C2%BB%C3%92%C2%A1%C3%A0%C3%8A%C3%95%C3%82&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:295:&quot;target%3D%22resource25%22+onclick%3D%22return+openpopup%28%27%2Fmod%2Fresource%2Fview.php%3Finpopup%3Dtrue%26amp%3Bid%3D34%27%2C%27resource25%27%2C%27resizable%3D1%2Cscrollbars%3D1%2Cdirectories%3D1%2Clocation%3D1%2Cmenubar%3D1%2Ctoolbar%3D1%2Cstatus%3D1%2Cheight%3D450%2Cwidth%3D620%27%29%3B%22&quot;;}i:35;O:8:&quot;stdClass&quot;:6:{s:2:&quot;cm&quot;;i:35;s:3:&quot;mod&quot;;s:8:&quot;resource&quot;;s:7:&quot;section&quot;;s:2:&quot;21&quot;;s:4:&quot;name&quot;;s:42:&quot;%C2%A4%C2%B9%C2%BE%C3%94%C3%A0%C3%88%C3%89&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:295:&quot;target%3D%22resource26%22+onclick%3D%22return+openpopup%28%27%2Fmod%2Fresource%2Fview.php%3Finpopup%3Dtrue%26amp%3Bid%3D35%27%2C%27resource26%27%2C%27resizable%3D1%2Cscrollbars%3D1%2Cdirectories%3D1%2Clocation%3D1%2Cmenubar%3D1%2Ctoolbar%3D1%2Cstatus%3D1%2Cheight%3D450%2Cwidth%3D620%27%29%3B%22&quot;;}i:36;O:8:&quot;stdClass&quot;:6:{s:2:&quot;cm&quot;;i:36;s:3:&quot;mod&quot;;s:8:&quot;resource&quot;;s:7:&quot;section&quot;;s:2:&quot;22&quot;;s:4:&quot;name&quot;;s:33:&quot;ever...%28%C2%B5%C3%8D%C2%B92%29+&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:0:&quot;&quot;;}i:37;O:8:&quot;stdClass&quot;:6:{s:2:&quot;cm&quot;;i:37;s:3:&quot;mod&quot;;s:8:&quot;resource&quot;;s:7:&quot;section&quot;;s:2:&quot;23&quot;;s:4:&quot;name&quot;;s:78:&quot;%C3%83%C3%91%C2%A1%C2%AA%C3%91%C3%A8%C3%87%C3%87%C3%91%C2%B9%C2%B5%C3%92%C3%82&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:0:&quot;&quot;;}i:38;O:8:&quot;stdClass&quot;:6:{s:2:&quot;cm&quot;;i:38;s:3:&quot;mod&quot;;s:8:&quot;resource&quot;;s:7:&quot;section&quot;;s:2:&quot;24&quot;;s:4:&quot;name&quot;;s:42:&quot;%C2%A4%C3%85%C3%8D%C2%B4%C3%85%C3%99%C2%A1&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:0:&quot;&quot;;}i:39;O:8:&quot;stdClass&quot;:6:{s:2:&quot;cm&quot;;i:39;s:3:&quot;mod&quot;;s:8:&quot;resource&quot;;s:7:&quot;section&quot;;s:2:&quot;25&quot;;s:4:&quot;name&quot;;s:36:&quot;%C2%BB%C3%85%C3%92%C3%83%C3%A9%C3%92&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:0:&quot;&quot;;}i:40;O:8:&quot;stdClass&quot;:6:{s:2:&quot;cm&quot;;i:40;s:3:&quot;mod&quot;;s:8:&quot;resource&quot;;s:7:&quot;section&quot;;s:2:&quot;26&quot;;s:4:&quot;name&quot;;s:30:&quot;%C3%A4%C3%81%C3%A8%C2%B7%C3%93&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:0:&quot;&quot;;}i:41;O:8:&quot;stdClass&quot;:6:{s:2:&quot;cm&quot;;i:41;s:3:&quot;mod&quot;;s:8:&quot;resource&quot;;s:7:&quot;section&quot;;s:2:&quot;27&quot;;s:4:&quot;name&quot;;s:60:&quot;%C3%A4%C3%81%C3%A8%C2%B7%C3%94%C3%A9%C2%A7%C2%A1%C3%91%C2%B9&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:0:&quot;&quot;;}i:42;O:8:&quot;stdClass&quot;:6:{s:2:&quot;cm&quot;;i:42;s:3:&quot;mod&quot;;s:8:&quot;resource&quot;;s:7:&quot;section&quot;;s:2:&quot;28&quot;;s:4:&quot;name&quot;;s:60:&quot;%C3%A4%C3%81%C3%A8%C3%81%C3%95%C2%BB%C3%91%C2%AD%C3%8B%C3%92&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:0:&quot;&quot;;}i:43;O:8:&quot;stdClass&quot;:6:{s:2:&quot;cm&quot;;i:43;s:3:&quot;mod&quot;;s:8:&quot;resource&quot;;s:7:&quot;section&quot;;s:2:&quot;29&quot;;s:4:&quot;name&quot;;s:49:&quot;%C2%A4%C3%94%C2%B4%C3%81%C3%92%C2%A1%C3%A4%C2%BB+&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:0:&quot;&quot;;}i:44;O:8:&quot;stdClass&quot;:6:{s:2:&quot;cm&quot;;i:44;s:3:&quot;mod&quot;;s:8:&quot;resource&quot;;s:7:&quot;section&quot;;s:2:&quot;30&quot;;s:4:&quot;name&quot;;s:84:&quot;%C2%B5%C3%92%C3%81%C3%8A%C2%BA%C3%92%C3%82%C3%A0%C2%B6%C3%8D%C3%90%C2%A4%C3%A8%C3%90&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:0:&quot;&quot;;}i:45;O:8:&quot;stdClass&quot;:6:{s:2:&quot;cm&quot;;i:45;s:3:&quot;mod&quot;;s:8:&quot;resource&quot;;s:7:&quot;section&quot;;s:2:&quot;31&quot;;s:4:&quot;name&quot;;s:54:&quot;%C2%A4%C3%94%C2%B4%C2%B4%C3%99%C2%A1%C3%A8%C3%8D%C2%B9&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:0:&quot;&quot;;}}' WHERE id = '2' &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT cm.*, m.name as modname
+                            FROM mdl_modules m,
+                                 mdl_course_modules cm
+                            WHERE cm.course = '3'
+                            AND cm.module = m.id  &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_course_sections WHERE course = '3' ORDER BY section ASC &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_resource WHERE id = '19' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_resource WHERE id = '19' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_quiz WHERE id = '2' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_forum WHERE id = '9' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_resource WHERE id = '20' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_resource WHERE id = '20' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_quiz WHERE id = '3' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): UPDATE mdl_course SET modinfo = 'a:5:{i:24;O:8:&quot;stdClass&quot;:7:{s:2:&quot;cm&quot;;i:24;s:3:&quot;mod&quot;;s:8:&quot;resource&quot;;s:7:&quot;section&quot;;s:1:&quot;0&quot;;s:4:&quot;name&quot;;s:403:&quot;Part+I+%E0%B8%AD%E0%B9%88%E0%B8%B2%E0%B8%99%E0%B8%9A%E0%B8%97%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81%E0%B8%A8%E0%B8%B1%E0%B8%9E%E0%B8%97%E0%B9%8C%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%80%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%B0%E0%B8%AA%E0%B8%A1%E0%B9%83%E0%B8%99%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B9%88%E0%B8%B2%E0%B8%87&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:295:&quot;target%3D%22resource19%22+onclick%3D%22return+openpopup%28%27%2Fmod%2Fresource%2Fview.php%3Finpopup%3Dtrue%26amp%3Bid%3D24%27%2C%27resource19%27%2C%27resizable%3D1%2Cscrollbars%3D1%2Cdirectories%3D1%2Clocation%3D1%2Cmenubar%3D1%2Ctoolbar%3D1%2Cstatus%3D1%2Cheight%3D450%2Cwidth%3D620%27%29%3B%22&quot;;s:4:&quot;icon&quot;;s:9:&quot;f/pdf.gif&quot;;}i:26;O:8:&quot;stdClass&quot;:6:{s:2:&quot;cm&quot;;i:26;s:3:&quot;mod&quot;;s:4:&quot;quiz&quot;;s:7:&quot;section&quot;;s:1:&quot;0&quot;;s:4:&quot;name&quot;;s:79:&quot;%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%97%E0%B8%94%E0%B8%AA%E0%B8%AD%E0%B8%9A+Part+I&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:0:&quot;&quot;;}i:46;O:8:&quot;stdClass&quot;:6:{s:2:&quot;cm&quot;;i:46;s:3:&quot;mod&quot;;s:5:&quot;forum&quot;;s:7:&quot;section&quot;;s:1:&quot;0&quot;;s:4:&quot;name&quot;;s:90:&quot;%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%94%E0%B8%B2%E0%B8%99%E0%B8%82%E0%B9%88%E0%B8%B2%E0%B8%A7&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:0:&quot;&quot;;}i:27;O:8:&quot;stdClass&quot;:7:{s:2:&quot;cm&quot;;i:27;s:3:&quot;mod&quot;;s:8:&quot;resource&quot;;s:7:&quot;section&quot;;s:1:&quot;1&quot;;s:4:&quot;name&quot;;s:127:&quot;%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%AA%E0%B9%88%E0%B8%A7%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88+2+Part+II&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:295:&quot;target%3D%22resource20%22+onclick%3D%22return+openpopup%28%27%2Fmod%2Fresource%2Fview.php%3Finpopup%3Dtrue%26amp%3Bid%3D27%27%2C%27resource20%27%2C%27resizable%3D1%2Cscrollbars%3D1%2Cdirectories%3D1%2Clocation%3D1%2Cmenubar%3D1%2Ctoolbar%3D1%2Cstatus%3D1%2Cheight%3D450%2Cwidth%3D620%27%29%3B%22&quot;;s:4:&quot;icon&quot;;s:9:&quot;f/pdf.gif&quot;;}i:28;O:8:&quot;stdClass&quot;:6:{s:2:&quot;cm&quot;;i:28;s:3:&quot;mod&quot;;s:4:&quot;quiz&quot;;s:7:&quot;section&quot;;s:1:&quot;1&quot;;s:4:&quot;name&quot;;s:80:&quot;%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%97%E0%B8%94%E0%B8%AA%E0%B8%AD%E0%B8%9A+Part+II&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:0:&quot;&quot;;}}' WHERE id = '3' &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT cm.*, m.name as modname
+                            FROM mdl_modules m,
+                                 mdl_course_modules cm
+                            WHERE cm.course = '4'
+                            AND cm.module = m.id  &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_course_sections WHERE course = '4' ORDER BY section ASC &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_resource WHERE id = '21' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_resource WHERE id = '21' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_quiz WHERE id = '4' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): UPDATE mdl_course SET modinfo = 'a:2:{i:29;O:8:&quot;stdClass&quot;:7:{s:2:&quot;cm&quot;;i:29;s:3:&quot;mod&quot;;s:8:&quot;resource&quot;;s:7:&quot;section&quot;;s:1:&quot;0&quot;;s:4:&quot;name&quot;;s:82:&quot;%C3%A0%C3%8D%C2%A1%C3%8A%C3%92%C3%83%C3%87%C3%94%C2%AA%C3%92+Companent+Preparation&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:295:&quot;target%3D%22resource21%22+onclick%3D%22return+openpopup%28%27%2Fmod%2Fresource%2Fview.php%3Finpopup%3Dtrue%26amp%3Bid%3D29%27%2C%27resource21%27%2C%27resizable%3D1%2Cscrollbars%3D1%2Cdirectories%3D1%2Clocation%3D1%2Cmenubar%3D1%2Ctoolbar%3D1%2Cstatus%3D1%2Cheight%3D450%2Cwidth%3D620%27%29%3B%22&quot;;s:4:&quot;icon&quot;;s:9:&quot;f/pdf.gif&quot;;}i:31;O:8:&quot;stdClass&quot;:6:{s:2:&quot;cm&quot;;i:31;s:3:&quot;mod&quot;;s:4:&quot;quiz&quot;;s:7:&quot;section&quot;;s:1:&quot;0&quot;;s:4:&quot;name&quot;;s:44:&quot;%C2%A2%C3%A9%C3%8D%C3%8A%C3%8D%C2%BA+GAP-005&quot;;s:7:&quot;visible&quot;;s:1:&quot;1&quot;;s:5:&quot;extra&quot;;s:0:&quot;&quot;;}}' WHERE id = '4' &nbsp; 
+<hr />
+<hr />
+(mysql): ALTER TABLE mdl_forum DROP COLUMN open &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_forum DROP COLUMN assesspublic &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): SELECT COUNT(*) FROM mdl_forum_posts WHERE message LIKE '%#####TRUSTTEXT#####%' &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">ตาราง forum  ได้รับการติดตั้งแล้ว</div><br />
+<hr /><h2   class="main">glossary module needs upgrading</h2><hr />
+(mysql): SELECT COUNT(*) FROM mdl_glossary_entries WHERE definition LIKE '%#####TRUSTTEXT#####%' &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT COUNT(*) FROM mdl_glossary_comments WHERE comment LIKE '%#####TRUSTTEXT#####%' &nbsp; 
+<hr />
+<hr />
+(mysql): ALTER TABLE mdl_glossary_comments CHANGE comment entrycomment TEXT  DEFAULT '' not null  &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">ตาราง glossary  ได้รับการติดตั้งแล้ว</div><br />
+<hr /><h2   class="main">hotpot module needs upgrading</h2><hr />
+(mysql): ALTER TABLE `mdl_hotpot_questions` ADD `md5key` VARCHAR(32) NOT NULL DEFAULT '' &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE `mdl_hotpot_questions` ADD INDEX `hotpot_questions_md5key_idx` (`md5key`) &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_hotpot_questions &nbsp; 
+<hr />
+<hr />
+(mysql): ALTER TABLE `mdl_hotpot_strings` ADD `md5key` VARCHAR(32) NOT NULL DEFAULT '' &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE `mdl_hotpot_strings` ADD INDEX `hotpot_strings_md5key_idx` (`md5key`) &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_hotpot_strings &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">ตาราง hotpot  ได้รับการติดตั้งแล้ว</div><br />
+<hr /><h2   class="main">journal module needs upgrading</h2><hr />
+(mysql): ALTER TABLE mdl_journal_entries CHANGE comment entrycomment TEXT  DEFAULT '' null  &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">ตาราง journal  ได้รับการติดตั้งแล้ว</div><br />
+<hr /><h2   class="main">label module needs upgrading</h2><div class="notifysuccess" align="center">ตาราง label  ได้รับการติดตั้งแล้ว</div><br />
+<hr /><h2   class="main">lams module needs upgrading</h2><div class="notifysuccess" align="center">ตาราง lams  ได้รับการติดตั้งแล้ว</div><br />
+<hr /><h2   class="main">lesson module needs upgrading</h2><hr />
+(mysql): ALTER TABLE mdl_lesson ADD feedback int unsigned DEFAULT '1' not null AFTER `nextpagedefault` &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_lesson_default ADD feedback int unsigned DEFAULT '1' not null AFTER `nextpagedefault` &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_lesson_answers MODIFY COLUMN response TEXT NULL after answer &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_lesson_attempts MODIFY COLUMN useranswer TEXT NULL after correct &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_lesson_answers MODIFY COLUMN answer TEXT NULL after timemodified &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">ตาราง lesson  ได้รับการติดตั้งแล้ว</div><br />
+<hr /><h2   class="main">quiz module needs upgrading</h2><hr />
+(mysql): ALTER TABLE mdl_question ADD commentarytext TEXT  DEFAULT '' not null AFTER `image` &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): UPDATE mdl_quiz SET review = (review &amp; ~133152) | ((review &amp; 16644) * 8) &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): SELECT name FROM mdl_config WHERE name = 'quiz_review' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): UPDATE mdl_config SET value = '16777215' WHERE name = 'quiz_review' &nbsp; 
+<hr />
+<hr />
+(mysql): CREATE TABLE mdl_quiz_feedback (
+                id int(10) unsigned NOT NULL auto_increment,
+                quizid int(10) unsigned NOT NULL default '0',
+                feedbacktext text NOT NULL default '',
+                mingrade double NOT NULL default '0',
+                maxgrade double NOT NULL default '0',
+                PRIMARY KEY (id),
+                KEY quizid (quizid)
+            ) TYPE=MyISAM COMMENT='Feedback given to students based on their overall score on the test' &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): 
+            INSERT INTO mdl_quiz_feedback (quizid, feedbacktext, maxgrade, mingrade)
+            SELECT id, '', grade + 1, 0 FROM mdl_quiz;
+         &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_question_sessions CHANGE comment manualcomment TEXT  DEFAULT '' not null  &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_question_dataset_items CHANGE number itemnumber INTEGER(10) unsigned DEFAULT '0' not null  &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_question CHANGE commentarytext generalfeedback TEXT  DEFAULT '' not null  &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">ตาราง quiz  ได้รับการติดตั้งแล้ว</div><br />
+<hr /><h2   class="main">resource module needs upgrading</h2><div class="notifysuccess" align="center">ตาราง resource  ได้รับการติดตั้งแล้ว</div><br />
+<hr /><h2   class="main">scorm module needs upgrading</h2><hr />
+(mysql): ALTER TABLE mdl_scorm ADD skipview TINYINT UNSIGNED DEFAULT '1' NOT NULL AFTER `launch` &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">ตาราง scorm  ได้รับการติดตั้งแล้ว</div><br />
+<hr /><h2   class="main">survey module needs upgrading</h2><div class="notifysuccess" align="center">ตาราง survey  ได้รับการติดตั้งแล้ว</div><br />
+<hr /><h2   class="main">wiki module needs upgrading</h2><hr />
+(mysql): CREATE TABLE mdl_wiki_locks
+(
+  id INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  wikiid INT(10) UNSIGNED NOT NULL,
+  pagename VARCHAR(160) NOT NULL DEFAULT '',
+  lockedby INT(10) NOT NULL DEFAULT 0,
+  lockedsince INT(10) NOT NULL DEFAULT 0,
+  lockedseen INT(10) NOT NULL DEFAULT 0,
+  PRIMARY KEY(id),
+  UNIQUE INDEX wiki_locks_uk(wikiid,pagename),
+  INDEX wiki_locks_ix(lockedseen)  
+) &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">ตาราง wiki  ได้รับการติดตั้งแล้ว</div><br />
+<hr /><h2   class="main">workshop module needs upgrading</h2><hr />
+(mysql): SHOW COLUMNS FROM `mdl_workshop_assessments` &nbsp; 
+<hr />
+<hr />
+(mysql): ALTER TABLE mdl_workshop_assessments ADD teachergraded INTEGER(4) UNSIGNED DEFAULT '0' NOT NULL AFTER `gradinggrade` &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">ตาราง workshop  ได้รับการติดตั้งแล้ว</div><br />
+<hr /><h2   class="main">multichoice plugin needs upgrading</h2><hr />
+(mysql): ALTER TABLE mdl_question_multichoice ADD correctfeedback TEXT  DEFAULT '' not null  &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_question_multichoice ADD partiallycorrectfeedback TEXT  DEFAULT '' not null  &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_question_multichoice ADD incorrectfeedback TEXT  DEFAULT '' not null  &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): UPDATE mdl_question SET defaultgrade = '0' WHERE qtype = 'description' AND defaultgrade = '1' &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">ตาราง multichoice  ได้รับการติดตั้งแล้ว</div><br />
+<hr /><h2   class="main">numerical plugin needs upgrading</h2><hr />
+(mysql): UPDATE mdl_question_answers SET answer = '*' WHERE answer = '' AND question IN (SELECT id FROM mdl_question WHERE qtype = 'numerical') &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">ตาราง numerical  ได้รับการติดตั้งแล้ว</div><br />
+<hr /><h2   class="main">backup</h2><div class="notifysuccess" align="center">ฐานข้อมูลได้รับการอัพเกรดแล้ว</div><br />
+<div class="notifysuccess" align="center">เวอร์ชั่นของข้อมูลสำรองคือ 2006082304</div><br />
+<h2   class="main">admin_bookmarks</h2><div class="notifysuccess" align="center">ตั้งค่าเสร็จสิ้นแล้ว Admin bookmarks  ตาราง</div><br />
+<hr /><h2   class="main">admin_tree</h2><div class="notifysuccess" align="center">ตั้งค่าเสร็จสิ้นแล้ว Site Administration  ตาราง</div><br />
+<hr /><h2   class="main">New version of Remote RSS Feeds (rss_client) exists</h2><hr />
+(mysql): ALTER TABLE mdl_block_rss_client ADD shared INTEGER(10) unsigned DEFAULT '0' not null  &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): SELECT r.*
+                      FROM mdl_role r,
+                           mdl_role_capabilities rc
+                     WHERE rc.capability = 'moodle/site:doanything'
+                       AND rc.roleid = r.id AND (rc.contextid = '1' OR  rc.contextid IN (1)) AND rc.permission = '1' &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT rc.*
+            FROM mdl_role_capabilities rc,
+                 mdl_context c
+            WHERE rc.contextid in (1)
+                 AND rc.roleid = 1
+                 AND rc.contextid = c.id  AND rc.capability = 'moodle/site:doanything' 
+            ORDER BY c.contextlevel DESC,
+                     rc.capability DESC &nbsp; 
+<hr />
+<hr />
+(mysql):  SELECT u.*, ra.id as adminid FROM mdl_user u
+                INNER JOIN mdl_role_assignments ra ON ra.userid = u.id
+                INNER JOIN mdl_role r ON r.id = ra.roleid
+                LEFT OUTER JOIN mdl_user_lastaccess ul ON (ul.userid = u.id )
+                 WHERE ra.contextid  =1
+                  AND u.deleted = 0
+                  AND ra.roleid in (1)
+                      
+                       ORDER BY ra.id ASC  &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_block_rss_client WHERE userid = 2 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_block WHERE name = 'rss_client' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_block_instance WHERE blockid = '16' &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">ตั้งค่าเสร็จสิ้นแล้ว Remote RSS Feeds  ตาราง</div><br />
+<hr /><h2   class="main">search</h2><div class="notifysuccess" align="center">ตั้งค่าเสร็จสิ้นแล้ว Global Search  ตาราง</div><br />
+<hr /><h2   class="main">authorize plugin needs upgrading</h2><hr />
+(mysql): DELETE FROM mdl_config_plugins WHERE name = 'an_nextmail' &nbsp; 
+<hr />
+<hr />
+(mysql): ALTER TABLE `mdl_enrol_authorize` ADD paymentmethod enum('cc', 'echeck') NOT NULL default 'cc' AFTER `id` &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<hr />
+(mysql): ALTER TABLE mdl_enrol_authorize CHANGE cclastfour refundinfo SMALLINT(4) unsigned NOT NULL DEFAULT 0 &nbsp; 
+<hr />
+<div class="notifysuccess" align="center">สำเร็จ</div><br />
+<div class="notifysuccess" align="center">ตาราง authorize  ได้รับการติดตั้งแล้ว</div><br />
+<hr /><h2   class="main">paypal plugin needs upgrading</h2><div class="notifysuccess" align="center">ตาราง paypal  ได้รับการติดตั้งแล้ว</div><br />
+<hr />

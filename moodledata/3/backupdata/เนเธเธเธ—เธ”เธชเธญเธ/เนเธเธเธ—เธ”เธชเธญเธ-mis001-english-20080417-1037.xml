@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<quiz>
+
+
+<!-- question: 4  -->
+  <question type="matching">
+    <name><text>¨Ñº¤ÙèËÁÒÂàÅ¢·Õè¶Ù¡µéÍ§ã¹º·¤ÇÒÁ</text>
+</name>
+    <questiontext format="html">
+<text></text>
+    </questiontext>
+    <image></image>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+<subquestion>
+<text>has</text>
+<answer><text>6</text>
+</answer>
+</subquestion>
+<subquestion>
+<text>issues</text>
+<answer><text>8</text>
+</answer>
+</subquestion>
+<subquestion>
+<text>believed</text>
+<answer><text>7</text>
+</answer>
+</subquestion>
+<subquestion>
+<text>displays</text>
+<answer><text>5</text>
+</answer>
+</subquestion>
+<subquestion>
+<text>made</text>
+<answer><text>3</text>
+</answer>
+</subquestion>
+<subquestion>
+<text>spreading</text>
+<answer><text>1</text>
+</answer>
+</subquestion>
+<subquestion>
+<text>affected</text>
+<answer><text>4</text>
+</answer>
+</subquestion>
+<subquestion>
+<text>announcement</text>
+<answer><text>2</text>
+</answer>
+</subquestion>
+</question>
+
+
+
+<!-- question: 5  -->
+  <question type="matching">
+    <name><text>¨Ñº¤Ùè¤ÓÈÑ¾·ìµÒÁ¤ÇÒÁËÁÒÂ</text>
+</name>
+    <questiontext format="html">
+<text>¨Ñº¤Ùè¤ÓÈÑ¾·ìµÒÁ¤ÇÒÁËÁÒÂ</text>
+    </questiontext>
+    <image></image>
+    <defaultgrade>1</defaultgrade>
+    <penalty>1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+<subquestion>
+<text>Announcement</text>
+<answer><text>N : »ÃÐ¡ÒÈ</text>
+</answer>
+</subquestion>
+<subquestion>
+<text>Report</text>
+<answer><text>A: ÃÒÂ§Ò¹</text>
+</answer>
+</subquestion>
+<subquestion>
+<text>Text</text>
+<answer><text>B: ¢éÍ¤ÇÒÁ</text>
+</answer>
+</subquestion>
+<subquestion>
+<text>Believe</text>
+<answer><text>Q:àª×èÍ</text>
+</answer>
+</subquestion>
+<subquestion>
+<text>Spreading</text>
+<answer><text>P:¡ÒÃá¾Ãè¡ÃÐ¨ÒÂ	</text>
+</answer>
+</subquestion>
+<subquestion>
+<text>Affect</text>
+<answer><text>R:ÁÕ¼Å¡ÃÐ·º</text>
+</answer>
+</subquestion>
+<subquestion>
+<text>Contain</text>
+<answer><text>C:ºÃÃ¨Ø/àµçÁä»´éÇÂ</text>
+</answer>
+</subquestion>
+<subquestion>
+<text>Already</text>
+<answer><text>S:¾ÃéÍÁáÅéÇ/ÁÕÍÂÙëáÅéÇ</text>
+</answer>
+</subquestion>
+<subquestion>
+<text>Article</text>
+<answer><text>D:ËÑÇ¢éÍ/º·¤ÇÒÁ</text>
+</answer>
+</subquestion>
+<subquestion>
+<text>Need</text>
+<answer><text>J:¨Óà»ç¹/¤ÇÒÁ¨Óà»ç¹</text>
+</answer>
+</subquestion>
+</question>
+
+
+</quiz>
