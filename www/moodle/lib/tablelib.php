@@ -602,10 +602,8 @@ class flexible_table {
         $suppress_enabled = array_sum($this->column_suppress);
         $suppress_lastrow = NULL;
         // Start of main data table
-        
-        //
-        //
-        echo '<div class="scroll_demo"><div>';
+		//incread scroll
+		 echo '<div class="scroll_demo"><div>';
         echo '<table'.$this->make_attributes_string($this->attributes).'>';
 
         echo '<tr>';
@@ -616,11 +614,11 @@ class flexible_table {
             if($this->is_collapsible) {
                 if(!empty($this->sess->collapse[$column])) {
                     // some headers contain < br/> tags, do not include in title
-                    //$icon_hide = ' <a href="'.$this->baseurl.$this->request[TABLE_VAR_SHOW].'='.$column.'"><img src="'.$CFG->pixpath.'/t/switch_plus.gif" title="'.get_string('show').' '.strip_tags($this->headers[$index]).'" alt="'.get_string('show').'" /></a>';
+                    $icon_hide = ' <a href="'.$this->baseurl.$this->request[TABLE_VAR_SHOW].'='.$column.'"><img src="'.$CFG->pixpath.'/t/switch_plus.gif" title="'.get_string('show').' '.strip_tags($this->headers[$index]).'" alt="'.get_string('show').'" /></a>';
                 }
-                else if($this->headers[$index] !== NULL) {
+                else if($index < 8) {
                     // some headers contain < br/> tags, do not include in title
-                    //$icon_hide = ' <a href="'.$this->baseurl.$this->request[TABLE_VAR_HIDE].'='.$column.'"><img src="'.$CFG->pixpath.'/t/switch_minus.gif" title="'.get_string('hide').' '.strip_tags($this->headers[$index]).'" alt="'.get_string('hide').'" /></a>';
+                    $icon_hide = ' <a href="'.$this->baseurl.$this->request[TABLE_VAR_HIDE].'='.$column.'"><img src="'.$CFG->pixpath.'/t/switch_minus.gif" title="'.get_string('hide').' '.strip_tags($this->headers[$index]).'" alt="'.get_string('hide').'" /></a>';
                 }
             }
 
@@ -704,7 +702,7 @@ class flexible_table {
                     $usestyles = $this->column_style[$column];
                  }
                 echo '<th class="header c'.$index.$this->column_class[$column].'" '.$this->make_styles_string($usestyles).' scope="col">'.$this->headers[$index].$icon_sort.'<div class="commands">'.$icon_hide.'</div></th>';
-            }  
+            }
 
         }
         echo '</tr>';
@@ -749,8 +747,7 @@ class flexible_table {
         }
 
         echo '</table>';
-       echo'</div></div>';
-
+		 echo'</div></div>';
         // Paging bar
         if($this->use_pages) {
             print_paging_bar($this->totalrows, $this->currpage, $this->pagesize, $this->baseurl, $this->request[TABLE_VAR_PAGE]);

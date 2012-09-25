@@ -14,7 +14,7 @@
 .qmmc .qmtitle{
 	display:block;
 	cursor:default;
-	white-space:nowrap;
+	background-color : black;
 	position:relative;
 	z-index:1;
 }

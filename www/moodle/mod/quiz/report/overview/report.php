@@ -207,7 +207,7 @@ class quiz_report extends quiz_default_report {
                     // Ignore questions of zero length
 		
                     $columns[] = 'qsgrade'.$id;
-                    $headers[] = '';//'#'.$question->number;
+                    $headers[] = $question->number;
                 }
             }
     
@@ -451,8 +451,14 @@ class quiz_report extends quiz_default_report {
                         }
                     }
                     $gradedstatesbyattempt = quiz_get_newgraded_states($attemptids, true, 'qs.id, qs.grade, qs.event, qs.question, qs.attempt');
-                }
+                }		
+				
+				
+				//add to table
                 foreach ($attempts as $attempt) {
+				
+				
+				//if($attempt->userid==searchuserid){
     
                     // Username columns.
                     $row = array();
@@ -558,7 +564,7 @@ class quiz_report extends quiz_default_report {
                                 }
                                 if (!$download) {
 									if($stateforqinattempt->grade==0){
-                                    $grade = '<div class="highlight3">'.'ผิดข้อที่  '.$question->number.'</div>';
+                                    $grade = '<div class="highlight3">'.'ผิดข้อ '.$question->number.'</div>';
 									$row[] = link_to_popup_window('/mod/quiz/reviewquestion.php?state='.
                                             $stateforqinattempt->id.'&amp;number='.$question->number,
                                             'reviewquestion', $grade, 600, 900, $strreviewquestion, 'none', true);

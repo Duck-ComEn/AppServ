@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html<?php echo $direction ?>>
+<head>
+    <?php echo $meta ?>
+    <meta name="keywords" content="moodle, <?php echo $title ?> " />
+    <title>HEC Moodle Theme 5</title>
+    <link rel="shortcut icon" href="<?php echo $CFG->themewww .'/'. current_theme() ?>/img/favicon.png" />
+    <?php include("$CFG->javascript"); ?>
+</head>
+
+<body<?php
+    echo " $bodytags";
+    if ($focus) {
+        echo " onload=\"setfocus()\"";
+    }
+    ?>>
+<div id="page">
+<div class="container_12">
+
+<?php //Accessibility: 'headermain' is now H1, see theme/standard/styles_layout.css: .headermain
+      if ($heading) {  // This is what gets printed on the home page only
+?>
+    <?php print_container_start(true, '', 'header'); ?>
+		<div class="topnav">
+			<ul id="nav" class="dropdown dropdown-horizontal">
+				<li><a href="<?php echo $CFG->wwwroot ?>/" class="home">Home</a></li>
+				<li><a href="<?php echo $CFG->wwwroot; ?>/course/index.php" title="Course" class="course">Courses</a></li>
+				<li><a href="<?php echo $CFG->wwwroot; ?>/calendar/view.php" title="Calendar" class="on-cal">Calendar</a></li>
+				<li><a href="<?php echo $CFG->wwwroot; ?>/mod/forum/" title="Forum" class="forum">Forum</a></li>
+			</ul>
+		</div>
+		<div class="clear">&nbsp;</div>
+<?php print_container_end(); ?>
+<?php } ?>
+	<div class="wrapper">
+		<div class="randomimg">
+			<div class="useralt">
+				<div class="padder">
+				<img src="<?php echo $CFG->wwwroot.'/user/pix.php?file=/'.$USER->id ?>/f1.jpg" width="80px" height="80px" title="Profile Picture" alt="Profile Picture" class="left-pic" /><h3>Hallo!</h3><?php echo $menu ?>
+				<div class="clear">&nbsp;</div>
+				</div>
+			</div>
+			<div class="randomalt">
+			<h2>Selamat Datang di eLearning HEC Studio</h2>
+			</div>
+			<img src="<?php echo $CFG->themewww .'/'. current_theme() ?>/img/s3.jpg" alt="Haley eLearning Center Studio" />
+		</div>
+		<div class="clear">&nbsp;</div>
+<?php //Accessibility: breadcrumb trail/navbar now a DIV, not a table.
+      if ($navigation) { // This is the navigation bar with breadcrumbs  ?>
+    <div class="navbar clearfix"><div class="navbutton"><?php echo $button; ?></div></div>
+	<div class="breadcrumb"><div class="padder"><?php print_navigation($navigation); ?></div></div>
+<?php } else { ?>
+	<div class="breadcrumb">
+		<div class="padder">
+			breadcrumb
+		</div>
+	</div>
+<?php } ?>
+	<div class="left-column"></div>
+	<div class="clear">&nbsp;</div>
+    <!-- END OF HEADER -->
+    <?php print_container_start(false, '', 'content'); ?>

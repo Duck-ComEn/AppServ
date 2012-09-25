@@ -75,6 +75,7 @@
                 } else {
                     while ($user = rs_fetch_next_record($availableusers)) {
                         $fullname = fullname($user, true);
+						
                         echo "<option value=\"$user->id\">".$fullname.", ".$user->email."</option>\n";
                         $i++;
                     }

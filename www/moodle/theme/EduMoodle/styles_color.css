@@ -65,7 +65,7 @@ img.grouppicture {
 
 body {
   background-color:#4FADDC;;
-  color:#000;
+  color:#000000;
 }
 
 th.header,
@@ -337,7 +337,7 @@ table.flexible .r1 {
 }
 
 #adminsettings fieldset {
-    background-color: #EEE;
+    background-color: #BFBFBF;
     border-color: #BBB;
     color: #000;
 }
@@ -814,7 +814,7 @@ table.message_search_results td {
 }
 
 .forumpost .starter {
-  background:#DDDDDD;
+  background:#C2ED98;
 }
 
 .forumheaderlist .discussion .starter {
