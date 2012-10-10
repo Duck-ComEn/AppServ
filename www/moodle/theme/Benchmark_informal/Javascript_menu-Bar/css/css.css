@@ -1,0 +1,103 @@
+#network {
+  height: 42px;
+  background: url(bg.png) repeat-x;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  color: #fffeff;
+}
+
+#network .container {
+  width: 952px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  height: 31px;
+  padding-top: 8px;
+}
+
+.jonnotie {
+  width: 82px;
+  height: 22px;
+  background-image: url(jonnotie.png);
+  display: block;
+  text-indent: -9999px;
+  margin-left: 11px;
+}
+
+
+
+/* @end */
+
+/* @group dropdown */
+
+#network .dropdown {
+  position: absolute;
+  top: 5px;
+  right: 500px;
+  width: 152px;
+  height: 29px;
+  background-image: url(dropdown.png);
+  margin-bottom: 0;
+  font-size: 11px;
+  line-height: 29px;
+  padding-left: 10px;
+  font-weight: bold;
+  text-shadow: #244355 0 -1px 0;
+  cursor: pointer;
+}
+
+
+
+/* @end */
+
+/* @group sites */
+
+.sites {
+  width: 142px;
+  background-image: url(sites.png);
+  list-style-type: none;
+  list-style-position: outside;
+  font-size: 11px;
+  text-shadow: #244355 0 -1px 0;
+  position: absolute;
+  top: 5px;
+  right: 500px;
+  display: none;
+  padding: 0 10px 3px;
+}
+
+.sites a {
+  color: #fffeff;
+  display: block;
+  border-bottom: 1px solid rgba(17,39,52,0.25);
+  margin-left: -9px;
+  margin-right: -9px;
+  padding: 0 9px 3px;
+  margin-bottom: 0;
+  line-height: 27px;
+}
+
+.sites a:hover {
+  text-decoration: none;
+}
+
+.sites li.first a {
+  line-height: 29px;
+  padding-bottom: 0;
+}
+
+.sites li.last a {
+  border-bottom-style: none;
+  border-bottom-width: 0;
+}
+
+.sites li.soon a {
+  color: #607f91;
+}
+
+
+
+/* @end */

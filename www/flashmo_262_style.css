@@ -1,0 +1,49 @@
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	leading: 4px;
+}
+
+a {
+	color: #33CCFF;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #FF9900;
+	text-decoration: none;
+}
+
+.title {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 32px;
+	color: #7FFF55;
+	font-weight: bold;
+}
+
+.subtitle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #CCFF33;
+	text-align: center;
+}
+
+.highlight {
+	color: #FFCC66;
+}
+
+.note {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #99CCFF;
+}
+
+
+.subtitle2{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 27px;
+	color: #FFAA55;
+	text-align: center;
+	
+}

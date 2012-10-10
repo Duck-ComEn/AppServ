@@ -1,0 +1,140 @@
+#menu-bar {
+  margin: 0px 0px 0px 0px;
+  padding: 8px 10px 0px 10px;
+  height: 40px;
+  line-height: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  box-shadow: 3px -3px 10px #3B4C7A;
+  -webkit-box-shadow: 3px -3px 10px #3B4C7A;
+  -moz-box-shadow: 3px -3px 10px #3B4C7A;
+  background: #070B8B;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4E98FA, endColorstr=#B8FAFF);
+  background: -webkit-gradient(linear, left top, left bottom, from(#4E98FA), to(#B8FAFF));
+  background: -moz-linear-gradient(top,  #4E98FA,  #B8FAFF);
+  border: solid 0px #6D6D6D;
+  margin-top:10px;
+}
+#menu-bar li {
+  margin: 0px 0px 0px 6px;
+  padding: 0px 0px 6px 0px;
+  float: left;
+  position: relative;
+  list-style: none;
+}
+#menu-bar a {
+  font-weight: bold;
+  font-family: georgia;
+  font-style: normal;
+  font-size: 15px;
+  color: #F0F0F0;
+  text-decoration: none;
+  display: block;
+  padding: 8px 10px 8px 10px;
+  margin: 0;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  text-shadow: 2px -2px 2px #0D0759;
+}
+#menu-bar .current a, #menu-bar li:hover > a {
+  background: #0399D4;
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFF, endColorstr=#26F1FF);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#26F1FF));
+  background: -moz-linear-gradient(top,  #FFFFFF,  #26F1FF);
+  color: #1C60FF;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  text-shadow: 2px 2px 2px #2EB0E8;
+}
+#menu-bar ul li:hover a, #menu-bar li:hover li a {
+  background: none;
+  border: none;
+  color: #666;
+  -box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+#menu-bar ul a:hover {
+  background: #0399D4 !important;
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr=#44E1EC, endColorstr=#1288FF);
+  background: -webkit-gradient(linear, left top, left bottom, from(#44E1EC), to(#1288FF)) !important;
+  background: -moz-linear-gradient(top,  #44E1EC,  #1288FF) !important;
+  color: #FFFFFF !important;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  text-shadow: 2px 2px 3px #080808;
+}
+#menu-bar ul {
+  background: #DDDDDD;
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr=#CFF9FF, endColorstr=#fff);
+  background: -webkit-gradient(linear, left top, left bottom, from(#CFF9FF), to(#fff));
+  background: -moz-linear-gradient(top,  #CFF9FF,  #fff);
+  display: none;
+  margin: 0;
+  padding: 0;
+  width: 185px;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  border: outset 3px #0ee5ff;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -webkit-box-shadow: 2px 2px 3px #22318F;
+  -moz-box-shadow: 2px 2px 3px #22318F;
+  box-shadow: 2px 2px 3px #22318F;
+}
+#menu-bar li:hover > ul {
+  display: block;
+}
+#menu-bar ul li {
+  float: none;
+  margin: 0;
+  padding: 0;
+}
+#menu-bar ul a {
+  padding:10px 0px 10px 15px;
+  color:#000000 !important;
+  font-size:13px;
+  font-style:normal;
+  font-family:'times new roman';
+  font-weight: normal;
+  text-shadow: 2px 2px 3px #FFFFFF;
+}
+#menu-bar ul li:first-child > a {
+  border-top-left-radius: 12px;
+  -webkit-border-top-left-radius: 12px;
+  -moz-border-radius-topleft: 12px;
+  border-top-right-radius: 12px;
+  -webkit-border-top-right-radius: 12px;
+  -moz-border-radius-topright: 12px;
+}
+#menu-bar ul li:last-child > a {
+  border-bottom-left-radius: 12px;
+  -webkit-border-bottom-left-radius: 12px;
+  -moz-border-radius-bottomleft: 12px;
+  border-bottom-right-radius: 12px;
+  -webkit-border-bottom-right-radius: 12px;
+  -moz-border-radius-bottomright: 12px;
+}
+#menu-bar:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#menu-bar {
+  display: inline-block;
+}
+  html[xmlns] #menu-bar {
+  display: block;
+}
+* html #menu-bar {
+  height: 1%;
+}

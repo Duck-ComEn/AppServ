@@ -1,0 +1,46 @@
+<?php
+
+    print_container_end(); // content container
+
+    print_container_start(false, '', 'footer');
+    
+    echo $loggedinas;
+   
+	
+    if (!empty($performanceinfo) and has_capability('moodle/site:config', get_context_instance(CONTEXT_SYSTEM))) { 
+        echo $performanceinfo;
+    }
+
+?> 
+
+        <div class="footerlogos"><ul>
+          <li><a href="http://www.newbury-college.ac.uk"><img src="<?php echo $CFG->httpswwwroot.'/theme/'.current_theme() ?>/images/footer/logos/newburycollege.jpg"></a></li>
+          <li><a href="http://www.westberks.gov.uk/"><img src="<?php echo $CFG->httpswwwroot.'/theme/'.current_theme() ?>/images/footer/logos/westberks.jpg"></a></li>
+          <li><a href="http://skillsfundingagency.bis.gov.uk/"><img src="<?php echo $CFG->httpswwwroot.'/theme/'.current_theme() ?>/images/footer/logos/sfa.png"></a></li>
+          <li><a href="http://www.ypla.gov.uk/"><img src="<?php echo $CFG->httpswwwroot.'/theme/'.current_theme() ?>/images/footer/logos/ypla.png"></a></li>
+          <li><a href="http://www.apprenticeships.org.uk/"><img src="<?php echo $CFG->httpswwwroot.'/theme/'.current_theme() ?>/images/footer/logos/apprenticeships.jpg"></a></li>
+          <li><a href="http://www.actionforinclusion.net"><img src="<?php echo $CFG->httpswwwroot.'/theme/'.current_theme() ?>/images/footer/logos/actionforinclusion.jpg"></a></li>
+          <li><img src="<?php echo $CFG->httpswwwroot.'/theme/'.current_theme() ?>/images/footer/logos/matrix.jpg"></li>
+          <li><a href="http://www.investorsinpeople.co.uk"><img src="<?php echo $CFG->httpswwwroot.'/theme/'.current_theme() ?>/images/footer/logos/iip.png"></a></li>
+          <li><a href="http://www.trainingqualitystandard.co.uk"><img src="<?php echo $CFG->httpswwwroot.'/theme/'.current_theme() ?>/images/footer/logos/tqs.jpg"></a></li>
+        </ul></div>
+
+<p>
+
+This site is maintained and operated by Learner Services, The LRC and IT Services. <br />
+		  For more information please <a href="mailto:moodle@newbury-college.ac.uk">contact us</a>. Newbury College is not responsible for the content of external internet sites.</p>
+ <p>Original theme Aardvark v1.5 created by <a href="http://moodle.org/mod/data/view.php?d=26&rid=2618">Shaun Daubney (Newbury College)</a>.</p></div>
+
+   
+<?php
+
+    if (debugging()) {
+?>
+        <div class="validators"><ul>
+          <li><a href="http://validator.w3.org/check?verbose=1&amp;ss=1&amp;uri=<?php echo urlencode(qualified_me()) ?>">Validate HTML</a></li>
+          <li><a href="http://www.contentquality.com/mynewtester/cynthia.exe?rptmode=-1&amp;url1=<?php echo urlencode(qualified_me()) ?>">Section 508 Check</a></li>
+          <li><a href="http://www.contentquality.com/mynewtester/cynthia.exe?rptmode=0&amp;warnp2n3e=1&amp;url1=<?php echo urlencode(qualified_me()) ?>">WCAG 1 (2,3) Check</a></li>
+        </ul></div>
+<?php } 
+    print_container_end();
+?></div></div></div></body></html>

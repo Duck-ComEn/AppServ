@@ -41,6 +41,13 @@ if (has_capability('mod/quiz:manage', $context)) {
     $row[] = new tabobject('edit', "$CFG->wwwroot/mod/quiz/edit.php?cmid=$cm->id", get_string('edit'));
 }
 
+// new tab
+if (has_capability('mod/quiz:manage', $context)) {
+    $row[] = new tabobject('Search', "$CFG->wwwroot/mod/quiz/report/overview/search.php?q=$quiz->id", get_string('Search'));
+}
+
+
+
 if ($currenttab == 'info' && count($row) == 1) {
     // Don't show only an info tab (e.g. to students).
 } else {
